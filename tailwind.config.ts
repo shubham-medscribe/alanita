@@ -12,6 +12,10 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        poppins: ["var(--font-poppins)", "sans-serif"], // Added Poppins
+        garamond: ["var(--font-garamond)", "EB Garamond", "serif"],
+      },
     },
   },
   plugins: [],
