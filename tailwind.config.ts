@@ -15,6 +15,7 @@ export default {
       fontFamily: {
         poppins: ["var(--font-poppins)", "sans-serif"], // Added Poppins
         garamond: ["var(--font-garamond)", "EB Garamond", "serif"],
+        inter: ["var(--font-inter)", "sans-serif"],
       },
     },
   },

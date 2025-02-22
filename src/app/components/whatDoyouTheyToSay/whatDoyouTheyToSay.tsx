@@ -35,15 +35,15 @@ export default function WhatDoyouTheyToSay() {
     },
   ];
   return (
-    <div className="w-full py-10 px-5 space-y-5">
+    <div className="w-full py-10 lg:px-5 space-y-5 overflow-hidden">
       <div className="text-black">
         <h1 className="text-[45px] font-bold font-garamond">
           What do you they say?
         </h1>
       </div>
       <div className="w-full flex flex-wrap justify-center 2xl:justify-between gap-10">
-        <div className="flex items-center justify-center relative">
-          <div className="w-[95dvw] sm:w-96 h-auto 2xl:w-[548px] 2xl:h-[246px]">
+        <div className="flex items-center justify-center ">
+          <div className="w-[80dvw] sm:w-96 h-auto 2xl:w-[548px] 2xl:h-[246px]">
             <Swiper
               modules={[Pagination, Navigation, Autoplay]}
               spaceBetween={20}
@@ -52,21 +52,26 @@ export default function WhatDoyouTheyToSay() {
               autoplay={{ delay: 3000 }}
               pagination={{ clickable: true }}
               navigation
-              className="w-full h-full shadow-xl rounded-2xl"
+              style={{overflow:"visible"}}
+              className="w-full h-full shadow-xl rounded-2xl "
             >
               {cards.map((card, index) => (
                 <SwiperSlide key={index}>
                   <motion.div
                     /*   whileHover={{ scale: 1.05 }} */
                     /*  whileTap={{ scale: 0.95 }} */
-                    className="w-full h-full text-black flex flex-col gap-3 justify-between border border-[#E2E2E2] rounded-2xl  p-5 2xl:p-8 relative"
+                    className="relative w-full h-full text-black flex flex-col gap-3 justify-between border border-[#E2E2E2] rounded-2xl  p-5 2xl:p-8"
                   >
-                    <Image
-                      src={Quotation_two}
-                      alt="Quote"
-                      className="w-12 h-12 sm:w-16 sm:h-16 absolute top-0 right-0
+                    <div
+                      className="absolute top-0 right-0
                     -translate-y-1/2 translate-x-1/2"
-                    />
+                    >
+                      <img
+                        src={Quotation_two.src}
+                        alt="Quote"
+                        className="w-6 h-6 sm:w-8 sm:h-8 "
+                      />
+                    </div>
 
                     <div>
                       <p className="text-[#344E41] font-light max-h-36 text-[1em] 2xl:text-2xl leading-7 sm:leading-7  lg:leading-6 xl:leading-7 font-poppins opacity-[80%]">

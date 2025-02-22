@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Navbar from "./components/Navbar/Navbar";
 import "./globals.css";
-import { EB_Garamond, Poppins } from "next/font/google";
+import { EB_Garamond, Inter, Poppins } from "next/font/google";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -15,6 +15,12 @@ const garamond = EB_Garamond({
   variable: "--font-garamond",
 });
 
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["300","400", "500", "700"],
+  variable: "--font-inter",
+});
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -22,7 +28,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.variable} ${garamond.variable} antialiased`}>
+      <body
+        className={`${poppins.variable} ${garamond.variable} ${inter.variable}  antialiased`}
+      >
         <Navbar />
         {children}
       </body>
