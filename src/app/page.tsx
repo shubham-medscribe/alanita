@@ -3,6 +3,8 @@ import AboutUs from "./components/AboutUs/AboutUs";
 import AvailableNowOnBothAndroidAndIphone from "./components/AvailableNowOnBothAndroidAndIphone/AvailableNowOnBothAndroidAndIphone";
 import BookYourFlight from "./components/BookYourFlight/BookYourFlight";
 import Fearures from "./components/fearures/Fearures";
+import OurBlogOffers from "./components/OurBlogOffers/OurBlogOffers";
+import OurLocation from "./components/OurLocations/OurLocation";
 import ToursAndPackages from "./components/ToursAndPackages/ToursAndPackages";
 import WhatDoyouTheyToSay from "./components/whatDoyouTheyToSay/whatDoyouTheyToSay";
 import WhyPeopleChooseOurAlanitaTravel from "./components/WhyPeopleChooseOurAlanitaTravel/WhyPeopleChooseOurAlanitaTravel";
@@ -18,6 +20,8 @@ export default function Home() {
           <WhyPeopleChooseOurAlanitaTravel/>
           <AvailableNowOnBothAndroidAndIphone/>
           <ToursAndPackages/>
+          <OurBlogOffers/>
+          <OurLocation/>
         </div>
       </div>
     </>
