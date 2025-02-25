@@ -37,7 +37,7 @@ export default function ToursAndPackages() {
   ];
 
   return (
-    <div className="w-full flex justify-center">
+    <div className="w-full flex justify-center p-5">
       <div className="w-full max-w-[1347px]">
         <div style={{color:"#1C1C1C"}} className="w-full flex flex-col items-center justify-center py-8">
           <h1 className="text-4xl font-garamond font-bold">Tours & Packages</h1>
@@ -58,7 +58,7 @@ export default function ToursAndPackages() {
             pagination={{ clickable: true }}
             autoplay={{ delay: 3000 }}
             modules={[Navigation, Pagination, Autoplay]}
-            className="w-[90vw] md:w-[95.5vw] xl:w-full"
+            className="w-[90vw] md:w-[95.5vw] xl:max-w-screen-md"
           >
             {destination.map((item: Record<string, any>, index: number) => {
               return (

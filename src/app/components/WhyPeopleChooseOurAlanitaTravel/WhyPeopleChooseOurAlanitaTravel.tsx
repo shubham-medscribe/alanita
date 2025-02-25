@@ -46,7 +46,7 @@ export default function WhyPeopleChooseOurAlanitaTravel() {
   ];
 
   return (
-    <div className="w-full text-black space-y-8">
+    <div className="w-full text-black space-y-8 p-5">
       <div className="space-y-2">
         <h1 className="text-[37px] font-garamond font-bold">
           People why choose our Alanita Travel

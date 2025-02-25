@@ -6,7 +6,7 @@ import Customer_satisfaction from "../../assests/customer_satisfaction.png";
 
 export default function Features() {
   return (
-    <div className="py-20 ">
+    <div className="py-20 px-5">
     <div
       className="w-full min-h-[450px] bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center p-5 sm:px-8 md:px-16 lg:px-24 rounded-3xl"
       style={{ backgroundImage: `url('/flight.jpg')` }} // Ensure image is in the public folder

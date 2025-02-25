@@ -9,7 +9,7 @@ export default function AvailableNowOnBothAndroidAndIphone() {
   const commonStyles = "flex items-center justify-center";
 
   return (
-    <div className="w-full flex justify-center">
+    <div className="w-full flex justify-center p-5">
     <div className="w-full max-w-[1347px] py-20 flex justify-center">
       <div className="w-full border border-[#FE0000] p-5 rounded-3xl">
         <div
@@ -19,9 +19,9 @@ export default function AvailableNowOnBothAndroidAndIphone() {
             <Image src={QR} alt="QR Code" className="w-full h-auto" />
           </div>
 
-          <div className={`${commonStyles} flex-col lg:flex-row gap-3  lg:gap-16`}>
-            <Image src={GooglePlay} alt="Google Play" className="w-full xl:w-[256px] h-auto" />
-            <Image src={AppleStore} alt="Apple Store" className="w-full xl:w-[256px] h-auto" />
+          <div className={`${commonStyles} flex-col xl:flex-row gap-3  lg:gap-10`}>
+            <Image src={GooglePlay} alt="Google Play" className="w-[20em] xl:w-[256px] h-auto" />
+            <Image src={AppleStore} alt="Apple Store" className="w-[20em] xl:w-[256px] h-auto" />
           </div>
 
           <div className={"flex justify-center items-center sm:col-span-2 lg:col-span-1"}>

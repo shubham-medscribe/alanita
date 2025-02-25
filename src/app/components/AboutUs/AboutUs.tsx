@@ -5,7 +5,7 @@ export default function AboutUs() {
   const ABOUT_US_BADGE_COLOR = Info.about_us_badge_color;
 
   return (
-    <section className="w-full  py-12 text-black ">
+    <section className="w-full  py-12 text-black px-5">
       <div
         className="w-full   lg:p-0 flex flex-col gap-6 xl:grid xl:gap-12 lg:min-h-[369px]"
         style={{ gridTemplateColumns: "376px auto" }}
@@ -44,7 +44,7 @@ export default function AboutUs() {
 
       <div className="w-full gap-6  lg:p-0 flex flex-col xl:grid grid-cols-[376px_auto] xl:grid-cols-[auto_376px] xl:gap-12 lg:min-h-[369px]">
         {/* Red Box (Moves to Right on xl) */}
-        <div className="order-1 xl:order-2 flex justify-center items-center bg-red-700 rounded-3xl w-full h-[75vw] max-h-[369px] xl:h-[369px]">
+        <div className="order-1 xl:order-2 flex justify-center items-center bg-red-700 rounded-3xl xl:w-full h-[75vw]  xl:h-[369px]">
           {/* Example Content */}
         </div>
 

@@ -33,3 +33,7 @@ body {
 .swiper-button-next {
   display: none !important;
 }
+
+.swiper-pagination {
+  display: none !important;
+}

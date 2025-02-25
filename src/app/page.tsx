@@ -2,7 +2,9 @@
 import AboutUs from "./components/AboutUs/AboutUs";
 import AvailableNowOnBothAndroidAndIphone from "./components/AvailableNowOnBothAndroidAndIphone/AvailableNowOnBothAndroidAndIphone";
 import BookYourFlight from "./components/BookYourFlight/BookYourFlight";
+import DestinationWedding from "./components/DestinationWedding/DestinationWedding";
 import Fearures from "./components/fearures/Fearures";
+import Footer from "./components/Footer/Footer";
 import OurBlogOffers from "./components/OurBlogOffers/OurBlogOffers";
 import OurLocation from "./components/OurLocations/OurLocation";
 import ToursAndPackages from "./components/ToursAndPackages/ToursAndPackages";
@@ -12,17 +14,20 @@ import WhyPeopleChooseOurAlanitaTravel from "./components/WhyPeopleChooseOurAlan
 export default function Home() {
   return (
     <>
-      <div className="w-full flex justify-center p-5">
-        <div className="max-w-screen-2xl">
+      <div className="w-full flex flex-col justify-center items-center overflow-hidden">
+     {/*    <BookYourFlight /> */}
+        <div className="max-w-screen-2xl overflow-hidden">
           <WhatDoyouTheyToSay />
           <Fearures />
           <AboutUs />
-          <WhyPeopleChooseOurAlanitaTravel/>
-          <AvailableNowOnBothAndroidAndIphone/>
-          <ToursAndPackages/>
-          <OurBlogOffers/>
-          <OurLocation/>
+          <WhyPeopleChooseOurAlanitaTravel />
+          <AvailableNowOnBothAndroidAndIphone />
+          <ToursAndPackages />
+          <DestinationWedding />
+          <OurBlogOffers />
+          <OurLocation />
         </div>
+        <Footer />
       </div>
     </>
   );
