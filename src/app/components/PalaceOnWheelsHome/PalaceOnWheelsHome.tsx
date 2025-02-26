@@ -45,7 +45,7 @@ export default function PalaceOnWheelsHome() {
         <Image src={Train} alt="train" />
       </div>
 
-      <div className="flex flex-col md:flex-row items-center justify-center p-4 gap-4">
+      <div className="flex flex-col md:flex-row items-center justify-center p-4 gap-4 ">
         {/* First image (static) */}
         <div className="w-full md:w-1/2">
           <img
@@ -57,17 +57,17 @@ export default function PalaceOnWheelsHome() {
 
         {/* Second div with fade effect */}
         <motion.div
-          key={index}
-          className="w-full md:w-1/2 flex items-center justify-center"
+        
+          className="w-full md:w-1/2 flex items-center justify-center overflow-hidden"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 2 }}
+          transition={{ duration: 3,repeat:Infinity  }}
         >
           <img
             src={images[index].src}
             alt="Fading Image"
-            className="w-full h-auto rounded-lg shadow-lg"
+            className=" w-full h-auto rounded-lg shadow-lg"
           />
         </motion.div>
       </div>
