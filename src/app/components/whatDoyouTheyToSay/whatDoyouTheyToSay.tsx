@@ -77,7 +77,7 @@ export default function WhatDoyouTheyToSay() {
             <Swiper
               onSwiper={(swiper) => (swiperRef.current = swiper)}
               onSlideChange={(swiper) => {
-                let realIndex = swiper.realIndex; // Use realIndex instead of activeIndex
+                const realIndex = swiper.realIndex; // Use realIndex instead of activeIndex
                 const progress = ((realIndex + 1) / swiper.slides.length) * 100;
                 setProgressWidth(progress);
               }}

@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import PlaceOnWheel from "../../assests/place-on-wheel.png";
 import Map from "../../assests/map.png";
 import Delhi from "../../assests/delhi.png";
@@ -178,7 +178,7 @@ export default function Placeonwheel() {
   );
 }
 
-function Table({ data }: { data: any }) {
+function Table({ data }: { data: Array<Record<string, string>> }) {
   return (
     <div className="overflow-x-auto">
       <table className="w-full border-collapse border border-gray-300 text-sm sm:text-base">
@@ -189,7 +189,7 @@ function Table({ data }: { data: any }) {
           </tr>
         </thead>
         <tbody>
-          {data.map((row: Record<string, any>, index: number) => (
+          {data.map((row: Record<string, string>, index: number) => (
             <tr key={index} className="hover:bg-gray-100 transition-all">
               <td className="p-3 border text-center">{row.time}</td>
               <td className="p-3 border">{row.detail}</td>
@@ -208,8 +208,8 @@ function TableWithTwoImages({
   day,
   order = true,
 }: {
-  data: any;
-  images: Array<any>;
+  data: Array<Record<string, string>>;
+  images: StaticImageData[];
   desc: string | Array<string>;
   day: string;
   order?: boolean;
@@ -246,7 +246,7 @@ function TableWithTwoImages({
             order ? "order-2" : "order-1"
           }`}
         >
-          {images.map((image: any, index: number) => (
+          {images.map((image: StaticImageData, index: number) => (
             <div className="h-full" key={index}>
               <Image
                 className="w-full h-[100%]  object-cover object-center rounded-3xl"

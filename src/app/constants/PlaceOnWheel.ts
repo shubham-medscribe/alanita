@@ -13,7 +13,7 @@ import Delhi2 from "../../app/assests/delhi-3.png";
 import Delhi3 from "../../app/assests/delhi-4.png";
 import Delhi4 from "../../app/assests/delhi-1.png";
 
-export default {
+const data = {
   wednesday: {
     desc: "The land of marvellous beauty, Udaipur is named after Rana Udai Singh, the dynamic ruler of this princely state. This City of Lakes has a long, glorious history and is also considered as the romantic city of Rajasthan, thanks to the endless love sagas of its rulers.",
     images: [Jaipur1, Jaipur2],
@@ -368,3 +368,5 @@ export default {
     ],
   },
 };
+
+export default data;

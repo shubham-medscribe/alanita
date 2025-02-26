@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "../../assests/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 import { faJetFighter } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 import PartnerLogo from "../../assests/partners_logos.webp";
@@ -13,6 +14,11 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 export default function Footer() {
+  type SocialLink = {
+    name: string;
+    link: string;
+    icon: IconDefinition;
+  };
   const footerData = {
     quick_links: [
       { title: "Home", link: "/" },
@@ -153,18 +159,16 @@ export default function Footer() {
             &copy; 2025 | All rights reserved by Alanta Travel
           </div>
           <div className="text-lg flex gap-3 order-1 xl:order-2">
-            {footerData.social.map(
-              (item: Record<string, any>, index: number) => {
-                return (
-                  <div
-                    key={index}
-                    className="w-10 h-10 rounded-full bg-white bg-opacity-10 flex items-center justify-center"
-                  >
-                    <FontAwesomeIcon icon={item.icon} />
-                  </div>
-                );
-              }
-            )}
+            {footerData.social.map((item: SocialLink, index: number) => {
+              return (
+                <div
+                  key={index}
+                  className="w-10 h-10 rounded-full bg-white bg-opacity-10 flex items-center justify-center"
+                >
+                  <FontAwesomeIcon icon={item.icon} />
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
