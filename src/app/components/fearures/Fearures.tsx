@@ -11,7 +11,7 @@ export default function Features() {
       className="w-full min-h-[450px] bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center p-5 sm:px-8 md:px-16 lg:px-24 rounded-3xl"
       style={{ backgroundImage: `url('/flight.jpg')` }} // Ensure image is in the public folder
     >
-      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-6 min-h-[231px] w-[90%] sm:max-w-6xl">
+      <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-6 min-h-[231px] w-[90%] sm:max-w-6xl">
         {/* Card 1 */}
         <div className=" bg-white shadow-lg rounded-3xl p-6 flex flex-col items-center text-center  sm:w-full">
           <img

@@ -7,6 +7,7 @@ import Fearures from "./components/fearures/Fearures";
 import Footer from "./components/Footer/Footer";
 import OurBlogOffers from "./components/OurBlogOffers/OurBlogOffers";
 import OurLocation from "./components/OurLocations/OurLocation";
+import PalaceOnWheelsHome from "./components/PalaceOnWheelsHome/PalaceOnWheelsHome";
 import ToursAndPackages from "./components/ToursAndPackages/ToursAndPackages";
 import WhatDoyouTheyToSay from "./components/whatDoyouTheyToSay/whatDoyouTheyToSay";
 import WhyPeopleChooseOurAlanitaTravel from "./components/WhyPeopleChooseOurAlanitaTravel/WhyPeopleChooseOurAlanitaTravel";
@@ -19,6 +20,7 @@ export default function Home() {
         <div className="max-w-screen-2xl overflow-hidden">
           <WhatDoyouTheyToSay />
           <Fearures />
+          <PalaceOnWheelsHome/>
           <AboutUs />
           <WhyPeopleChooseOurAlanitaTravel />
           <AvailableNowOnBothAndroidAndIphone />
