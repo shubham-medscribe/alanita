@@ -58,7 +58,7 @@ export default function AboutUs() {
                 Travel®, focus every day on meeting the specific needs of their
                 clients; to get the lowest airline fares to India and to receive
                 the best personal service. With the name of the company
-                combining their names, "Al + Anita" they take pride in
+                combining their names, {"Al + Anita"} they take pride in
                 developing and leading a professional team dedicated to
                 providing their clients with the best flights at the best rate.
               </p>
@@ -67,9 +67,9 @@ export default function AboutUs() {
                 a call at
               </p>
               <p>
-                <span className="underline">1-888-465-4282</span> or send us an email
-                at alanita@alanitatravel.net and allow us the opportunity to
-                earn your business. Whether on the phone or online, the best
+                <span className="underline">1-888-465-4282</span> or send us an
+                email at alanita@alanitatravel.net and allow us the opportunity
+                to earn your business. Whether on the phone or online, the best
                 fares all the time, Alanita Travel!
               </p>
             </div>

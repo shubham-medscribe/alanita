@@ -20,7 +20,7 @@ export default function PalaceOnWheelsHome() {
       setIndex((prevIndex) => (prevIndex + 1) % images.length);
     }, 3000);
     return () => clearInterval(interval);
-  }, []);
+  }, [images.length]);
   return (
     <div className="w-full text-[#1C1C1C] space-y-9">
       <div className=" text-center font-garamond font-bold text-5xl">
@@ -57,12 +57,11 @@ export default function PalaceOnWheelsHome() {
 
         {/* Second div with fade effect */}
         <motion.div
-        
           className="w-full md:w-1/2 flex items-center justify-center overflow-hidden"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 3,repeat:Infinity  }}
+          transition={{ duration: 3, repeat: Infinity }}
         >
           <img
             src={images[index].src}

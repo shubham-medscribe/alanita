@@ -1,5 +1,4 @@
 "use client";
-import { details, div, image } from "motion/react-client";
 import React from "react";
 import Image from "next/image";
 import PlaceOnWheel from "../../assests/place-on-wheel.png";

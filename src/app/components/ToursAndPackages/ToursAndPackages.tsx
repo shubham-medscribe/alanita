@@ -60,7 +60,7 @@ export default function ToursAndPackages() {
             modules={[Navigation, Pagination, Autoplay]}
             className="w-[90vw] md:w-[95.5vw] xl:max-w-screen-md"
           >
-            {destination.map((item: Record<string, any>, index: number) => {
+            {destination.map((item: Record<string, string>, index: number) => {
               return (
                 <SwiperSlide
                   className="w-[45vw] sm:w-[229px] lg:w-full"

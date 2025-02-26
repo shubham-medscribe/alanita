@@ -62,16 +62,16 @@ export default function OurBlogOffers() {
 
   // Function to update progress width
   const updateProgress = (swiper: SwiperType) => {
-    let realIndex: number = swiper.realIndex ; // Default to 0 if undefined
+    const realIndex: number = swiper.realIndex ; // Default to 0 if undefined
     console.log(realIndex)
-    let slidesPerView: number =
+    const slidesPerView: number =
       typeof swiper.params.slidesPerView === "number"
         ? swiper.params.slidesPerView
         : 1; // Ensure a number
 
-    let totalSlides: number = swiper.slides.length;
+    const totalSlides: number = swiper.slides.length;
 
-    let progress: number = (realIndex + slidesPerView) * (100 / totalSlides); // Calculate progress
+    const progress: number = (realIndex + slidesPerView) * (100 / totalSlides); // Calculate progress
 
     setProgressWidth(progress);
   };

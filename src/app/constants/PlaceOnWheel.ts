@@ -12,7 +12,6 @@ import Delhi1 from "../../app/assests/delhi-2.png";
 import Delhi2 from "../../app/assests/delhi-3.png";
 import Delhi3 from "../../app/assests/delhi-4.png";
 import Delhi4 from "../../app/assests/delhi-1.png";
-import Jaipur from "../../app/assests/jaipur-1.png";
 
 export default {
   wednesday: {

@@ -8,7 +8,7 @@ import GoogleRating from "../../assests/googleRating.png";
 import ThirtyOneyear from "../../assests/31 Gif.gif";
 import Quotation_one from "../../assests/quation_1.svg";
 import Quotation_two from "../../assests/quation_2.svg";
-import Info from "../../info.json";
+/* import Info from "../../info.json"; */
 //sweeper js modules
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -18,14 +18,10 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faArrowCircleLeft,
-  faArrowLeft,
-  faArrowsLeftRight,
-} from "@fortawesome/free-solid-svg-icons";
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import type { Swiper as SwiperType } from "swiper";
 export default function WhatDoyouTheyToSay() {
-  const PROGRESS_BAR_COLOR = Info.home_page_button_color;
+  /*   const PROGRESS_BAR_COLOR = Info.home_page_button_color; */
   const [progressWidth, setProgressWidth] = useState<number>(0);
 
   const cards = [

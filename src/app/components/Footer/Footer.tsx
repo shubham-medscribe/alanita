@@ -12,7 +12,6 @@ import {
   faYoutube,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-import { div } from "motion/react-client";
 export default function Footer() {
   const footerData = {
     quick_links: [

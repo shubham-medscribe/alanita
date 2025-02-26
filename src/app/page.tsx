@@ -1,7 +1,6 @@
 "use client";
 import AboutUs from "./components/AboutUs/AboutUs";
 import AvailableNowOnBothAndroidAndIphone from "./components/AvailableNowOnBothAndroidAndIphone/AvailableNowOnBothAndroidAndIphone";
-import BookYourFlight from "./components/BookYourFlight/BookYourFlight";
 import DestinationWedding from "./components/DestinationWedding/DestinationWedding";
 import Fearures from "./components/fearures/Fearures";
 import Footer from "./components/Footer/Footer";

@@ -1,9 +1,5 @@
 "use client";
-
-import Image from "next/image";
 import React from "react";
-import Couple from "../../assests/couple.jpg";
-import Istabul from "../../assests/istabul.jpg";
 export default function DestinationWedding() {
   return (
     <>
@@ -50,7 +46,7 @@ export default function DestinationWedding() {
                   Istanbul is a city steeped in history and beauty, making it an
                   ideal wedding destination. With grand palaces, luxurious
                   hotels, and picturesque waterfront venues, Istanbul provides a
-                  magical backdrop for your special day. The city's rich
+                  magical backdrop for your special day. The city&rsquo;s rich
                   culture, delicious cuisine, and warm hospitality make it even
                   more enchanting for couples and guests alike.
                 </p>
@@ -60,12 +56,12 @@ export default function DestinationWedding() {
                   Why Choose Istanbul for Your Destination Wedding?
                 </h1>
                 <p className="mt-2 text-base font-light">
-                  Istanbul is a city steeped in history and beauty, making it an
-                  ideal wedding destination. With grand palaces, luxurious
-                  hotels, and picturesque waterfront venues, Istanbul provides a
-                  magical backdrop for your special day. The city's rich
-                  culture, delicious cuisine, and warm hospitality make it even
-                  more enchanting for couples and guests alike.
+                  {`Istanbul is a city steeped in history and beauty, making it an
+  ideal wedding destination. With grand palaces, luxurious
+  hotels, and picturesque waterfront venues, Istanbul provides a
+  magical backdrop for your special day. The city's rich
+  culture, delicious cuisine, and warm hospitality make it even
+  more enchanting for couples and guests alike.`}
                 </p>
               </div>
               <div className="font-inter">
@@ -100,10 +96,12 @@ export default function DestinationWedding() {
                   </li>
                 </ol>
                 <p className="mt-2 text-base font-light">
-                  With Alanita Travel, your Istanbul destination wedding will be
-                  an unforgettable experience filled with love, elegance, and
-                  perfection. Let us help you create magical moments that last a
-                  lifetime!
+                  <p>
+                    {`With Alanita Travel, your Istanbul destination wedding will be
+                   an unforgettable experience filled with love, elegance, and
+                 perfection. Let us help you create magical moments that last a
+               lifetime!`}
+                  </p>
                 </p>
               </div>
             </div>
@@ -132,12 +130,11 @@ export default function DestinationWedding() {
                   Dubai
                 </h1>
                 <p className="mt-2 text-base font-light">
-                  Dubai, a city of luxury, grandeur, and breathtaking
-                  landscapes, is the perfect destination for a dream wedding.
-                  From stunning beachfront venues to opulent ballrooms, Dubai
-                  offers a magical backdrop for couples looking to tie the knot
-                  in style. With Alanita Travel, your destination wedding in
-                  Dubai becomes a seamless, hassle-free experience.
+                  {`Dubai, a city of luxury, grandeur, and breathtaking landscapes, is the perfect
+  destination for a dream wedding. From stunning beachfront venues to opulent
+  ballrooms, Dubai offers a magical backdrop for couples looking to tie the knot
+  in style. With Alanita Travel, your destination wedding in Dubai becomes a
+  seamless, hassle-free experience.`}
                 </p>
               </div>
               <div className="font-inter">
@@ -145,12 +142,12 @@ export default function DestinationWedding() {
                   Destination Wedding in Istanbul with Alanita Travel
                 </h1>
                 <p className="mt-2 text-base font-light">
-                  Istanbul is a city steeped in history and beauty, making it an
-                  ideal wedding destination. With grand palaces, luxurious
-                  hotels, and picturesque waterfront venues, Istanbul provides a
-                  magical backdrop for your special day. The city's rich
-                  culture, delicious cuisine, and warm hospitality make it even
-                  more enchanting for couples and guests alike.
+                  {`Istanbul is a city steeped in history and beauty, making it an
+  ideal wedding destination. With grand palaces, luxurious
+  hotels, and picturesque waterfront venues, Istanbul provides a
+  magical backdrop for your special day. The city's rich
+  culture, delicious cuisine, and warm hospitality make it even
+  more enchanting for couples and guests alike.`}
                 </p>
               </div>
               <div className="font-inter">
@@ -158,12 +155,12 @@ export default function DestinationWedding() {
                   Why Choose Istanbul for Your Destination Wedding?
                 </h1>
                 <p className="mt-2 text-base font-light">
-                  Istanbul is a city steeped in history and beauty, making it an
-                  ideal wedding destination. With grand palaces, luxurious
-                  hotels, and picturesque waterfront venues, Istanbul provides a
-                  magical backdrop for your special day. The city's rich
-                  culture, delicious cuisine, and warm hospitality make it even
-                  more enchanting for couples and guests alike.
+                  {`Istanbul is a city steeped in history and beauty, making it an
+                    ideal wedding destination. With grand palaces, luxurious
+                    hotels, and picturesque waterfront venues, Istanbul provides a
+                    magical backdrop for your special day. The city's rich
+                    culture, delicious cuisine, and warm hospitality make it even
+                    more enchanting for couples and guests alike.`}
                 </p>
               </div>
               <div className="font-inter">
@@ -198,10 +195,10 @@ export default function DestinationWedding() {
                   </li>
                 </ol> */}
                 <p className="mt-2 text-base font-light">
-                  With Alanita Travel, your Istanbul destination wedding will be
+                  {`With Alanita Travel, your Istanbul destination wedding will be
                   an unforgettable experience filled with love, elegance, and
                   perfection. Let us help you create magical moments that last a
-                  lifetime!
+                  lifetime!`}
                 </p>
               </div>
             </div>

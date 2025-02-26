@@ -4,7 +4,6 @@ import React from "react";
 import QR from "../../assests/qr.png";
 import GooglePlay from "../../assests/googlePlay.png";
 import AppleStore from "../../assests/appleStore.png";
-import Info from "../../info.json";
 export default function AvailableNowOnBothAndroidAndIphone() {
   const commonStyles = "flex items-center justify-center";
 

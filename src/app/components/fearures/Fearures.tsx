@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import Place_image from "../../assests/plane.png";
 import Compare from "../../assests/compare.png";
 import Customer_satisfaction from "../../assests/customer_satisfaction.png";

@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import Navbar from "./components/Navbar/Navbar";
 import "./globals.css";
 import { EB_Garamond, Inter, Poppins } from "next/font/google";
