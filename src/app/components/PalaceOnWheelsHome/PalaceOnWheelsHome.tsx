@@ -23,7 +23,7 @@ export default function PalaceOnWheelsHome() {
   }, [images.length]);
   return (
     <div className="w-full text-[#1C1C1C] space-y-9">
-      <div className=" text-center font-garamond font-bold text-5xl">
+      <div className=" text-center font-garamond font-bold text-4xl lg:text-5xl">
         Palace On Wheels
       </div>
       <div className="flex justify-center w-full">
@@ -32,11 +32,11 @@ export default function PalaceOnWheelsHome() {
 
       <div className="flex justify-center w-full">
         <div className="relative">
-          <div className="text-white absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-inter font-bold   text-[0.6em] xl:text-base w-fit">
+          <div className="text-white absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-inter font-bold   text-[0.6em] sm:text-base md:text-base lg:text-base xl:text-base w-fit">
             Click here for more info
           </div>
           <div className="flex justify-center">
-            <Image src={Topic} className="w-[80%] h-auto xl:w-96" alt="topic" />
+            <Image src={Topic} className="w-[80%] sm:w-96 h-auto xl:w-96" alt="topic" />
           </div>
         </div>
       </div>

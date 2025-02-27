@@ -5,14 +5,14 @@ export default function AboutUs() {
   const ABOUT_US_BADGE_COLOR = Info.about_us_badge_color;
 
   return (
-    <section className="w-full  py-12 text-black px-5">
+    <section className="w-full pt-10  xl:py-12 text-black px-5">
       <div
-        className="w-full   lg:p-0 flex flex-col gap-6 xl:grid xl:gap-12 lg:min-h-[369px]"
+        className="w-full   lg:p-0 flex flex-col gap-6 lg:grid lg:gap-12 lg:min-h-[369px]"
         style={{ gridTemplateColumns: "376px auto" }}
       >
-        <div className=" flex justify-center items-center bg-red-700 rounded-3xl h-[75vw] xl:w-full xl:h-[369px]"></div>
+        <div className=" flex justify-center items-center bg-red-700 rounded-3xl h-[75vw] gl:w-full lg:h-[369px]"></div>
 
-        <div className="gap-3 px flex flex-col justify-between">
+        <div className="gap-3  flex flex-col xl:justify-between">
           <div
             style={{ backgroundColor: ABOUT_US_BADGE_COLOR }}
             className="w-fit font-inter text-2xl py-2 px-6 rounded-lg text-black"
@@ -27,7 +27,7 @@ export default function AboutUs() {
           </div>
 
           <div className="pb-5">
-            <p className=" font-inter text-[1em] xl:text-[22px] font-[300] ">
+            <p className=" font-inter text-[1em] lg:text-xl xl:text-[22px] font-[300] ">
               Alanita Travel® is a leading travel company that specializes in
               providing its customers with the lowest possible airline fares for
               travel between the United States and India. Since it was founded
@@ -42,17 +42,17 @@ export default function AboutUs() {
         </div>
       </div>
 
-      <div className="w-full gap-6  lg:p-0 flex flex-col xl:grid grid-cols-[376px_auto] xl:grid-cols-[auto_376px] xl:gap-12 lg:min-h-[369px]">
+      <div className="w-full gap-6  lg:p-0 flex flex-col lg:grid grid-cols-[376px_auto] lg:grid-cols-[auto_376px] xl:gap-12 lg:min-h-[369px]">
         {/* Red Box (Moves to Right on xl) */}
-        <div className="order-1 xl:order-2 flex justify-center items-center bg-red-700 rounded-3xl xl:w-full h-[75vw]  xl:h-[369px]">
+        <div className="order-1 lg:order-2 flex justify-center items-center bg-red-700 rounded-3xl xl:w-full h-[75vw]  lg:h-[369px]">
           {/* Example Content */}
         </div>
 
         {/* Text Content (Moves to Left on xl) */}
-        <div className="order-2 xl:order-1  px-4">
+        <div className="order-2 lg:order-1  ">
           {/* Paragraph */}
-          <div className="pb-5 flex items-center h-full">
-            <div className="font-inter text-[1em] xl:text-[22px]  space-y-3 font-[300]">
+          <div className="xl:pb-5 flex items-center h-full">
+            <div className="font-inter text-[1em] lg:text-xl xl:text-[22px]  space-y-3 font-[300]">
               <p>
                 Anita Gray and Alan Teig - the founders and owners of Alanita
                 Travel®, focus every day on meeting the specific needs of their

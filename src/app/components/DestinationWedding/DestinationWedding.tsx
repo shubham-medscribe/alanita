@@ -11,7 +11,7 @@ export default function DestinationWedding() {
           <h2 className="text-[37px]">Turkey</h2>
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center 2xl:space-y-10 pb-[10vw] 2xl:py-0 overflow-hidden">
+      <div className="flex flex-col justify-center items-center 2xl:space-y-10 pb-[10vw] xl:pb-0 2xl:py-0 overflow-hidden">
         <div className="p-5 max-w-[1347px] grid grid-col-1 xl:grid-cols-2 gap-8 min-h-[839px] text-[#1C1C1C] w-full ">
           {/*    col-1 */}
           <div className="w-full ">
@@ -120,7 +120,7 @@ export default function DestinationWedding() {
           </div>
         </div>
 
-        <div className="p-5 max-w-[1347px] pt-[13vw] xl:pt-0  grid grid-col-1 xl:grid-cols-2 gap-8 min-h-[839px] text-[#1C1C1C] w-full ">
+        <div className="p-5 max-w-[1347px] pt-[13vw] xl:pt-0  grid grid-col-1 xl:grid-cols-2 gap-8 min-h-[750pxpx] text-[#1C1C1C] w-full ">
           {/*    col-1 */}
           <div className="w-full xl:order-2">
             {/*  content */}

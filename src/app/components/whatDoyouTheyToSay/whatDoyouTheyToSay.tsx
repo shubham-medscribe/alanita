@@ -57,13 +57,13 @@ export default function WhatDoyouTheyToSay() {
   return (
     <div className="w-full py-10 lg:px-5 space-y-5 overflow-hidden">
       <div className="text-black">
-        <h1 className="text-[45px] font-bold font-garamond">
+        <h1 className=" text-3xl py-3 xl:py-0 text-center xl:text-left sm:text-[45px] font-bold font-garamond">
           What do you they say?
         </h1>
       </div>
-      <div className="w-full flex flex-wrap justify-center 2xl:justify-between gap-10">
+      <div className="w-full flex flex-wrap justify-center xl:justify-between gap-10">
         <div className="flex items-center justify-center ">
-          <div className="w-[80dvw] sm:w-96 h-auto 2xl:w-[548px] 2xl:h-[246px] relative">
+          <div className="w-[95vw] sm:w-96 h-auto 2xl:w-[548px] 2xl:h-[246px] relative">
             <img
               src={Quotation_two.src}
               alt="Quote"
