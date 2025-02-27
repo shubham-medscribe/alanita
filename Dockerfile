@@ -1,25 +1,23 @@
+# Use Node.js 20 Alpine as the base image
 FROM node:20-alpine
 
 # Set working directory
 WORKDIR /app
 
-# Copy package.json and package-lock.json first to leverage Docker caching
+# Copy package.json and package-lock.json before installing dependencies
 COPY package.json package-lock.json ./
 
-# Install dependencies
-RUN npm ci --omit=dev
+# Install dependencies (ensure tailwindcss is installed)
+RUN npm install
 
-# Copy the rest of the application
+# Copy the entire project after dependencies are installed
 COPY . .
 
-# Build the Next.js application
+# Build the project
 RUN npm run build
 
-# Expose Next.js default port
+# Expose the application port
 EXPOSE 3000
 
-# Set environment variables
-ENV NODE_ENV=production
-
-# Start the application
-CMD ["npm", "run", "start"]
+# Run the application
+CMD ["npm", "start"]
