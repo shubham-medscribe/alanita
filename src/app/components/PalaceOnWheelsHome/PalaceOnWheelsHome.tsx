@@ -1,15 +1,12 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import Rope from "../../assests/rope.png";
-import Image from "next/image";
-import Train from "../../assests/train_gif.gif";
-import Topic from "../../assests/topic.png";
 import AlawayQatar from "../../assests/QatarAlways.jpg";
 import { motion } from "motion/react";
 import Qatar1 from "../../assests/qatar1.jpg";
 import Qatar2 from "../../assests/qatar2.jpg";
 import Qatar3 from "../../assests/qatar3.jpg";
 import Qatar4 from "../../assests/qatar4.jpg";
+import ClickHereForMoreInfo from "../ClickHereForMoreInfo/ClickHereForMoreInfo";
 export default function PalaceOnWheelsHome() {
   const images = [Qatar1, Qatar2, Qatar3, Qatar4];
 
@@ -23,27 +20,7 @@ export default function PalaceOnWheelsHome() {
   }, [images.length]);
   return (
     <div className="w-full text-[#1C1C1C] space-y-9">
-      <div className=" text-center font-garamond font-bold text-4xl lg:text-5xl">
-        Palace On Wheels
-      </div>
-      <div className="flex justify-center w-full">
-        <Image src={Rope} alt="rope" />
-      </div>
-
-      <div className="flex justify-center w-full">
-        <div className="relative">
-          <div className="text-white absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-inter font-bold   text-[0.6em] sm:text-base md:text-base lg:text-base xl:text-base w-fit">
-            Click here for more info
-          </div>
-          <div className="flex justify-center">
-            <Image src={Topic} className="w-[80%] sm:w-96 h-auto xl:w-96" alt="topic" />
-          </div>
-        </div>
-      </div>
-
-      <div className="flex justify-center w-full">
-        <Image src={Train} alt="train" />
-      </div>
+      <ClickHereForMoreInfo />
 
       <div className="flex flex-col md:flex-row items-center justify-center p-4 gap-4 ">
         {/* First image (static) */}
