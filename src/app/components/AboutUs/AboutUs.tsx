@@ -1,7 +1,6 @@
 import React from "react";
 import Info from "../../info.json";
 import YouTube from "react-youtube";
-import { width } from "@fortawesome/free-brands-svg-icons/fa42Group";
 export default function AboutUs() {
   const ABOUT_US_BADGE_COLOR = Info.about_us_badge_color;
 
