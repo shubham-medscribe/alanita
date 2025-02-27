@@ -39,7 +39,7 @@ export default function ToursAndPackages() {
   return (
     <div className="w-full flex justify-center p-5">
       <div className="w-full max-w-[1347px]">
-        <div style={{color:"#1C1C1C"}} className="w-full flex flex-col items-center justify-center py-8">
+        <div style={{color:"#1C1C1C"}} className="w-full flex flex-col items-center justify-center pb-8">
           <h1 className="text-4xl font-garamond font-bold">Tours & Packages</h1>
           <h3 className="text-[1em] text-center md:text-[21px] font-inter font-medium">Explore exciting tours and packages with Alanita Travel!</h3>
         </div>

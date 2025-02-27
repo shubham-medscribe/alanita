@@ -62,8 +62,8 @@ export default function OurBlogOffers() {
 
   // Function to update progress width
   const updateProgress = (swiper: SwiperType) => {
-    const realIndex: number = swiper.realIndex ; // Default to 0 if undefined
-    console.log(realIndex)
+    const realIndex: number = swiper.realIndex; // Default to 0 if undefined
+    console.log(realIndex);
     const slidesPerView: number =
       typeof swiper.params.slidesPerView === "number"
         ? swiper.params.slidesPerView
@@ -96,7 +96,6 @@ export default function OurBlogOffers() {
           }}
           modules={[Navigation, Pagination]}
           spaceBetween={20}
-         
           slidesPerView={1}
           breakpoints={{
             640: { slidesPerView: 1 },
@@ -141,11 +140,11 @@ export default function OurBlogOffers() {
               icon={faArrowLeft}
             />
           </button>
-          <div className="w-1/2 lg:w-[90%]">
+          <div className="w-1/2 lg:w-[90%] h-[3px] bg-[#D9D9D9] rounded-3xl">
             <motion.div
               animate={{ width: `${progressWidth}%` }}
               transition={{ duration: 0.5 }}
-              className={`h-[2px] rounded-xl  bg-[#FE0000]`}
+              className={`h-[3px]   bg-[#FE0000] rounded-3xl`}
             ></motion.div>
           </div>
           <button

@@ -3,8 +3,8 @@ import React from "react";
 export default function DestinationWedding() {
   return (
     <>
-      <div className="w-full flex justify-center p-5 text-[#1C1C1C] pt-20">
-        <div className="w-full max-w-[1347px]  font-garamond font-bold space-y-5">
+      <div className="w-full flex justify-center p-5 text-[#1C1C1C] xl:pt-20">
+        <div className="w-full max-w-[1347px]  font-garamond font-bold xl:space-y-5">
           <h1 className="text-[9vw] md:text-4xl lg:text-5xl xl:text-6xl">
             Destination Wedding
           </h1>

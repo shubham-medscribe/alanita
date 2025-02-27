@@ -9,7 +9,7 @@ export default function AvailableNowOnBothAndroidAndIphone() {
 
   return (
     <div className="w-full flex justify-center p-5">
-    <div className="w-full max-w-[1347px] py-20 flex justify-center">
+    <div className="w-full max-w-[1347px] xl:py-20 flex justify-center">
       <div className="w-full border border-[#FE0000] p-5 rounded-3xl">
         <div
           className="w-full  grid grid-cols-1 sm:grid-cols-2 md:grid-col-4  gap-8 lg:grid-cols-[256px_auto_308px] xl:lg:grid-cols-[256px_auto_508px] lg:gap-0 xl:gap-0 text-black"

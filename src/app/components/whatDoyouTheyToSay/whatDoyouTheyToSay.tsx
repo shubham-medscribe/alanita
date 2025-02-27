@@ -130,11 +130,11 @@ export default function WhatDoyouTheyToSay() {
                   icon={faArrowLeft}
                 />
               </button>
-              <div className="w-[90%]">
+              <div className="w-[75%] xl:w-[90%] h-[3px] bg-[#D9D9D9]">
                 <motion.div
                   animate={{ width: `${progressWidth}%` }}
                   transition={{ duration: 0.5 }}
-                  className={`h-[1px] rounded-xl  bg-[#FE0000]`}
+                  className={`h-[3px]  bg-[#FE0000] rounded-3xl `}
                 ></motion.div>
               </div>
               <button

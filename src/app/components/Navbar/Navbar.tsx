@@ -20,8 +20,6 @@ export default function Navbar() {
     { name: "Blog", href: "/blog" },
   ];
 
-  const LINK_HOVER_COLOR = Info.home_page_button_color;
-  console.log(Info);
   return (
     <nav className="flex justify-center relative">
       <div className="w-full max-w-screen-2xl flex items-center justify-between px-2 py-2  shadow-lg lg:shadow-none">
@@ -44,7 +42,7 @@ export default function Navbar() {
           >
             {links.map((link) => (
               <li
-                className={`hover:text-[${LINK_HOVER_COLOR}] transition-all duration-200`}
+                className={`hover:text-[#FE0000] transition-all duration-200`}
                 key={link.name}
               >
                 <a href={link.href}>{link.name}</a>
@@ -105,7 +103,7 @@ export default function Navbar() {
               <a
                 href={link.href}
                 onClick={() => setIsOpen(false)} // Close menu on click
-                className={`block w-full px-6 py-2 text-gray-900 hover:text-[${LINK_HOVER_COLOR}] transition-colors duration-300`}
+                className={`block w-full px-6 py-2 text-gray-900 hover:text-[#FE0000] transition-colors duration-300`}
               >
                 {link.name}
               </a>
