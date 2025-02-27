@@ -1,6 +1,7 @@
 import React from "react";
 import Info from "../../info.json";
-
+import YouTube from "react-youtube";
+import { width } from "@fortawesome/free-brands-svg-icons/fa42Group";
 export default function AboutUs() {
   const ABOUT_US_BADGE_COLOR = Info.about_us_badge_color;
 
@@ -10,7 +11,11 @@ export default function AboutUs() {
         className="w-full   lg:p-0 flex flex-col gap-6 lg:grid lg:gap-12 lg:min-h-[369px]"
         style={{ gridTemplateColumns: "376px auto" }}
       >
-        <div className=" flex justify-center items-center bg-red-700 rounded-3xl h-[75vw] gl:w-full lg:h-[369px]"></div>
+        <div className="flex justify-center items-center rounded-3xl h-[75vw] lg:w-full lg:h-[369px] overflow-hidden">
+          
+            <YouTube videoId="pYSM8L0sZsw" className="h-full  w-full"   opts={{ height: "100%", width: "100%" }}/>
+        
+        </div>
 
         <div className="gap-3  flex flex-col xl:justify-between">
           <div
@@ -44,8 +49,8 @@ export default function AboutUs() {
 
       <div className="w-full gap-6  lg:p-0 flex flex-col lg:grid grid-cols-[376px_auto] lg:grid-cols-[auto_376px] xl:gap-12 lg:min-h-[369px]">
         {/* Red Box (Moves to Right on xl) */}
-        <div className="order-1 lg:order-2 flex justify-center items-center bg-red-700 rounded-3xl xl:w-full h-[75vw]  lg:h-[369px]">
-          {/* Example Content */}
+        <div className="order-1 lg:order-2 flex justify-center items-center  rounded-3xl xl:w-full h-[75vw]  lg:h-[369px] overflow-hidden">
+        <YouTube videoId="a4bnSxZxNFU" className="h-full  w-full"   opts={{ height: "100%", width: "100%" }}/>
         </div>
 
         {/* Text Content (Moves to Left on xl) */}

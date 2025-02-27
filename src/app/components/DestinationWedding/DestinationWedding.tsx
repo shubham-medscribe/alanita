@@ -95,14 +95,14 @@ export default function DestinationWedding() {
                     providing a luxurious and intimate wedding experience.
                   </li>
                 </ol>
-                <p className="mt-2 text-base font-light">
+                <div className="mt-2 text-base font-light">
                   <p>
                     {`With Alanita Travel, your Istanbul destination wedding will be
                    an unforgettable experience filled with love, elegance, and
                  perfection. Let us help you create magical moments that last a
                lifetime!`}
                   </p>
-                </p>
+                </div>
               </div>
             </div>
           </div>
