@@ -45,7 +45,7 @@ export default function ClickHereForMoreInfo() {
         </div>
 
         <div className="flex justify-center w-full">
-          <Image src={Train} alt="train" />
+          <Image src={Train} className="w-[100vw] h-auto" alt="train" />
         </div>
       </div>
     </>

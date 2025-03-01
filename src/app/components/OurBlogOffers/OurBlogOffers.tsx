@@ -104,18 +104,18 @@ export default function OurBlogOffers() {
             1236: { slidesPerView: 3 },
           }}
           pagination={{ clickable: false }}
-          className="w-[80vw] lg:max-w-screen-lg xl:max-w-[1347px] overflow-hidden"
+          className="w-[80vw] max-w-[1347px] rounded-3xl "
         >
           {blogPosts.map((post) => (
             <SwiperSlide
               key={post.id}
               className="w-full h-full flex justify-center py-8"
             >
-              <div className="w-full bg-white shadow-lg rounded-3xl overflow-hidden">
+              <div className="w-full bg-white shadow-lg  rounded-b-3xl">
                 <Image
                   src={post.image}
                   alt={post.title}
-                  className="w-full h-auto object-cover object-center"
+                  className="w-full h-auto object-cover object-center rounded-t-3xl"
                 />
                 <div className="p-5 w-full min-h-28">
                   <h3 className="text-left text-[20px] font-semibold">

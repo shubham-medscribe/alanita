@@ -1,9 +1,11 @@
 "use client";
 import AboutUs from "./components/AboutUs/AboutUs";
 import AvailableNowOnBothAndroidAndIphone from "./components/AvailableNowOnBothAndroidAndIphone/AvailableNowOnBothAndroidAndIphone";
+import BookYourFlight from "./components/BookYourFlight/BookYourFlight";
 import DestinationWedding from "./components/DestinationWedding/DestinationWedding";
 import Fearures from "./components/fearures/Fearures";
 import Footer from "./components/Footer/Footer";
+import GirdEffectAnimation from "./components/GirdEffectAnimation/GirdEffectAnimation";
 import OurBlogOffers from "./components/OurBlogOffers/OurBlogOffers";
 import OurLocation from "./components/OurLocations/OurLocation";
 import PalaceOnWheelsHome from "./components/PalaceOnWheelsHome/PalaceOnWheelsHome";
@@ -15,11 +17,15 @@ export default function Home() {
   return (
     <>
       <div className="w-full flex flex-col justify-center items-center overflow-hidden">
-     {/*    <BookYourFlight /> */}
-        <div className="max-w-screen-2xl overflow-hidden">
+        <BookYourFlight />
+        <PalaceOnWheelsHome />
+        <div className="max-w-[1347px] overflow-hidden">
+          <GirdEffectAnimation />
           <WhatDoyouTheyToSay />
           <Fearures />
-          <PalaceOnWheelsHome/>
+        </div>
+
+        <div className="max-w-[1347px]">
           <AboutUs />
           <WhyPeopleChooseOurAlanitaTravel />
           <AvailableNowOnBothAndroidAndIphone />

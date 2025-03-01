@@ -102,7 +102,7 @@ const data = {
     ],
   },
   friday: {
-    desc: "Your first stop will be at the magnificent Pink City, Jaipur. The city displays graceful architecture in a unique pink shade. Established in 1727 by the then Maharaja, Sawai Jai Singh II, Jaipur is known as one of the most well-planned cities of its time.",
+    desc: "After the exquisite architectural landmarks, the perfect place to experience the other side of the royal charm is Sawai Madhopur. Named after its king, Maharaja Sawai Madho Singh I, this place is in close proximity to the famous Ranthambore National Park.",
     images: [Sawai, Sawai2],
     table: [
       {

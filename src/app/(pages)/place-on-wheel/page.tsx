@@ -8,6 +8,7 @@ import PlaceOnWeel from "../../constants/PlaceOnWheel";
 import ClickHereForMoreInfo from "@/app/components/ClickHereForMoreInfo/ClickHereForMoreInfo";
 import Track1 from "../../assests/train-track-1.png";
 import Track2 from "../../assests/train-track-2.png";
+import { div } from "motion/react-client";
 export default function Placeonwheel() {
   return (
     <div className="w-full flex justify-center text-[#1C1C1C] h-full">
@@ -50,6 +51,22 @@ export default function Placeonwheel() {
               </p>
             </div>
           </div>
+          <div className="flex justify-center">
+            <div className="w-full flex-col lg:flex-row text-center lg:text-left flex items-center justify-between max-w-screen-lg">
+              <div className="uppercase font-garamond text-4xl font-bold">
+                Day - 1 Wednesday
+              </div>
+              <div
+                style={{ backgroundImage: `url(${"./topic.png"})` }}
+                className="bg-no-repeat bg-contain bg-center w-52 h-20 text-white font-inter text-xl uppercase flex items-center justify-center"
+              >
+                Delhi
+              </div>
+              <div className="uppercase font-inter text-2xl font-bold">
+                the capital of India
+              </div>
+            </div>
+          </div>
 
           {/*  Day-1 wednesday */}
           <div className="w-full lg:min-w-[630px] min-h-[515px] grid grid-cols-1 xl:grid-cols-2 gap-6">
@@ -88,17 +105,24 @@ export default function Placeonwheel() {
             images={PlaceOnWeel.thursday.images}
             desc={PlaceOnWeel.thursday.desc}
             day="day 2 - thurday"
+            anotherNameOfCity="The Pink City"
+            city="Jaipur"
           />
 
-          <TrainRightToLeft title="SAWAI MADHOPUR/CHITTORGARH" />
+          <TrainRightToLeftChittorgarh
+            title="SAWAI MADHOPUR/CHITTORGARH"
+            day=""
+          />
 
           {/*   Day-3 - Friday */}
-          <TableWithTwoImages
+          <CHITTORGARH
             data={PlaceOnWeel.friday.table}
             images={PlaceOnWeel.friday.images}
             desc={PlaceOnWeel.friday.desc}
             day=""
             order={false}
+            anotherNameOfCity="The Price of Mewar"
+            city="Jaipur"
           />
 
           <TrainLeftToRight title="UDAIPUR" />
@@ -108,15 +132,34 @@ export default function Placeonwheel() {
             images={PlaceOnWeel.saturday.images}
             desc={PlaceOnWeel.saturday.desc}
             day="Day 4 - Saturday"
+            anotherNameOfCity="Romance on Water"
+            city="Udaipur"
           />
-          <TrainRightToLeft title="jaisalmer" />
+
+          <div className="hidden w-full lg:flex justify-center">
+            <div className="max-w-3xl xl:max-w-4xl relative">
+              <Image src={Track2} className="" alt="Track Image" />
+              <div className=" uppercase hidden lg:block font-garamond text-4xl font-bold w-full absolute bottom-14 left-24">
+                {"Day 5 - Sunday"}
+              </div>
+              <div
+                style={{ backgroundImage: `url(./topic.png)` }}
+                className="absolute bottom-0 left-12 -translate-x-1/2 translate-y-1/2 bg-no-repeat bg-contain py-3 px-5 bg-center text-center text-white font-inter uppercase font-bold text-lg w-full "
+              >
+                {"jaisalmer"}
+              </div>
+            </div>
+          </div>
+
           {/*   Day-5 - Sunday */}
-          <TableWithTwoImages
+          <CHITTORGARH
             data={PlaceOnWeel.sunday.table}
             images={PlaceOnWeel.sunday.images}
             desc={PlaceOnWeel.sunday.desc}
             day="Day 5 - Sunday"
             order={false}
+            anotherNameOfCity="The Golden City"
+            city="Jodhpur"
           />
 
           <TrainLeftToRight title="Jodhpur" />
@@ -126,10 +169,15 @@ export default function Placeonwheel() {
             images={PlaceOnWeel.monday.images}
             desc={PlaceOnWeel.monday.desc}
             day="Day 6 - Monday"
+            anotherNameOfCity="The Blue City"
+            city="Jodhpur"
           />
-          <TrainRightToLeft title="bharatpur" />
+          <TrainRightToLeftTwoLocatinWithDay
+            title="bharatpur"
+            day="Day 7 - Tuesday"
+          />
           {/*   Day-7 - Tuesday   */}
-          <TableWithTwoImages
+          <ParaDescription
             data={PlaceOnWeel.tuesday.table}
             images={PlaceOnWeel.tuesday.images}
             desc={PlaceOnWeel.tuesday.desc}
@@ -216,6 +264,268 @@ function Table({ data }: { data: Array<Record<string, string>> }) {
 function TableWithTwoImages({
   data,
   images,
+  anotherNameOfCity,
+  desc,
+  city,
+
+  day,
+  order = true,
+  descFull = false,
+}: {
+  data: Array<Record<string, string>>;
+  anotherNameOfCity: string;
+  images: StaticImageData[];
+  desc: string | Array<string>;
+  day: string;
+  city: string;
+  order?: boolean;
+  descFull?: boolean;
+}) {
+  return (
+    <div
+      className={`flex flex-col ${order ? "" : "items-end"} gap-8 pt-10 h-fit`}
+    >
+      <div
+        className={`w-full  ${!descFull ? "w-full" : "w-full"} px-4 space-y-3`}
+      >
+        <h2 className="text-center lg:text-left uppercase font-garamond text-4xl font-bold w-full">
+          {day}
+        </h2>
+        <div className="flex flex-col lg:flex-row">
+          {Array.isArray(desc) &&
+            desc.map((item, index) => {
+              return (
+                <p key={index} className={`w-full`}>
+                  {item}
+                </p>
+              );
+            })}
+          {!Array.isArray(desc) && (
+            <p className={`w-full lg:w-[70%]`}>{desc}</p>
+          )}
+          <div className="py-5 xl:py-0 lg:w-[30%] flex flex-col items-center text-3xl font-inter font-medium ">
+            {anotherNameOfCity}
+            <div
+              style={{ backgroundImage: `url(${"./topic.png"})` }}
+              className=" bg-no-repeat bg-contain bg-center w-52 h-20 text-white font-inter text-xl uppercase flex lg:hidden items-center justify-center"
+            >
+              {city}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className={`w-full flex lg:flex-row flex-col gap-5`}>
+        {/*    Table */}
+        <div
+          className={`w-full lg:w-[60%] xl:w-[70%] font-inter ${
+            order ? "order-1" : "order-2"
+          }`}
+        >
+          <Table data={data} />
+        </div>
+        {/*   ImageSection */}
+        <div
+          className={`w-full lg:w-[40%] xl:w-[30%]  flex  lg:flex-col  gap-2 justify-between ${
+            order ? "order-2" : "order-1"
+          }`}
+        >
+          {images.map((image: StaticImageData, index: number) => (
+            <div className="w-full h-full overflow-hidden" key={index}>
+              <Image
+                className="w-full h-full  object-cover object-center rounded-3xl"
+                src={image}
+                alt=""
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function TrainLeftToRight({ title }: { title: string }) {
+  return (
+    <div className="w-full lg:flex justify-center hidden">
+      <div className="max-w-3xl xl:max-w-full relative">
+        <Image src={Track1} className="" alt="Track Image" />
+        <div
+          style={{ backgroundImage: `url(./topic.png)` }}
+          className="   absolute bottom-0 right-12 translate-x-1/2 translate-y-1/2 bg-no-repeat bg-contain py-3 w-full px-5 bg-center text-center text-white font-inter uppercase font-bold text-lg"
+        >
+          {title}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function TrainRightToLeft({ title }: { title: string }) {
+  return (
+    <div className="w-full flex justify-center">
+      <div className="relative">
+        <Image src={Track2} className="" alt="Track Image" />
+        <div
+          style={{ backgroundImage: `url(./topic.png)` }}
+          className="absolute bottom-0 left-12 -translate-x-1/2 translate-y-1/2 bg-no-repeat bg-contain py-3 px-5 bg-center text-center text-white font-inter uppercase font-bold text-lg w-full "
+        >
+          {title}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function CHITTORGARH({
+  data,
+  images,
+  desc,
+  anotherNameOfCity,
+  city,
+  day,
+  order = true,
+  descFull = false,
+}: {
+  data: Array<Record<string, string>>;
+  images: StaticImageData[];
+  desc: string | Array<string>;
+  day: string;
+  city: string;
+  anotherNameOfCity: string;
+  order?: boolean;
+  descFull?: boolean;
+}) {
+  return (
+    <div className={`flex flex-col ${order ? "" : "items-end"} gap-8`}>
+      <div
+        className={`lg:w-[60%] xl:w-[70%] pl-4  space-y-3 relative flex lg:flex-row flex-col pt-5 lg:pt-0`}
+      >
+        <h2 className="lg:hidden text-center uppercase font-garamond text-4xl font-bold w-full">
+          {day}
+        </h2>
+
+        <div className="flex justify-end">
+          <div className="space-y-3 lg:space-y-0">
+            <div className="flex justify-center flex-col items-center lg:block text-center text-3xl font-inter font-medium lg:text-end lg:absolute -top-1/2 right-0 ">
+              {anotherNameOfCity}
+              <div
+                style={{ backgroundImage: `url(${"./topic.png"})` }}
+                className="lg:hidden bg-no-repeat bg-contain bg-center w-52 h-20 text-white font-inter text-xl uppercase flex items-center justify-center"
+              >
+                {city}
+              </div>
+            </div>
+            {Array.isArray(desc) &&
+              desc.map((item, index) => {
+                return (
+                  <p key={index} className={`w-full `}>
+                    {item}
+                  </p>
+                );
+              })}
+            {!Array.isArray(desc) && <p className={`w-full text-justify`}>{desc}</p>}
+          </div>
+        </div>
+      </div>
+
+      <div className={`w-full flex lg:flex-row flex-col gap-5`}>
+        {/*    Table */}
+        <div
+          className={`w-full lg:w-[60%] xl:w-[70%] font-inter ${
+            order ? "order-1" : "order-2"
+          }`}
+        >
+          <Table data={data} />
+        </div>
+        {/*   ImageSection */}
+        <div
+          className={`w-full lg:w-[40%] xl:w-[30%]  flex  lg:flex-col  gap-2 justify-between ${
+            order ? "order-2" : "order-1"
+          }`}
+        >
+          {images.map((image: StaticImageData, index: number) => (
+            <div className="w-full h-full overflow-hidden" key={index}>
+              <Image
+                className="w-full h-full  object-cover object-center rounded-3xl"
+                src={image}
+                alt=""
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function TrainRightToLeftChittorgarh({
+  title,
+  day,
+}: {
+  title: string;
+  day: string;
+}) {
+  return (
+    <div className="hidden w-full lg:flex justify-center">
+      <div className="max-w-3xl xl:max-w-4xl  w-full relative">
+        <Image src={Track2} className="" alt="Track Image" />
+        <div className="uppercase font-garamond text-4xl font-bold w-full absolute bottom-14 left-24">
+          {day}
+        </div>
+        <div
+          style={{ backgroundImage: `url(./topic.png)` }}
+          className="absolute bottom-0 left-12 -translate-x-1/2 translate-y-1/2 bg-no-repeat bg-contain py-3 px-5 bg-center text-center text-white font-inter uppercase font-bold text-lg w-full "
+        >
+          {title}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function TrainRightToLeftTwoLocatinWithDay({
+  title,
+  day,
+}: {
+  title: string;
+  day: string;
+}) {
+  return (
+    <div className="w-ful flex flex-col relative font-inter">
+      <div className="hidden  w-full lg:flex justify-center">
+        <Image src={Track2} alt="Track Image" />
+      </div>
+      <div className="xl:pl-20 w-full flex flex-col lg:flex-row  justify-between gap-4 xl:gap-10 items-center max-w-5xl">
+        <h2 className="pt-7 font-bold font-garamond text-5xl lg:hidden uppercase">
+          {day}
+        </h2>
+        <div className="flex items-center gap-5">
+          <div
+            style={{ backgroundImage: `url(./topic.png)` }}
+            className="w-[250px] px-[70px] bg-center bg-contain bg-no-repeat uppercase text-white py-3"
+          >
+            BharatPur
+          </div>
+        </div>
+        <h1 className="text-2xl">Avian Bird Sanctuary</h1>
+        <div className="flex flex-col lg:flex-row items-center gap-5">
+          <div
+            style={{ backgroundImage: `url(./topic.png)` }}
+            className="w-[250px] px-[70px] bg-center text-center bg-contain bg-no-repeat uppercase text-white py-3"
+          >
+            Agra
+          </div>
+          <h1 className="w-auto text-2xl">Taj Mahal</h1>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function ParaDescription({
+  data,
+  images,
   desc,
   day,
   order = true,
@@ -233,13 +543,12 @@ function TableWithTwoImages({
       className={`flex flex-col ${order ? "" : "items-end"} gap-8 pt-10 h-fit`}
     >
       <div
-        className={`w-full  ${
-          !descFull ? "xl:w-[70%]" : "w-full"
-        } px-4 space-y-3`}
+        className={`w-full  ${!descFull ? "w-full" : "w-full"} px-4 space-y-3`}
       >
         <h2 className="uppercase font-garamond text-4xl font-bold w-full">
           {day}
         </h2>
+
         {Array.isArray(desc) &&
           desc.map((item, index) => {
             return (
@@ -248,7 +557,6 @@ function TableWithTwoImages({
               </p>
             );
           })}
-        {!Array.isArray(desc) && <p className={`w-full`}>{desc}</p>}
       </div>
 
       <div className={`w-full flex lg:flex-row flex-col gap-5`}>
@@ -275,38 +583,6 @@ function TableWithTwoImages({
               />
             </div>
           ))}
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function TrainLeftToRight({ title }: { title: string }) {
-  return (
-    <div className="w-full flex justify-center">
-      <div className="relative">
-        <Image src={Track1} className="" alt="Track Image" />
-        <div
-          style={{ backgroundImage: `url(./topic.png)` }}
-          className="absolute bottom-0 right-12 translate-x-1/2 translate-y-1/2 bg-no-repeat bg-contain py-3 w-full px-5 bg-center text-center text-white font-inter uppercase font-bold text-lg"
-        >
-          {title}
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function TrainRightToLeft({ title }: { title: string }) {
-  return (
-    <div className="w-full flex justify-center">
-      <div className="relative">
-        <Image src={Track2} className="" alt="Track Image" />
-        <div
-          style={{ backgroundImage: `url(./topic.png)` }}
-          className="absolute bottom-0 left-12 -translate-x-1/2 translate-y-1/2 bg-no-repeat bg-contain py-3 px-5 bg-center text-center text-white font-inter uppercase font-bold text-lg w-full "
-        >
-          {title}
         </div>
       </div>
     </div>
