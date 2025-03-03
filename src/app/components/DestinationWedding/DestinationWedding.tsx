@@ -128,7 +128,7 @@ export default function DestinationWedding() {
                 className="py-2 px-10 block rounded-xl text-[28px]"
                 onClick={() => setCurrentLocation(data.istanbul)}
               >
-                istanbul
+                Istanbul
               </button>
               <button
                 onClick={() => setCurrentLocation(data.bodrum)}
