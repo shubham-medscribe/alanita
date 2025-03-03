@@ -104,7 +104,7 @@ const data = {
 
 export default function DestinationWedding() {
   const [currentLocation, setCurrentLocation] = useState<
-    Array<Record<string, any>>
+    Array<Record<string, string | Array<string>>>
   >(data.istanbul);
   return (
     <>

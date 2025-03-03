@@ -484,7 +484,7 @@ function TrainRightToLeftChittorgarh({
 }
 
 function TrainRightToLeftTwoLocatinWithDay({
-  title,
+  title="BharatPur",
   day,
 }: {
   title: string;
@@ -504,7 +504,7 @@ function TrainRightToLeftTwoLocatinWithDay({
             style={{ backgroundImage: `url(./topic.png)` }}
             className="w-[250px] px-[70px] bg-center bg-contain bg-no-repeat uppercase text-white py-3"
           >
-            BharatPur
+            {title}
           </div>
         </div>
         <h1 className="text-2xl">Avian Bird Sanctuary</h1>
