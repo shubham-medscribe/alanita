@@ -153,7 +153,7 @@ function OneWayForm() {
         </div>
 
         <div className="flex justify-center h-full items-end pt-10">
-          <button className="py-3 text-2xl px- md:px-36 bg-[#1E4492] rounded-3xl font-inter font-bold">
+          <button className="py-3 text-2xl px-28 md:px-36 bg-[#1E4492] rounded-3xl font-inter font-bold">
             Search Flights
           </button>
         </div>
