@@ -25,7 +25,7 @@ export default function ToursAndPackages() {
     {
       id: 2,
       name: "Abu Dhabi",
-      image: "/abuDhabi.jpg",
+      image: "/abudhabi.jpg",
     },
   ];
 
@@ -172,11 +172,12 @@ export default function ToursAndPackages() {
             return (
               <TourNoneAnimateCard
                 key={destination.id}
+                name={destination.name}
                 image={destination.image}
               />
             );
           })}
-          <TourNoneAnimateCard />
+          <TourNoneAnimateCard name="Turkey"/>
         </div>
       </div>
     </div>
@@ -215,7 +216,7 @@ function Animate({
           <div>
             <Image src={GroupStar} alt="stars" className="w-[120px] h-6" />
           </div>
-          <div className="font-inter font-bold  sm:text-[25px]">Turkey</div>
+          <div className="font-inter font-bold  sm:text-[25px]">{name}</div>
           <div className="text-[#1c1c1c] text-[13px]">
             Lorem Ipsum is simply dummy text of the printing
           </div>
@@ -269,7 +270,7 @@ function Animate({
   );
 }
 
-function TourNoneAnimateCard({ image = "./turkey.jpg" }: { image?: string }) {
+function TourNoneAnimateCard({ image = "./turkey.jpg",name }: { image?: string,name:string }) {
   return (
     <div
       style={{ backgroundImage: `url(${image})` }}
@@ -280,7 +281,7 @@ function TourNoneAnimateCard({ image = "./turkey.jpg" }: { image?: string }) {
           <div>
             <Image src={GroupStar} alt="stars" className="w-[120px] h-6" />
           </div>
-          <div className="font-inter font-bold  sm:text-[25px]">Turkey</div>
+          <div className="font-inter font-bold  sm:text-[25px] capitalize">{name}</div>
           <div className="text-[#1c1c1c] text-[13px]">
             Lorem Ipsum is simply dummy text of the printing
           </div>
