@@ -163,7 +163,7 @@ export default function ToursAndPackages() {
 
         <div className="grid 2xl:hidden grid-cols-1 lg:grid-cols-2 gap-3">
           {destination.map(
-            (destination: Record<string, any>, index: number) => {
+            (destination: Record<string, any>) => {
               return (
                 <TourNoneAnimateCard
                   key={destination.id}

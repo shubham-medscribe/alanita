@@ -23,7 +23,6 @@ export default function Home() {
           <WhatDoyouTheyToSay />
           <Fearures />
         </div>
-
         <div className="max-w-[1347px]">
           <AboutUs />
           <WhyPeopleChooseOurAlanitaTravel />

@@ -8,7 +8,6 @@ import PlaceOnWeel from "../../constants/PlaceOnWheel";
 import ClickHereForMoreInfo from "@/app/components/ClickHereForMoreInfo/ClickHereForMoreInfo";
 import Track1 from "../../assests/train-track-1.png";
 import Track2 from "../../assests/train-track-2.png";
-import { div } from "motion/react-client";
 export default function Placeonwheel() {
   return (
     <div className="w-full flex justify-center text-[#1C1C1C] h-full">
@@ -361,7 +360,7 @@ function TrainLeftToRight({ title }: { title: string }) {
   );
 }
 
-function TrainRightToLeft({ title }: { title: string }) {
+/* function TrainRightToLeft({ title }: { title: string }) {
   return (
     <div className="w-full flex justify-center">
       <div className="relative">
@@ -375,7 +374,7 @@ function TrainRightToLeft({ title }: { title: string }) {
       </div>
     </div>
   );
-}
+} */
 
 function CHITTORGARH({
   data,
@@ -385,7 +384,7 @@ function CHITTORGARH({
   city,
   day,
   order = true,
-  descFull = false,
+/*   descFull = false, */
 }: {
   data: Array<Record<string, string>>;
   images: StaticImageData[];
@@ -394,7 +393,7 @@ function CHITTORGARH({
   city: string;
   anotherNameOfCity: string;
   order?: boolean;
-  descFull?: boolean;
+/*   descFull?: boolean; */
 }) {
   return (
     <div className={`flex flex-col ${order ? "" : "items-end"} gap-8`}>

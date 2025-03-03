@@ -1,5 +1,4 @@
 "use client";
-import { li } from "motion/react-client";
 import React, { useState } from "react";
 
 const data = {
@@ -148,37 +147,43 @@ export default function DestinationWedding() {
             {/*  content */}
 
             <div className="space-y-5 w-full h-full">
-              {currentLocation.map((item: any, index: number) => {
-                return (
-                  <div key={index}>
-                    {!Array.isArray(item.desc) && (
-                      <div className="font-inter">
-                        <h1 className="text-[#000000] font-bold text-lg">
-                          {item.heading}
-                        </h1>
-                        <p className="mt-2 text-base font-light">{item.desc}</p>
-                      </div>
-                    )}
+              {currentLocation.map(
+                (
+                  item: Record<string, string | Array<string>>,
+                  index: number
+                ) => {
+                  return (
+                    <div key={index}>
+                      {!Array.isArray(item.desc) && (
+                        <div className="font-inter">
+                          <h1 className="text-[#000000] font-bold text-lg">
+                            {item.heading}
+                          </h1>
+                          <p className="mt-2 text-base font-light">
+                            {item.desc}
+                          </p>
+                        </div>
+                      )}
 
-                    {Array.isArray(item.desc) && (
-                      <div className="font-inter">
-                        <h1 className="text-[#000000] font-bold text-lg">
-                          {item.heading}
-                        </h1>
-                        <ol className="list-decimal list-inside 2xl:list-outside  text-base font-light">
-                          {item.desc.map((item: any, index: number) => {
-                            return (
-                              <li className="" key={index}>
-                                <span className="font-bold">
-                                  {item.split(":")[0] + ":"}
-                                </span>
+                      {Array.isArray(item.desc) && (
+                        <div className="font-inter">
+                          <h1 className="text-[#000000] font-bold text-lg">
+                            {item.heading}
+                          </h1>
+                          <ol className="list-decimal list-inside 2xl:list-outside  text-base font-light">
+                            {item.desc.map((item: string, index: number) => {
+                              return (
+                                <li className="" key={index}>
+                                  <span className="font-bold">
+                                    {item.split(":")[0] + ":"}
+                                  </span>
 
-                                <span>{item.split(":")[1]}</span>
-                              </li>
-                            );
-                          })}
-                        </ol>
-                        {/*    <div className="mt-2 text-base font-light">
+                                  <span>{item.split(":")[1]}</span>
+                                </li>
+                              );
+                            })}
+                          </ol>
+                          {/*    <div className="mt-2 text-base font-light">
                           <p>
                             {`With Alanita Travel, your Istanbul destination wedding will be
                    an unforgettable experience filled with love, elegance, and
@@ -186,11 +191,12 @@ export default function DestinationWedding() {
                lifetime!`}
                           </p>
                         </div> */}
-                      </div>
-                    )}
-                  </div>
-                );
-              })}
+                        </div>
+                      )}
+                    </div>
+                  );
+                }
+              )}
             </div>
           </div>
           {/*    col-2 */}
@@ -215,37 +221,43 @@ export default function DestinationWedding() {
               <h1 className="text-[#000000] font-bold text-4xl font-garamond">
                 Dubai
               </h1>
-              {data.dubai.map((item: any, index: number) => {
-                return (
-                  <div key={index}>
-                    {!Array.isArray(item.desc) && (
-                      <div className="font-inter">
-                        <h1 className="text-[#000000] font-bold text-lg">
-                          {item.heading}
-                        </h1>
-                        <p className="mt-2 text-base font-light">{item.desc}</p>
-                      </div>
-                    )}
+              {data.dubai.map(
+                (
+                  item: Record<string, string | Array<string>>,
+                  index: number
+                ) => {
+                  return (
+                    <div key={index}>
+                      {!Array.isArray(item.desc) && (
+                        <div className="font-inter">
+                          <h1 className="text-[#000000] font-bold text-lg">
+                            {item.heading}
+                          </h1>
+                          <p className="mt-2 text-base font-light">
+                            {item.desc}
+                          </p>
+                        </div>
+                      )}
 
-                    {Array.isArray(item.desc) && (
-                      <div className="font-inter">
-                        <h1 className="text-[#000000] font-bold text-lg">
-                          {item.heading}
-                        </h1>
-                        <ol className="list-decimal list-inside 2xl:list-outside  text-base font-light">
-                          {item.desc.map((item: any, index: number) => {
-                            return (
-                              <li className="" key={index}>
-                                <span className="font-bold">
-                                  {item.split(":")[0] + ":"}
-                                </span>
+                      {Array.isArray(item.desc) && (
+                        <div className="font-inter">
+                          <h1 className="text-[#000000] font-bold text-lg">
+                            {item.heading}
+                          </h1>
+                          <ol className="list-decimal list-inside 2xl:list-outside  text-base font-light">
+                            {item.desc.map((item: string, index: number) => {
+                              return (
+                                <li className="" key={index}>
+                                  <span className="font-bold">
+                                    {item.split(":")[0] + ":"}
+                                  </span>
 
-                                <span>{item.split(":")[1]}</span>
-                              </li>
-                            );
-                          })}
-                        </ol>
-                        {/*    <div className="mt-2 text-base font-light">
+                                  <span>{item.split(":")[1]}</span>
+                                </li>
+                              );
+                            })}
+                          </ol>
+                          {/*    <div className="mt-2 text-base font-light">
                           <p>
                             {`With Alanita Travel, your Istanbul destination wedding will be
                    an unforgettable experience filled with love, elegance, and
@@ -253,11 +265,12 @@ export default function DestinationWedding() {
                lifetime!`}
                           </p>
                         </div> */}
-                      </div>
-                    )}
-                  </div>
-                );
-              })}
+                        </div>
+                      )}
+                    </div>
+                  );
+                }
+              )}
             </div>
           </div>
           {/*    col-2 */}
