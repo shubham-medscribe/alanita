@@ -1,10 +1,13 @@
+"use client";
 import React from "react";
 import Rope from "../../assests/rope.png";
 import Image from "next/image";
 import Train from "../../assests/train_gif.gif";
 import Topic from "../../assests/topic.png";
 import { motion } from "motion/react";
+import { useRouter } from "next/navigation";
 export default function ClickHereForMoreInfo() {
+  const router = useRouter();
   return (
     <>
       <div className="space-y-9">
@@ -18,10 +21,12 @@ export default function ClickHereForMoreInfo() {
         <div className="flex justify-center w-full">
           <div className="relative">
             <div
-              onClick={() => window.alert("Work in progress for this page")}
               className="cursor-pointer text-white absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-inter font-bold   text-[0.6em] sm:text-base md:text-base lg:text-base xl:text-base w-fit"
             >
-              <motion.span
+              <motion.button
+                onClick={() => {
+                  router.push("/palace-on-wheels");
+                }}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{
@@ -32,7 +37,7 @@ export default function ClickHereForMoreInfo() {
                 }}
               >
                 Click here for more info
-              </motion.span>
+              </motion.button>
             </div>
             <div className="flex justify-center">
               <Image

@@ -4,7 +4,6 @@ import AvailableNowOnBothAndroidAndIphone from "./components/AvailableNowOnBothA
 import BookYourFlight from "./components/BookYourFlight/BookYourFlight";
 import DestinationWedding from "./components/DestinationWedding/DestinationWedding";
 import Fearures from "./components/fearures/Fearures";
-import Footer from "./components/Footer/Footer";
 import GirdEffectAnimation from "./components/GirdEffectAnimation/GirdEffectAnimation";
 import OurBlogOffers from "./components/OurBlogOffers/OurBlogOffers";
 import OurLocation from "./components/OurLocations/OurLocation";
@@ -34,7 +33,7 @@ export default function Home() {
           <OurBlogOffers />
           <OurLocation />
         </div>
-        <Footer />
+      
       </div>
     </>
   );
