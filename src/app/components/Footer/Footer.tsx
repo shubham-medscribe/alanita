@@ -102,7 +102,10 @@ export default function Footer() {
           {/* Middle Section - Links */}
 
           <div>
-            <h3 className="font-bold mb-2">Quick Links</h3>
+            <div className="flex flex-col gap-1 mb-2">
+              <h3 className="font-bold ">Quick Links</h3>
+              <div className="w-8 h-[2px] bg-white"></div>
+            </div>
             <ul className="text-sm space-y-4">
               {footerData.quick_links.map((link, index) => (
                 <li key={index}>
@@ -113,7 +116,10 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="font-bold mb-2">Top Destinations</h3>
+            <div className="flex flex-col gap-1 mb-2">
+              <h3 className="font-bold ">Top Destinations</h3>
+              <div className="w-8 h-[2px] bg-white"></div>
+            </div>
             <ul className="text-sm space-y-4">
               {footerData.top_destinations.map((link, index) => (
                 <li key={index} className="flex gap-3">
@@ -126,7 +132,10 @@ export default function Footer() {
 
           {/* Right Section - Contact*/}
           <div className="space-y-4">
-            <h3 className="font-bold mb-2">Contact</h3>
+            <div className="flex flex-col gap-1 mb-2">
+              <h3 className="font-bold ">Contact</h3>
+              <div className="w-8 h-[2px] bg-white"></div>
+            </div>
             <p className="text-sm">
               Toll Free Number: {footerData.contact.tollFree}
             </p>
