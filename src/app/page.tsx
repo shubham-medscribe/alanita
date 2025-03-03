@@ -32,7 +32,6 @@ export default function Home() {
           <OurBlogOffers />
           <OurLocation />
         </div>
-      
       </div>
     </>
   );

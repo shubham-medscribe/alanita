@@ -17,7 +17,7 @@ const garamond = EB_Garamond({
 
 const inter = Inter({
   subsets: ["latin"],
-  weight: ["300","400", "500", "700"],
+  weight: ["300", "400", "500", "700"],
   variable: "--font-inter",
 });
 
@@ -31,7 +31,11 @@ export default function RootLayout({
       <body
         className={`${poppins.variable} ${garamond.variable} ${inter.variable}  antialiased`}
       >
-        <Navbar />
+        <div className="flex justify-center">
+          <div className="w-full max-w-[1347px]">
+            <Navbar />
+          </div>
+        </div>
         {children}
         <Footer />
       </body>

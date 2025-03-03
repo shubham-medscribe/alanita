@@ -32,20 +32,20 @@ export default function BookYourFlight() {
         className="min-h-[650px] w-full flex flex-col items-center bg-center bg-cover pt-24 relative"
       >
         <div className="flex flex-col justify-center items-center py-5">
-          <h1 className="capitalize font-garamond text-[8vw] lg:text-7xl font-bold">
+          <h1 className="capitalize font-garamond text-[8vw] lg:text-7xl font-bold text-white">
             Book your Flights Today!
           </h1>
           <div className="flex  items-center gap-4 mt-6">
             <div className="h-1 w-[52px] bg-[#FF0000]"></div>
-            <div className="font-inter font-normal text-[3.4vw] lg:text-[28px]">
+            <div className="font-inter font-normal text-[3.4vw] lg:text-[28px] text-white">
               Your journey begins with a single click
             </div>
             <div className="h-1 w-[52px] bg-[#FF0000]"></div>
           </div>
         </div>
 
-        <div className="w-full max-w-[1244px] flex justify-center flex-col relative  -bottom-16">
-          <div className="grid grid-cols-3 font-bold font-inter text-[3vw] sm:text-xl">
+        <div className="w-full max-w-[1347px] flex justify-center flex-col relative  -bottom-16">
+          <div className="grid grid-cols-3 font-bold font-inter text-[3vw] sm:text-xl ">
             <button
               style={
                 selectedForm === "RoundTrip"
@@ -89,8 +89,8 @@ export default function BookYourFlight() {
               Multi City
             </button>
           </div>
-          <div className="w-full max-w-[1244px] min-h-[376px] bg-white rounded-b-3xl shadow-xl relative">
-            <div className="">
+          <div className="w-full  min-h-[376px] bg-white rounded-b-3xl shadow-xl relative">
+            <div className="w-full">
               {/*  form here */}
               {form}
             </div>

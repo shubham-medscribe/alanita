@@ -4,7 +4,7 @@ function OneWayForm() {
       onSubmit={(e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
       }}
-      className="w-full h-full xl:absolute py-10 px-3 sm:px-16"
+      className="w-full h-full  py-10 px-3 sm:px-16"
     >
       <div className="flex flex-col justify-between">
         <div className="grid grid-cols-1 lg:grid-col-2 xl:grid-cols-3 gap-5">
@@ -153,7 +153,7 @@ function OneWayForm() {
         </div>
 
         <div className="flex justify-center h-full items-end pt-10">
-          <button className="py-3 text-2xl px-28 md:px-36 bg-[#1E4492] rounded-3xl font-inter font-bold">
+          <button className="py-3 text-2xl px- md:px-36 bg-[#1E4492] rounded-3xl font-inter font-bold">
             Search Flights
           </button>
         </div>

@@ -22,7 +22,7 @@ export default function Navbar() {
 
   return (
     <nav className="flex justify-center relative">
-      <div className="w-full max-w-screen-2xl flex items-center justify-between px-2 py-2  shadow-lg lg:shadow-none">
+      <div className="w-full flex items-center justify-between px-2 py-2  shadow-lg lg:shadow-none">
         {/* Logo */}
         <div className="w-fit lg:block">
           <figure>

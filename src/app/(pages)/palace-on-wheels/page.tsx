@@ -10,18 +10,16 @@ import Track1 from "../../assests/train-track-1.png";
 import Track2 from "../../assests/train-track-2.png";
 export default function Placeonwheel() {
   return (
-    <div className="w-full flex justify-center text-[#1C1C1C] h-full">
+    <div className="w-full flex flex-col justify-center items-center text-[#1C1C1C] h-full">
+      <div className="w-full">
+        <Image
+          src={PlaceOnWheel}
+          className="w-full h-auto object-cover"
+          alt="place-on-wheel"
+        />
+      </div>
+      <ClickHereForMoreInfo />
       <div className="max-w-screen-2xl overflow-hidden  flex flex-col items-center">
-        <div className="w-full">
-          <Image
-            src={PlaceOnWheel}
-            className="w-full h-auto object-cover"
-            alt="place-on-wheel"
-          />
-        </div>
-
-        <ClickHereForMoreInfo />
-
         <div className="w-full max-w-screen-xl  p-5">
           {/*    map & description */}
           <div className="w-full lg:min-w-[630px] min-h-[326px] grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -384,8 +382,8 @@ function CHITTORGARH({
   city,
   day,
   order = true,
-/*   descFull = false, */
-}: {
+}: /*   descFull = false, */
+{
   data: Array<Record<string, string>>;
   images: StaticImageData[];
   desc: string | Array<string>;
@@ -393,7 +391,7 @@ function CHITTORGARH({
   city: string;
   anotherNameOfCity: string;
   order?: boolean;
-/*   descFull?: boolean; */
+  /*   descFull?: boolean; */
 }) {
   return (
     <div className={`flex flex-col ${order ? "" : "items-end"} gap-8`}>
@@ -423,7 +421,9 @@ function CHITTORGARH({
                   </p>
                 );
               })}
-            {!Array.isArray(desc) && <p className={`w-full text-justify`}>{desc}</p>}
+            {!Array.isArray(desc) && (
+              <p className={`w-full text-justify`}>{desc}</p>
+            )}
           </div>
         </div>
       </div>
@@ -484,7 +484,7 @@ function TrainRightToLeftChittorgarh({
 }
 
 function TrainRightToLeftTwoLocatinWithDay({
-  title="BharatPur",
+  title = "BharatPur",
   day,
 }: {
   title: string;
