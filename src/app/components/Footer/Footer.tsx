@@ -13,6 +13,7 @@ import {
   faTwitter,
   faYoutube,
   faLinkedin,
+  faFacebookF,
 } from "@fortawesome/free-brands-svg-icons";
 
 export default function Footer() {
@@ -74,7 +75,24 @@ export default function Footer() {
 
   return (
     <footer className="bg-[#12264A] w-full relative ">
-      {/*   <div className="absolute left-0 top-20"></div> */}
+      <div className="absolute xl:left-0 xl:top-20 right-0 top-80">
+        <div className="w-8 text-xl p-2 flex justify-center items-center bg-[#3b5998] text-white">
+          <FontAwesomeIcon icon={faFacebookF} />
+        </div>
+        <div className="w-8 text-xl p-2 flex justify-center items-center bg-[#55acee] text-white">
+          <FontAwesomeIcon icon={faTwitter} />
+        </div>
+        <div className="w-8 text-xl bg-gradient-to-bl from-[#e87339] via-[#da2646] to-[#ca226c] p-2 flex justify-center items-center text-white">
+          <FontAwesomeIcon icon={faInstagram} />
+        </div>
+
+        <div className="w-8 text-xl p-2 flex justify-center items-center bg-[#007bb5] text-white">
+          <FontAwesomeIcon icon={faLinkedin} />
+        </div>
+        <div className="w-8 text-xl p-2 flex justify-center items-center bg-[#bb0000] text-white">
+          <FontAwesomeIcon icon={faYoutube} />
+        </div>
+      </div>
       <div
         style={{ backgroundImage: `url(./background_pattern.webp)` }}
         className="relative w-full  text-white py-10 px-6 md:px-20 font-inter font-semibold bg-no-repeat bg-contain bg-right object-contain overflow-hidden"
@@ -146,23 +164,29 @@ export default function Footer() {
 
         {/*   Certifications */}
         <div className="mt-32 w-full flex justify-center gap-6">
-          <div className="flex flex-col items-center">
-            <h1>Official Partners</h1>
-            <div className="w-[70%] xl:w-[250px] h-auto">
+          <div className="flex flex-col items-center justify-between ">
+            <div className="flex flex-col gap-1 mb-2">
+              <h3 className="font-bold text-sm sm:text-base md:text-lg">Officials Partners</h3>
+              <div className="w-8 h-[2px] bg-white"></div>
+            </div>
+            <div className="w-full sm:w-[30vw] xl:w-[250px] h-auto xl:h-16">
               <Image
                 src={PartnerLogo}
-                className="w-full  object-contain"
+                className="w-full h-full object-cover"
                 alt="Certifications"
               />
             </div>
           </div>
 
-          <div className="flex flex-col items-center">
-            <h1>Secured Certificate</h1>
-            <div className="w-[70%] xl:w-[250px] h-auto">
+          <div className="flex flex-col lg:marker:items-center justify-between">
+            <div className="flex flex-col gap-1 mb-2">
+              <h3 className="font-bold text-sm sm:text-base md:text-xl">Secured Certificate</h3>
+              <div className="w-8 h-[2px] bg-white"></div>
+            </div>
+            <div className="w-full sm:w-[30vw] xl:w-[250px] h-full xl:h-16">
               <Image
                 src={SSL}
-                className="w-full h-auto object-contain"
+                className="w-full h-full object-contain"
                 alt="Certifications"
               />
             </div>
