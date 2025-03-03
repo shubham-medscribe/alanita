@@ -35,7 +35,7 @@ export default function ToursAndPackages() {
     image: string;
   };
 
-  const [shrink, setShrink] = useState<Boolean>(false);
+  const [shrink, setShrink] = useState<boolean>(false);
 
   return (
     <div className="w-full flex justify-center p-5">
@@ -188,7 +188,7 @@ function Animate({
   name,
   image,
 }: {
-  setShrink: Function;
+  setShrink: ((value: boolean) => void);
   name: string;
   image: string;
 }) {
