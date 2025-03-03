@@ -37,7 +37,7 @@ export default function BookYourFlight() {
           </h1>
           <div className="flex  items-center gap-4 mt-6">
             <div className="h-1 w-[52px] bg-[#FF0000]"></div>
-            <div className="font-inter font-normal text-[3.5vw] lg:text-[28px]">
+            <div className="font-inter font-normal text-[3.4vw] lg:text-[28px]">
               Your journey begins with a single click
             </div>
             <div className="h-1 w-[52px] bg-[#FF0000]"></div>
