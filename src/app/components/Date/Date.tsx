@@ -5,7 +5,7 @@ import "react-datepicker/dist/react-datepicker.css";
 export default function MyDatePicker() {
   const [selectedDate, setSelectedDate] = useState<Date | null>(null);
   const [isMobile, setIsMobile] = useState(false);
-  const datepickerRef = useRef<any>(null); // Reference for DatePicker
+  const datepickerRef = useRef<DatePicker | null>(null); // Correct type
 
   // Detect screen size
   useEffect(() => {
