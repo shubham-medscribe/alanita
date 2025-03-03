@@ -29,6 +29,12 @@ export default function ToursAndPackages() {
     },
   ];
 
+  type Destination = {
+    id: number;
+    name: string;
+    image: string;
+  };
+
   const [shrink, setShrink] = useState<Boolean>(false);
 
   return (
@@ -53,7 +59,7 @@ export default function ToursAndPackages() {
             (item: { id: number; name: string; image: string }) => {
               return (
                 <Animate
-                  setShrink={setShrink}
+                  setShrink={(val: boolean) => setShrink(val)}
                   name={item.name}
                   image={item.image}
                   key={item.id}
@@ -74,7 +80,7 @@ export default function ToursAndPackages() {
                 opacity: !shrink ? "0" : "1",
                 visibility: !shrink ? "hidden" : "visible",
               }}
-              transition={{delay:1 }}
+              transition={{ delay: 1 }}
               style={{
                 textShadow: "2px 5px 4px rgba(0, 0, 0, 0.9)", // Adds a soft shadow
                 color: "white", // Ensures visibility on dark backgrounds
@@ -162,16 +168,14 @@ export default function ToursAndPackages() {
         </div>
 
         <div className="grid 2xl:hidden grid-cols-1 lg:grid-cols-2 gap-3">
-          {destination.map(
-            (destination: Record<string, any>) => {
-              return (
-                <TourNoneAnimateCard
-                  key={destination.id}
-                  image={destination.image}
-                />
-              );
-            }
-          )}
+          {destination.map((destination: Destination) => {
+            return (
+              <TourNoneAnimateCard
+                key={destination.id}
+                image={destination.image}
+              />
+            );
+          })}
           <TourNoneAnimateCard />
         </div>
       </div>
