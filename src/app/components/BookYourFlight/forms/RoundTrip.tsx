@@ -1,3 +1,5 @@
+import Date from "../../Date/Date";
+
 function RoundTripForm() {
   return (
     <form
@@ -18,11 +20,7 @@ function RoundTripForm() {
             </div>
             {/*  date & select time list */}
             <div className="flex gap-3">
-              <input
-                type="date"
-                className="p-5 border border-[#C3C3C3] rounded-xl w-full h-[56px] "
-                placeholder="From"
-              />
+             <Date/>
 
               <select className="p-3 border border-[#C3C3C3] rounded-xl w-full h-[56px]">
                 <option value="">Anytime</option>
@@ -162,7 +160,7 @@ function RoundTripForm() {
         </div>
 
         <div className="flex justify-center h-full items-end pt-10">
-          <button className="py-3 text-2xl px-28 md:px-36 bg-[#1E4492] rounded-3xl font-inter font-bold">
+          <button className="py-3 text-2xl px- md:px-36 bg-[#1E4492] rounded-3xl font-inter font-bold">
             Search Flights
           </button>
         </div>

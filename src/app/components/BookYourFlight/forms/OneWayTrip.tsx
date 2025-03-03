@@ -1,3 +1,4 @@
+import Date from "../../Date/Date"
 function OneWayForm() {
   return (
     <form
@@ -18,11 +19,7 @@ function OneWayForm() {
             </div>
             {/*  date & select time list */}
             <div className="flex gap-3">
-              <input
-                type="date"
-                className="p-5 border border-[#C3C3C3] rounded-xl w-full h-[56px] "
-                placeholder="From"
-              />
+             <Date/>
 
               <select className="p-3 border border-[#C3C3C3] rounded-xl w-full h-[56px]">
                 <option value="">Anytime</option>

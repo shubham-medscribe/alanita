@@ -1,3 +1,4 @@
+import Date from "../../Date/Date";
 function MultiCityForm() {
   return (
     <form
@@ -55,11 +56,7 @@ function MultiCityForm() {
         {/*  col-3 */}
         <div className="w-full flex flex-col xl:flex-row gap-5 ">
           <div className="flex-1 flex gap-3">
-            <input
-              type="date"
-              className="p-5 border border-[#C3C3C3] rounded-xl w-full h-[56px] "
-              placeholder="date"
-            />
+            <Date />
 
             <select className="p-3 border border-[#C3C3C3] rounded-xl w-full h-[56px]">
               <option value="">1 Adult</option>
@@ -69,11 +66,7 @@ function MultiCityForm() {
             </select>
           </div>
           <div className="flex-1 flex gap-3">
-            <input
-              type="date"
-              className="p-5 border border-[#C3C3C3] rounded-xl w-full h-[56px] "
-              placeholder="date"
-            />
+            <Date/>
 
             <select className="p-3 border border-[#C3C3C3] rounded-xl w-full h-[56px]">
               <option value="">1 Adult</option>
@@ -83,11 +76,7 @@ function MultiCityForm() {
             </select>
           </div>
           <div className="flex-1 flex gap-3">
-            <input
-              type="date"
-              className="p-5 border border-[#C3C3C3] rounded-xl w-full h-[56px] "
-              placeholder="date"
-            />
+            <Date/>
 
             <select className="p-3 border border-[#C3C3C3] rounded-xl w-full h-[56px]">
               <option value="">1 Adult</option>
