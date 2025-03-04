@@ -1,10 +1,71 @@
+import { useState } from "react";
 import Date from "../../Date/Date";
 
+interface FormState {
+  from: string;
+  to: string;
+  date1: Date | null;
+  date2: Date | null;
+  anytime1: string;
+  anytime2: string;
+  preferredAirline1: string;
+  preferredAirline2: string;
+  adultCount: string;
+  childCount: string;
+  classCabin: string;
+  lapInfant: string;
+  seatInfant: string;
+  flexibleDates: boolean;
+  noPenaltyFares: boolean;
+  directFlights: boolean;
+  nearbyAirports: boolean;
+}
+
 function RoundTripForm() {
+  // Form State
+  const [formData, setFormData] = useState<FormState>({
+    from: "",
+    to: "",
+    date1: null,
+    date2: null,
+    anytime1: "",
+    anytime2: "",
+    preferredAirline1: "",
+    preferredAirline2: "",
+    adultCount: "1 Adult",
+    childCount: "0 Child",
+    classCabin: "All Class/Cabin",
+    lapInfant: "0 Lap Infant",
+    seatInfant: "0 Seat Infant",
+    flexibleDates: false,
+    noPenaltyFares: false,
+    directFlights: false,
+    nearbyAirports: false,
+  });
+
+  // Handle Input Change
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
+  ) => {
+    const { name, value, type } = e.target;
+    const checked = (e.target as HTMLInputElement).checked; // Ensure TypeScript recognizes `checked`
+
+    setFormData((prev) => ({
+      ...prev,
+      [name]: type === "checkbox" ? checked : value,
+    }));
+  };
+
+  // Handle Form Submission
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    console.log("Form Data:", formData);
+  };
   return (
     <form
       onSubmit={(e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
+        handleSubmit(e);
       }}
       className="w-full h-full  py-10 px-3 sm:px-16"
     >
@@ -14,15 +75,27 @@ function RoundTripForm() {
           <div className="text-[#A5A5A5] space-y-4">
             <div>
               <input
+                onChange={handleChange}
+                name="from"
                 className="p-5 border border-[#C3C3C3] rounded-xl w-full h-[56px]"
                 placeholder="From"
               />
             </div>
             {/*  date & select time list */}
             <div className="flex gap-3">
-             <Date/>
+              <Date
+                onDate={(date: Date | null) => {
+                  if (date) {
+                    setFormData({ ...formData, date1: date });
+                  }
+                }}
+              />
 
-              <select className="p-3 border border-[#C3C3C3] rounded-xl w-full h-[56px]">
+              <select
+                onChange={handleChange}
+                name="anytime1"
+                className="p-3 border border-[#C3C3C3] rounded-xl w-full h-[56px]"
+              >
                 <option value="">Anytime</option>
                 <option value="economy">Economy</option>
                 <option value="business">Business</option>
@@ -36,6 +109,8 @@ function RoundTripForm() {
                 <div>
                   <label className="flex  items-center space-x-2">
                     <input
+                      name="flexibleDates"
+                      onChange={handleChange}
                       type="checkbox"
                       className="w-4 h-4 border border-[#C3C3C3]"
                     />
@@ -47,6 +122,8 @@ function RoundTripForm() {
                 <div>
                   <label className="flex items-center space-x-2">
                     <input
+                      name="faresWithNoPenalties"
+                      onChange={handleChange}
                       type="checkbox"
                       className="w-4 h-4 border border-[#C3C3C3]"
                     />
@@ -60,6 +137,8 @@ function RoundTripForm() {
                 <div>
                   <label className="flex items-center space-x-2">
                     <input
+                      name="directFlights"
+                      onChange={handleChange}
                       type="checkbox"
                       className="w-4 h-4 border border-[#C3C3C3]"
                     />
@@ -71,6 +150,8 @@ function RoundTripForm() {
                 <div>
                   <label className="flex items-center space-x-2">
                     <input
+                      name="nearbyAirports"
+                      onChange={handleChange}
                       type="checkbox"
                       className="w-4 h-4 border border-[#C3C3C3]"
                     />
@@ -86,21 +167,28 @@ function RoundTripForm() {
           <div className="text-[#A5A5A5] space-y-4 ">
             <div>
               <input
+                name="to"
+                onChange={handleChange}
                 className="p-5 border border-[#C3C3C3] rounded-xl w-full h-[56px]"
                 placeholder="To"
               />
             </div>
             {/*  date & select time list */}
             <div className="flex gap-3">
-              <select className="p-3 border border-[#C3C3C3] rounded-xl w-full h-[56px]">
-                <option value="">0 Lap Infant</option>
-                <option value="economy">Economy</option>
-                <option value="business">Business</option>
-                <option value="first-class">First Class</option>
-              </select>
+              <Date
+                onDate={(date: Date | null) => {
+                  if (date) {
+                    setFormData({ ...formData, date2: date });
+                  }
+                }}
+              />
 
-              <select className="p-3 border border-[#C3C3C3] rounded-xl w-full h-[56px]">
-                <option value="">0 Seat infant</option>
+              <select
+                onChange={handleChange}
+                name="anytime2"
+                className="p-3 border border-[#C3C3C3] rounded-xl w-full h-[56px]"
+              >
+                <option value="">Anytime</option>
                 <option value="economy">Economy</option>
                 <option value="business">Business</option>
                 <option value="first-class">First Class</option>
@@ -109,13 +197,19 @@ function RoundTripForm() {
 
             <div>
               <input
+                name="preferredAirline1"
+                onChange={handleChange}
                 className="p-5 border border-[#C3C3C3] rounded-xl w-full h-[56px]"
                 placeholder="Prefred Airlines 1"
               />
             </div>
 
             <div className="flex justify-center">
-              <select className="p-3 border border-[#C3C3C3] rounded-xl h-[56px] w-52">
+              <select
+                name="classCabin"
+                onChange={handleChange}
+                className="p-3 border border-[#C3C3C3] rounded-xl h-[56px] w-full xl:w-52"
+              >
                 <option value="all class cabin">All class/cabin</option>
                 <option value="economy">Economy</option>
                 <option value="business">Business</option>
@@ -127,31 +221,52 @@ function RoundTripForm() {
           <div className="text-[#A5A5A5] space-y-4 ">
             {/*  date & select time list */}
             <div className="flex gap-3">
-              <select className="p-3 border border-[#C3C3C3] rounded-xl w-full h-[56px]">
+              <select
+                name="adultCount"
+                onChange={handleChange}
+                className="p-3 border border-[#C3C3C3] rounded-xl w-full h-[56px]"
+              >
                 <option value="">1 Adult</option>
                 <option value="economy">Economy</option>
                 <option value="business">Business</option>
                 <option value="first-class">First Class</option>
               </select>
 
-              <select className="p-3 border border-[#C3C3C3] rounded-xl w-full h-[56px]">
+              <select
+                name="childCount"
+                onChange={handleChange}
+                className="p-3 border border-[#C3C3C3] rounded-xl w-full h-[56px]"
+              >
                 <option value="">0 Child</option>
                 <option value="economy">Economy</option>
                 <option value="business">Business</option>
                 <option value="first-class">First Class</option>
               </select>
             </div>
-            <div>
-              <select className="p-3 border border-[#C3C3C3] rounded-xl w-full h-[56px]">
-                <option value="">All Class/Cabin</option>
-                <option value="economy">Economy</option>
-                <option value="business">Business</option>
-                <option value="first-class">First Class</option>
+            <div className="flex gap-3">
+              <select
+                name="lapInfant"
+                value={formData.lapInfant}
+                onChange={handleChange}
+                className="p-3 border border-[#C3C3C3] rounded-xl w-full h-[56px]"
+              >
+                <option value="0 Lap Infant">0 Lap Infant</option>
+              </select>
+
+              <select
+                name="seatInfant"
+                value={formData.seatInfant}
+                onChange={handleChange}
+                className="p-3 border border-[#C3C3C3] rounded-xl w-full h-[56px]"
+              >
+                <option value="0 Seat Infant">0 Seat Infant</option>
               </select>
             </div>
 
             <div>
               <input
+                name="preferredAirline2"
+                onChange={handleChange}
                 className="p-5 border border-[#C3C3C3] rounded-xl w-full h-[56px]"
                 placeholder="Prefred Airlines 2"
               />
@@ -160,7 +275,10 @@ function RoundTripForm() {
         </div>
 
         <div className="flex justify-center h-full items-end pt-10">
-          <button className="py-3 text-2xl px- md:px-36 bg-[#1E4492] rounded-3xl font-inter font-bold">
+          <button
+            type="submit"
+            className="py-3 text-2xl px-28 md:px-36 bg-[#1E4492] rounded-3xl font-bold"
+          >
             Search Flights
           </button>
         </div>

@@ -2,7 +2,11 @@ import { useState, useEffect, useRef } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
-export default function MyDatePicker() {
+export default function MyDatePicker({
+  onDate,
+}: {
+  onDate: (date: Date|null) => void;
+}) {
   const [selectedDate, setSelectedDate] = useState<Date | null>(null);
   const [isMobile, setIsMobile] = useState(false);
   const datepickerRef = useRef<DatePicker | null>(null); // Correct type
@@ -25,7 +29,10 @@ export default function MyDatePicker() {
       <DatePicker
         ref={datepickerRef} // Assign ref to DatePicker
         selected={selectedDate}
-        onChange={(date) => setSelectedDate(date)}
+        onChange={(date) => {
+          setSelectedDate(date);
+          onDate(date);
+        }}
         dateFormat="dd/MM/yyyy"
         placeholderText="DD/MM/YYYY"
         className="p-5 border border-[#C3C3C3] rounded-xl w-full h-[56px] text-black"
