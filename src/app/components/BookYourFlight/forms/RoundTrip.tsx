@@ -299,7 +299,7 @@ function RoundTripForm() {
         <div className="flex justify-center h-full items-end pt-10">
           <button
             type="submit"
-            className="py-3 text-2xl px-28 md:px-36 bg-[#1E4492] rounded-3xl font-bold"
+            className="text-white py-3 text-2xl px-28 md:px-36 bg-[#1E4492] rounded-3xl font-bold"
           >
             Search Flights
           </button>

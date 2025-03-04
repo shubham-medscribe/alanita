@@ -256,10 +256,17 @@ function OneWayForm() {
               <input
                 name="preferredAirline2"
                 value={formData.preferredAirline2}
+                list="airlineList"
                 onChange={handleChange}
                 className="p-5 border border-[#C3C3C3] rounded-xl w-full h-[56px]"
                 placeholder="Preferred Airline 2"
               />
+              <datalist id="airlineList">
+                <option value="New York"></option>
+                <option value="Los Angeles"></option>
+                <option value="Chicago"></option>
+                <option value="San Francisco"></option>
+              </datalist>
             </div>
           </div>
         </div>
@@ -267,7 +274,7 @@ function OneWayForm() {
         <div className="flex justify-center h-full items-end pt-10">
           <button
             type="submit"
-            className="py-3 text-2xl px-28 md:px-36 bg-[#1E4492] rounded-3xl font-bold"
+            className="text-white py-3 text-2xl px-28 md:px-36 bg-[#1E4492] rounded-3xl font-bold"
           >
             Search Flights
           </button>
