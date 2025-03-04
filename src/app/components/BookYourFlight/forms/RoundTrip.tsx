@@ -1,5 +1,13 @@
 import { useState } from "react";
 import Date from "../../Date/Date";
+import {
+  adultsCount,
+  allClassCabin,
+  anytime,
+  childsCount,
+  lapInfant,
+  seatInfant,
+} from "../constants/formsOptions";
 
 interface FormState {
   from: string;
@@ -96,10 +104,12 @@ function RoundTripForm() {
                 name="anytime1"
                 className="p-3 border border-[#C3C3C3] rounded-xl w-full h-[56px]"
               >
-                <option value="">Anytime</option>
-                <option value="economy">Economy</option>
-                <option value="business">Business</option>
-                <option value="first-class">First Class</option>
+                {anytime.map((item: string, index: number) => (
+                  <option key={index} value={item}>
+                    {item}
+                  </option>
+                ))}
+                ;
               </select>
             </div>
 
@@ -188,10 +198,11 @@ function RoundTripForm() {
                 name="anytime2"
                 className="p-3 border border-[#C3C3C3] rounded-xl w-full h-[56px]"
               >
-                <option value="">Anytime</option>
-                <option value="economy">Economy</option>
-                <option value="business">Business</option>
-                <option value="first-class">First Class</option>
+                {anytime.map((item: string, index: number) => (
+                  <option key={index} value={item}>
+                    {item}
+                  </option>
+                ))}
               </select>
             </div>
 
@@ -210,10 +221,11 @@ function RoundTripForm() {
                 onChange={handleChange}
                 className="p-3 border border-[#C3C3C3] rounded-xl h-[56px] w-full xl:w-52"
               >
-                <option value="all class cabin">All class/cabin</option>
-                <option value="economy">Economy</option>
-                <option value="business">Business</option>
-                <option value="first-class">First Class</option>
+                {allClassCabin.map((item: string, index: number) => (
+                  <option value={item} key={index}>
+                    {item}
+                  </option>
+                ))}
               </select>
             </div>
           </div>
@@ -226,10 +238,11 @@ function RoundTripForm() {
                 onChange={handleChange}
                 className="p-3 border border-[#C3C3C3] rounded-xl w-full h-[56px]"
               >
-                <option value="">1 Adult</option>
-                <option value="economy">Economy</option>
-                <option value="business">Business</option>
-                <option value="first-class">First Class</option>
+                {adultsCount.map((item: string, index: number) => (
+                  <option value={item} key={index}>
+                    {item}
+                  </option>
+                ))}
               </select>
 
               <select
@@ -237,10 +250,11 @@ function RoundTripForm() {
                 onChange={handleChange}
                 className="p-3 border border-[#C3C3C3] rounded-xl w-full h-[56px]"
               >
-                <option value="">0 Child</option>
-                <option value="economy">Economy</option>
-                <option value="business">Business</option>
-                <option value="first-class">First Class</option>
+                {childsCount.map((item: string, index: number) => (
+                  <option value={item} key={index}>
+                    {item}
+                  </option>
+                ))}
               </select>
             </div>
             <div className="flex gap-3">
@@ -250,7 +264,11 @@ function RoundTripForm() {
                 onChange={handleChange}
                 className="p-3 border border-[#C3C3C3] rounded-xl w-full h-[56px]"
               >
-                <option value="0 Lap Infant">0 Lap Infant</option>
+                 {lapInfant.map((item: string, index: number) => (
+                  <option key={index} value={item}>
+                    {item}
+                  </option>
+                ))}
               </select>
 
               <select
@@ -259,7 +277,11 @@ function RoundTripForm() {
                 onChange={handleChange}
                 className="p-3 border border-[#C3C3C3] rounded-xl w-full h-[56px]"
               >
-                <option value="0 Seat Infant">0 Seat Infant</option>
+                 {seatInfant.map((item: string, index: number) => (
+                  <option key={index} value={item}>
+                    {item}
+                  </option>
+                ))}
               </select>
             </div>
 

@@ -5,7 +5,7 @@ import "react-datepicker/dist/react-datepicker.css";
 export default function MyDatePicker({
   onDate,
 }: {
-  onDate: (date: Date|null) => void;
+  onDate?: (date: Date | null) => void;
 }) {
   const [selectedDate, setSelectedDate] = useState<Date | null>(null);
   const [isMobile, setIsMobile] = useState(false);
@@ -31,7 +31,9 @@ export default function MyDatePicker({
         selected={selectedDate}
         onChange={(date) => {
           setSelectedDate(date);
-          onDate(date);
+          if (onDate) {
+            onDate(date);
+          }
         }}
         dateFormat="dd/MM/yyyy"
         placeholderText="DD/MM/YYYY"

@@ -1,5 +1,13 @@
 import { useState } from "react";
 import Date from "../../Date/Date";
+import {
+  adultsCount,
+  allClassCabin,
+  anytime,
+  childsCount,
+  lapInfant,
+  seatInfant,
+} from "../constants/formsOptions";
 
 interface FormData {
   from: string;
@@ -88,10 +96,11 @@ function OneWayForm() {
                 onChange={handleChange}
                 className="p-3 border border-[#C3C3C3] rounded-xl w-full h-[56px]"
               >
-                <option value="">Anytime</option>
-                <option value="economy">Economy</option>
-                <option value="business">Business</option>
-                <option value="first-class">First Class</option>
+                {anytime.map((item: string, index: number) => (
+                  <option key={index} value={item}>
+                    {item}
+                  </option>
+                ))}
               </select>
             </div>
 
@@ -166,7 +175,11 @@ function OneWayForm() {
                 onChange={handleChange}
                 className="p-3 border border-[#C3C3C3] rounded-xl w-full h-[56px]"
               >
-                <option value="0 Lap Infant">0 Lap Infant</option>
+                {lapInfant.map((item: string, index: number) => (
+                  <option key={index} value={item}>
+                    {item}
+                  </option>
+                ))}
               </select>
 
               <select
@@ -175,7 +188,11 @@ function OneWayForm() {
                 onChange={handleChange}
                 className="p-3 border border-[#C3C3C3] rounded-xl w-full h-[56px]"
               >
-                <option value="0 Seat Infant">0 Seat Infant</option>
+                {seatInfant.map((item: string, index: number) => (
+                  <option value={item} key={index}>
+                    {item}
+                  </option>
+                ))}
               </select>
             </div>
 
@@ -199,7 +216,11 @@ function OneWayForm() {
                 onChange={handleChange}
                 className="p-3 border border-[#C3C3C3] rounded-xl w-full h-[56px]"
               >
-                <option value="1 Adult">1 Adult</option>
+                {adultsCount.map((item: string, index: number) => (
+                  <option value={item} key={index}>
+                    {item}
+                  </option>
+                ))}
               </select>
 
               <select
@@ -208,7 +229,11 @@ function OneWayForm() {
                 onChange={handleChange}
                 className="p-3 border border-[#C3C3C3] rounded-xl w-full h-[56px]"
               >
-                <option value="0 Child">0 Child</option>
+                {childsCount.map((item: string, index: number) => (
+                  <option value={item} key={index}>
+                    {item}
+                  </option>
+                ))}
               </select>
             </div>
 
@@ -219,7 +244,11 @@ function OneWayForm() {
                 onChange={handleChange}
                 className="p-3 border border-[#C3C3C3] rounded-xl w-full h-[56px]"
               >
-                <option value="All Class/Cabin">All Class/Cabin</option>
+                {allClassCabin.map((item: string, index: number) => (
+                  <option value={item} key={index}>
+                    {item}
+                  </option>
+                ))}
               </select>
             </div>
 
