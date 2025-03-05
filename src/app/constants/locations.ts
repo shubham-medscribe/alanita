@@ -574,7 +574,7 @@ const locations = {
     },
     list1: {
       heading: "Why Choose Alanita Travel?",
-      list: [
+      desc: [
         "Unbeatable Prices: We won't be undersold! Alanita Travel offers some of the lowest prices on flights from Washington D.C. to Hyderabad.",
         "Seamless Booking: Our user-friendly website makes booking your flight a breeze. Plus, our friendly customer service team is always available to assist you.",
         "Peace of Mind: Travel with confidence knowing Alanita Travel is a reputable company dedicated to making your travel experience enjoyable.",
@@ -611,7 +611,7 @@ const locations = {
     },
     list1: {
       heading: "Budget-Friendly Flights from Raleigh Durham to Mumbai",
-      list: [
+      desc: [
         "Embark on an affordable journey with Alanita Travel, your trusted partner for budget-friendly flights from Raleigh Durham to Mumbai.",
         "Take advantage of our competitive prices and personalized customer service for a seamless travel experience.",
         "With our flexible search options and email alerts for the latest offers and discounts, securing cheap flight tickets to Mumbai has never been easier.",
@@ -649,7 +649,7 @@ const locations = {
     },
     list1: {
       heading: "Why Book with Alanita Travel?",
-      list: [
+      desc: [
         "Great Savings: Enjoy unbeatable deals on flights from Chicago to Mumbai.",
         "Simple Booking: Our user-friendly website makes booking your flight a breeze.",
         "Expert Support: Our friendly staff are available to answer your questions and help you find the best flight for your needs.",
@@ -690,7 +690,7 @@ const locations = {
     },
     list1: {
       heading: "Unbeatable Deals to Mumbai Await",
-      list1: [
+      desc: [
         {
           heading: "Unbeatable Deals to Mumbai Await",
           desc: "Unlock incredible savings on flights from Seattle to Mumbai with us. Our goal is simple: get you the best possible price without compromising your travel experience.",
@@ -787,7 +787,7 @@ const locations = {
     list1: [
       {
         heading: "Why Choose Alanita Travel?",
-        list: [
+        desc: [
           "Great Savings: Enjoy unbeatable deals on flights from Seattle to Chennai.",
           "Effortless Booking: Our intuitive website streamlines the booking process, making it simple and stress-free.",
           "Expert Assistance: Our knowledgeable travel agents are on hand to address your queries and tailor your journey to your preferences.",
@@ -1588,7 +1588,7 @@ const locations = {
   "flights-from-boston-to-chennai": {
     desc: "Find unbeatable deals on flights from Boston to Chennai with Alanita Travel! Our extensive network of airline partnerships and flexible search options make it easy to compare prices and find the perfect flight for your budget and travel preferences. Explore the cultural richness of Chennai, all without breaking the bank!",
 
-    descWithImg: {
+    descwithimg: {
       heading: "Unforgettable Experiences Await in Chennai",
       desc: [
         "Chennai, the 'Gateway to South India,' offers a captivating blend of historical sites, vibrant culture, and stunning beaches. Explore the architectural marvel of Fort St. George, immerse yourself in the energy of Marina Beach, or wander through the colorful Kapaleeshwarar Temple. Savor the unique flavors of South Indian cuisine, from the delicate filter coffee to the flavorful dosas.",
@@ -1640,7 +1640,7 @@ const locations = {
   "flights-from-dallas-to-bangalore": {
     desc: "At Alanita Travel, we know finding a good deal is essential for a relaxing trip. That's why we offer competitive prices on flights from Dallas to Bangalore, making your Indian adventure budget-friendly. We go beyond just deals, providing personalized customer service for a smooth booking experience, so you can focus on the excitement ahead.",
 
-    descWithImg: {
+    descwithimg: {
       heading: "Navigating Bangalore with Ease",
       desc: [
         "Upon landing at Kempegowda International Airport (BLR), you'll find a variety of convenient transportation options to reach the city center. Taxis, car rentals, and a robust public transportation system, including the metro rail, make getting around Bangalore a breeze.",
@@ -1690,7 +1690,7 @@ const locations = {
   "flights-from-dallas-to-chennai": {
     desc: "Dreaming of exploring the rich tapestry of history, culture, and architectural marvels that Chennai offers? Look no further! Alanita Travel can be your gateway to this captivating Indian destination, ensuring your 'Incredible India' adventure begins with finding the perfect flight deal from Dallas.",
 
-    descWithImg: {
+    descwithimg: {
       heading: "Immerse Yourself in Chennai's Enchantment",
       desc: [
         "Nicknamed the 'Gateway to South India,' Chennai is a vibrant blend of old-world charm and modern amenities. Lose yourself in the architectural splendor of the iconic Marina Beach, a captivating stretch of sand steeped in history. Marvel at the intricate craftsmanship of the Kapaleeshwarar Temple, a majestic reminder of a bygone era. Wander through the bustling lanes of T Nagar, a shopper's paradise overflowing with dazzling jewelry, traditional textiles, and handcrafted souvenirs. Indulge in the mouthwatering flavors of Chennai's cuisine, from the legendary dosas – a crisp, savory pancake – to melt-in-your-mouth idlis and flavorful curries. Chennai promises an unforgettable journey filled with beauty, heritage, and the warmth of its people.",
@@ -1739,7 +1739,7 @@ const locations = {
   "flights-from-dallas-to-mumbai": {
     desc: "Dreaming of exploring the historical grandeur and vibrant energy of Mumbai? Look no further! Alanita Travel can help you find the perfect flight deal from Dallas to Mumbai, ensuring your 'Incredible India' adventure begins without breaking the bank.",
 
-    descWithImg: {
+    descwithimg: {
       heading: "Immerse Yourself in Mumbai's Enchantment",
       desc: [
         "Nicknamed the 'City of Dreams,' Mumbai is a captivating tapestry of rich history, cultural diversity, and architectural marvels. Witness the grandeur of the Gateway of India, explore the intricate details of Chhatrapati Shivaji Maharaj Terminus, or wander through the bustling Colaba Causeway market. Tantalize your taste buds with the legendary Mumbai street food, from melt-in-your-mouth vada pav to aromatic pav bhaji and flavorful bhel puri.",
@@ -1792,7 +1792,7 @@ const locations = {
   "flights-from-houston-to-bangalore": {
     desc: "At Alanita Travel, we understand that affordability is a key factor for a stress-free travel experience. That's why we offer competitive prices on flights from Houston to Bangalore, ensuring you can embark on your Indian adventure without breaking the bank. Our commitment extends beyond just finding you the best deals; our personalized customer service ensures a smooth and seamless booking process, allowing you to focus on the excitement of your upcoming trip.",
 
-    descWithImg: {
+    descwithimg: {
       heading: "Navigating Bangalore with Ease",
       desc: [
         "Upon landing at Kempegowda International Airport (BLR), you'll find a variety of convenient transportation options to reach the city center. Taxis, car rentals, and a robust public transportation system, including the metro rail, make getting around Bangalore a breeze.",
@@ -1840,7 +1840,7 @@ const locations = {
   "flights-from-houston-to-delhi": {
     desc: "Dreaming of exploring the historical grandeur and vibrant energy of Delhi? Look no further! Alanita Travel can help you find the perfect flight deal from Houston to Delhi, ensuring your 'Incredible India' adventure begins without breaking the bank.",
 
-    descWithImg: {
+    descwithimg: {
       heading: "Immerse Yourself in Delhi's Enchantment",
       desc: [
         "Nicknamed 'Dil Ki Dilli' (Heart of India), Delhi is a captivating tapestry of rich history, cultural diversity, and architectural marvels. Witness the grandeur of the Red Fort, explore the intricate details of Jama Masjid, or wander through the bustling Chandni Chowk market. Tantalize your taste buds with the legendary North Indian cuisine, from melt-in-your-mouth butter chicken to aromatic kebabs and flavorful curries.",
@@ -1893,7 +1893,7 @@ const locations = {
   "flights-from-houston-to-hyderabad": {
     desc: "Dreaming of exploring the rich tapestry of history, culture, and architectural marvels that Hyderabad offers? Look no further! Alanita Travel can be your gateway to this captivating Indian destination, ensuring your 'Incredible India' adventure begins with finding the perfect flight deal from Houston.",
 
-    descWithImg: {
+    descwithimg: {
       heading: "Immerse Yourself in Hyderabad's Enchantment",
       desc: [
         "Nicknamed the 'City of Pearls,' Hyderabad is a vibrant blend of old-world charm and modern amenities. Lose yourself in the architectural splendor of the iconic Charminar, a captivating monument steeped in history. Marvel at the intricate craftsmanship of the Golconda Fort, a majestic reminder of a bygone era. Wander through the bustling lanes of Laad Bazaar, a shopper's paradise overflowing with dazzling pearls, traditional textiles, and handcrafted souvenirs. Indulge in the mouth-watering flavors of Hyderabadi cuisine, from the legendary biryani – a fragrant rice dish layered with meat and vegetables – to melt-in-your-mouth kebabs and flavorful curries. Hyderabad promises an unforgettable journey filled with beauty, heritage, and the warmth of its people.",
@@ -1941,7 +1941,7 @@ const locations = {
   "flights-from-houston-to-mumbai": {
     desc: "Welcome to Alanita Travel, your trusted partner for securing cheap flight tickets from Houston to Mumbai! Whether you're on a business trip, a long-awaited vacation, or reconnecting with loved ones, we're dedicated to making your journey to the 'City of Dreams' smooth and budget-friendly. Let us handle the logistics while you dream of exploring Mumbai's vibrant energy, iconic landmarks, and delicious street food.",
 
-    descWithImg: {
+    descwithimg: {
       heading: "Immerse Yourself in Mumbai's Enchantment",
       desc: [
         "Mumbai, the heart of Maharashtra, pulsates with a captivating blend of history, culture, and modern marvels. Lose yourself in the architectural grandeur of the Gateway of India, a symbol of the city's rich colonial past. Explore the serenity of Haji Ali Dargah, a beautiful mosque perched on a tiny island. Wander through the bustling markets of Colaba, a shopper's paradise, or delve into the historical wonder of Chhatrapati Shivaji Maharaj Terminus, a UNESCO World Heritage Site.",
@@ -1991,7 +1991,7 @@ const locations = {
   "flights-from-dallas-to-delhi": {
     desc: "Discover incredible deals on flights from Dallas to Delhi with Alanita Travel! Our vast network of airline partnerships and flexible search tools streamline the process, allowing you to compare prices effortlessly and find the perfect flight for your budget and travel preferences. Explore the captivating city of Delhi without breaking the bank!",
 
-    descWithImg: {
+    descwithimg: {
       heading: "Immerse Yourself in Delhi's Enchantment",
       desc: [
         "Delhi, also known as 'The Heart of India,' offers a captivating blend of rich heritage, vibrant culture, and architectural marvels. Witness the architectural wonder of the Qutub Minar, explore the historic Red Fort, or wander through the bustling Chandni Chowk.",
@@ -2040,7 +2040,7 @@ const locations = {
   "flights-from-dallas-to-hyderabad": {
     desc: "Discover incredible deals on flights from Dallas to Hyderabad with Alanita Travel! Our vast network of airline partnerships and flexible search tools streamline the process, allowing you to compare prices effortlessly and find the perfect flight for your budget and travel preferences. Explore the captivating city of Hyderabad without breaking the bank!",
 
-    descWithImg: {
+    descwithimg: {
       heading: "Immerse Yourself in Hyderabad's Enchantment",
       desc: [
         "Hyderabad, also known as the 'City of Pearls,' offers a captivating blend of rich heritage, vibrant culture, and architectural marvels.",
@@ -2090,7 +2090,7 @@ const locations = {
   "flights-from-houston-to-chennai": {
     desc: "Discover incredible deals on flights from Houston to Chennai with Alanita Travel! Our vast network of airline partnerships and flexible search tools streamline the process, allowing you to compare prices effortlessly and find the perfect flight for your budget and travel preferences. Explore the captivating city of Chennai without breaking the bank!",
 
-    descWithImg: {
+    descwithimg: {
       heading: "Immerse Yourself in Chennai's Enchantment",
       desc: [
         "Chennai, also known as 'The Gateway to South India,' offers a captivating blend of rich heritage, vibrant culture, and architectural marvels.",
@@ -2143,14 +2143,14 @@ const locations_1 = {
   "flights-from-houston-to-chennai": {
     desc: "Discover incredible deals on flights from Houston to Chennai with Alanita Travel! Our vast network of airline partnerships and flexible search tools streamline the process, allowing you to compare prices effortlessly and find the perfect flight for your budget and travel preferences. Explore the captivating city of Chennai without breaking the bank!",
 
-    descWithImg: {
+    descwithimg: {
       heading: "Immerse Yourself in Chennai's Enchantment",
       desc: [
         "Chennai, also known as 'The Gateway to South India,' offers a captivating blend of rich heritage, vibrant culture, and architectural marvels.",
         "Witness the architectural wonder of the Kapaleeshwarar Temple, explore Fort St. George, or wander through the bustling Parry's Corner.",
         "Tantalize your taste buds with the legendary South Indian cuisine, from the aromatic filter coffee and fluffy idlis to the delectable dosas and flavorful curries.",
       ],
-      img: "", // Empty string for the image
+      img: null, // Empty string for the image
     },
 
     list1: [
@@ -2187,13 +2187,13 @@ const locations_1 = {
 
     welcome: {
       heading: "Affordable Flights from Houston to Chennai",
-      map: "", // Empty string for the image
+      map: null, // Empty string for the image
     },
   },
   "flights-from-usa-to-ahmedabad": {
     desc: "Alanita Travel offers the best airfares and the lowest price on cheap tickets to Ahmedabad from the USA. Ahmedabad is a remarkable city of Gujarat and one of the most famous travel destinations. The demand for flights from the USA to Ahmedabad is high. Alanita Travel meets this increasing demand by offering hassle-free flight ticket deals to Ahmedabad from the USA. A large number of international flights arrive at Ahmedabad, which means the demand for flight tickets is high. Considering all this, we have amazing deals and offers for this route. Flights to Ahmedabad from the USA are also available with us at a discounted rate.",
 
-    descWithImg: {
+    descwithimg: {
       heading: "Why Book Flight Tickets from the USA to Ahmedabad?",
       desc: [
         "Ahmedabad is one of the fastest-growing cities in the world, and the city sits pleasantly on the banks of Sabarmati river.",
@@ -2201,7 +2201,7 @@ const locations_1 = {
         "Also known as the industrial hub of India, this place is prime for commerce and trade sectors. Incredible growth has been seen in the infrastructure of the city.",
         "You will love visiting the place if you are thinking of booking tickets to Ahmedabad.",
       ],
-      img: "", // Empty string for the image
+      img: null, // Empty string for the image
     },
 
     list1: [
@@ -2241,13 +2241,13 @@ const locations_1 = {
 
     welcome: {
       heading: "Affordable Flights from the USA to Ahmedabad",
-      map: "", // Empty string for the image
+      map: null, // Empty string for the image
     },
   },
   "flights-from-usa-to-hyderabad": {
     desc: "Do you wish to visit the city of Nizams? If yes, you are in the right place. At Alanita Travel we offer you an ample number of flights to Hyderabad from the USA. Visit us at our website with just one click and get amazing deals on your tickets. Find great offers on cheap flights to Hyderabad from the USA throughout the year. Booking your tickets beforehand will let you avail unbelievable offers. You might not have planned your trip yet, but you can book your tickets now to have an unplanned memory for life. We assure you significant savings and unbeatable offers in tickets to Hyderabad from the USA.",
 
-    descWithImg: {
+    descwithimg: {
       heading: "Hyderabad - The Pearl City of India",
       desc: [
         "Hyderabad - the city of Nizams, which is famous for its richness and royalty will bring all the twists and turns to excite your journey.",
@@ -2255,7 +2255,7 @@ const locations_1 = {
         "The city of Hyderabad is known to be a crowded place, but when you get inside the crowd, you will enjoy it.",
         "You can start with the famous Charminar, then move towards Golconda Fort. The place has an ample number of shopping malls and food outlets that won't let you get bored.",
       ],
-      img: "", // Empty string for the image
+      img: null, // Empty string for the image
     },
 
     list1: [
@@ -2293,12 +2293,12 @@ const locations_1 = {
 
     welcome: {
       heading: "Affordable Flights from the USA to Hyderabad",
-      map: "", // Empty string for the image
+      map: null, // Empty string for the image
     },
   },
   "flights-to-chennai-from-usa": {
     desc: null,
-    descWithImg: null,
+    descwithimg: null,
 
     list1: [
       {
@@ -2354,7 +2354,7 @@ const locations_1 = {
   },
   "flights-to-mumbai-from-usa": {
     desc: null,
-    descWithImg: null,
+    descwithimg: null,
 
     list1: [
       {
@@ -2432,7 +2432,7 @@ const locations_1 = {
   },
   "flights-to-new-delhi-from-usa": {
     desc: null,
-    descWithImg: null,
+    descwithimg: null,
 
     list1: [
       {
@@ -2450,7 +2450,7 @@ const locations_1 = {
   },
   "flights-to-usa-from-india": {
   desc: null,
-  descWithImg: null,
+  descwithimg: null,
 
   list1: [
     {
@@ -2499,7 +2499,7 @@ const locations_1 = {
 },
 "flights-to-india-from-usa": {
   desc: null,
-  descWithImg: null,
+  descwithimg: null,
 
   list1: [
     {
