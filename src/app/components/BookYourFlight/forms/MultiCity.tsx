@@ -1,3 +1,4 @@
+"use client"
 import { useState } from "react";
 import Date from "../../Date/Date";
 import {
@@ -248,7 +249,7 @@ function MultiCityForm() {
           </div>
         </div>
         <div className="flex justify-center h-full items-end pt-10">
-          <button className="text-white py-3 text-2xl px-28 sm:px-36 bg-[#1E4492] rounded-3xl font-inter font-bold text-white">
+          <button className=" py-3 text-2xl px-28 sm:px-36 bg-[#1E4492] rounded-3xl font-inter font-bold text-white">
             Search Flights
           </button>
         </div>
