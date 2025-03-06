@@ -15,8 +15,13 @@ import WhyPeopleChooseOurAlanitaTravel from "./components/WhyPeopleChooseOurAlan
 export default function Home() {
   return (
     <>
-   
       {/*    <AirTravelSearchForm /> */}
+      <iframe
+        src="/index.html"
+        width="100%"
+        height="380"
+        className="border-0 overflow-hidden"
+      ></iframe>
       <div className="w-full flex flex-col justify-center items-center overflow-hidden">
         <BookYourFlight />
         <PalaceOnWheelsHome />
