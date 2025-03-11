@@ -3,7 +3,10 @@ import React from "react";
 
 export default function page() {
   return (
+    <>
+    
     <div className="w-full flex flex-col items-center text-gray-900">
+     
       <div className="w-full max-w-[1347px]">
         <div className="container mx-auto p-4">
           <div>
@@ -48,5 +51,6 @@ export default function page() {
         <OurLocation />
       </div>
     </div>
+    </>
   );
 }
