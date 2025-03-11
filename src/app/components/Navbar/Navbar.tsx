@@ -17,7 +17,7 @@ export default function Navbar() {
     { name: "E-Forms", href: "/e-forms" },
     { name: "Rules & Regulations", href: "/rules-and-regulations" },
     { name: "Contact", href: "/contact" },
-    { name: "Blog", href: "/blog" },
+    { name: "Blog", href: "/blogs" },
   ];
 
   return (
