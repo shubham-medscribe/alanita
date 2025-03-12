@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useState } from "react";
 import Date from "../../Date/Date";
 import {
@@ -9,23 +9,25 @@ import {
   lapInfant,
   seatInfant,
 } from "../constants/formsOptions";
+import formatFormDataOneWay from "@/app/utils/SearchFlightFormater/OneWay";
+import generateFlightURL from "@/app/utils/FlightUrlGenerator";
 
 interface FormData {
   from: string;
   to: string;
   date: Date | null;
-  time: string;
-  flexibleDates: boolean;
-  directFlights: boolean;
-  faresWithNoPenalties: boolean;
-  nearbyAirports: boolean;
-  lapInfant: string;
-  seatInfant: string;
-  adultCount: string;
-  childCount: string;
-  classCabin: string;
-  preferredAirline1: string;
-  preferredAirline2: string;
+  time?: string;
+  flexibleDates?: boolean;
+  directFlights?: boolean;
+  faresWithNoPenalties?: boolean;
+  nearbyAirports?: boolean;
+  lapInfant: number;
+  seatInfant: number;
+  adultCount: number;
+  childCount: number;
+  classCabin?: string;
+  preferredAirline1?: string;
+  preferredAirline2?: string;
 }
 
 function OneWayForm() {
@@ -38,11 +40,11 @@ function OneWayForm() {
     directFlights: false,
     faresWithNoPenalties: false,
     nearbyAirports: false,
-    lapInfant: "0 Lap Infant",
-    seatInfant: "0 Seat Infant",
-    adultCount: "1 Adult",
-    childCount: "0 Child",
-    classCabin: "All Class/Cabin",
+    lapInfant: 0,
+    seatInfant: 0,
+    adultCount: 1,
+    childCount: 0,
+    classCabin: "",
     preferredAirline1: "",
     preferredAirline2: "",
   });
@@ -64,7 +66,13 @@ function OneWayForm() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log("Form Data Submitted:", formData);
+    const { segments, options } = formatFormDataOneWay(formData); // Call your function here with the updated formData object
     // You can send this data to an API or perform further processing
+    console.log("Options:", options);
+    console.log("Segments:", segments);
+    const SearchUrl = generateFlightURL([segments], options);
+    window.open(SearchUrl, "_blank");
+    console.log("SearchUrl:", SearchUrl); // You can use this URL for further processing or API calls
   };
 
   return (
@@ -80,7 +88,13 @@ function OneWayForm() {
                 onChange={handleChange}
                 className="p-5 border border-[#C3C3C3] rounded-xl w-full h-[56px]"
                 placeholder="From"
+                list="from-suggestions"
               />
+              <datalist id="from-suggestions">
+                <option value="BOM">
+                  [BOM] Mumbai Bombay (Chhatrapati Shiv)
+                </option>
+              </datalist>
             </div>
 
             <div className="flex gap-3">
@@ -97,9 +111,9 @@ function OneWayForm() {
                 onChange={handleChange}
                 className="p-3 border border-[#C3C3C3] rounded-xl w-full h-[56px]"
               >
-                {anytime.map((item: string, index: number) => (
-                  <option key={index} value={item}>
-                    {item}
+                {anytime.map((item: Record<string, string>, index: number) => (
+                  <option key={index} value={item.val}>
+                    {item.time}
                   </option>
                 ))}
               </select>
@@ -166,7 +180,11 @@ function OneWayForm() {
                 onChange={handleChange}
                 className="p-5 border border-[#C3C3C3] rounded-xl w-full h-[56px]"
                 placeholder="To"
+                list="suggestionsTo"
               />
+              <datalist id="suggestionsTo">
+                <option value="DEL">[DEL] Delhi, India, IN</option>
+              </datalist>
             </div>
 
             <div className="flex gap-3">
@@ -176,11 +194,13 @@ function OneWayForm() {
                 onChange={handleChange}
                 className="p-3 border border-[#C3C3C3] rounded-xl w-full h-[56px]"
               >
-                {lapInfant.map((item: string, index: number) => (
-                  <option key={index} value={item}>
-                    {item}
-                  </option>
-                ))}
+                {lapInfant.map(
+                  (item: Record<string, number | string>, index: number) => (
+                    <option key={index} value={item.val}>
+                      {item.label}
+                    </option>
+                  )
+                )}
               </select>
 
               <select
@@ -189,11 +209,13 @@ function OneWayForm() {
                 onChange={handleChange}
                 className="p-3 border border-[#C3C3C3] rounded-xl w-full h-[56px]"
               >
-                {seatInfant.map((item: string, index: number) => (
-                  <option value={item} key={index}>
-                    {item}
-                  </option>
-                ))}
+                {seatInfant.map(
+                  (item: Record<string, number | string>, index: number) => (
+                    <option value={item.val} key={index}>
+                      {item.label}
+                    </option>
+                  )
+                )}
               </select>
             </div>
 

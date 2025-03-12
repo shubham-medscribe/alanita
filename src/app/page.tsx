@@ -37,7 +37,9 @@ export default function Home() {
           <ToursAndPackages />
           <DestinationWedding />
           <OurBlogOffers />
-          <OurLocation />
+          <div className="py-12">
+            <OurLocation />
+          </div>
         </div>
       </div>
     </>

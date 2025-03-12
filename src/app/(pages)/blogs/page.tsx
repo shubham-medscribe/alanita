@@ -2,8 +2,11 @@ import React from "react";
 import Blogs from "../../constants/blog";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendar, faUser } from "@fortawesome/free-solid-svg-icons";
+import PageView from "@/app/components/PageView/PageView";
 export default function page() {
   return (
+    <>
+    <PageView title={"Blogs"} content={"Home | Blogs"}/>
     <div className="w-full flex justify-center p-5">
       <div className="w-full max-w-[1347px]">
         <div className="grid grid-cols-1 md:grid-cols-2  xl:grid-cols-3 gap-5">
@@ -22,6 +25,7 @@ export default function page() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 

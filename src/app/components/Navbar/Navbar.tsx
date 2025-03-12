@@ -1,4 +1,4 @@
-"use client"; // Add this if using Next.js App Router
+"use client";
 
 import React from "react";
 import { motion } from "framer-motion";
@@ -15,8 +15,8 @@ export default function Navbar() {
     { name: "Home", href: "/" },
     { name: "Flights", href: "/flights" },
     { name: "E-Forms", href: "/e-forms" },
-    { name: "Rules & Regulations", href: "/rules-and-regulations" },
-    { name: "Contact", href: "/contact" },
+    { name: "Rules & Regulations", href: "/rules" },
+    { name: "Contact", href: "/contact-us" },
     { name: "Blog", href: "/blogs" },
   ];
 

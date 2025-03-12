@@ -70,8 +70,8 @@ export default function LocationSection() {
   };
 
   return (
-    <section className="py-12 px-5 text-[#1C1C1C]">
-      <div className="container  px-4">
+    <section className=" text-[#1C1C1C]">
+      <div className="container">
         <motion.h2
           className="text-4xl sm:text-[50px] mb-3 sm:mb-5 font-semibold  font-garamond"
           initial={{ opacity: 0, y: -50 }}
