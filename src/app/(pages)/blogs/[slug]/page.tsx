@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useParams } from "next/navigation";
 import React from "react";
 
-export default function page() {
+export default function Page() {
   const params = useParams();
   const slug = params.slug as string;
   const data = blogContent[slug as keyof typeof blogContent];
@@ -143,21 +143,31 @@ export default function page() {
             <div className="space-y-3">
               {data.problems.map((problem, idx) => (
                 <div className="space-y-2" key={idx}>
-                  <h1 className="text-[#17233e] font-bold text-2xl">{problem.heading}</h1>
+                  <h1 className="text-[#17233e] font-bold text-2xl">
+                    {problem.heading}
+                  </h1>
                   <div>
-                  <div className="flex gap-1 flex-col lg:flex-row">
+                    <div className="flex gap-1 flex-col lg:flex-row">
                       <div className="font-bold text-[#17233e] flex gap-1 items-center">
-                      <FontAwesomeIcon className="text-[#d6171f]" icon={faJetFighter} />
+                        <FontAwesomeIcon
+                          className="text-[#d6171f]"
+                          icon={faJetFighter}
+                        />
                         Mistake:
                       </div>
                       <p>{problem.content}</p>
                     </div>
                     <div className="flex gap-1 flex-col lg:flex-row">
-                    <div className="font-bold text-[#17233e] flex gap-1 items-center">
-                      <FontAwesomeIcon className="text-[#d6171f]" icon={faJetFighter} />
-                        Solution: 
+                      <div className="font-bold text-[#17233e] flex gap-1 items-center">
+                        <FontAwesomeIcon
+                          className="text-[#d6171f]"
+                          icon={faJetFighter}
+                        />
+                        Solution:
                       </div>
-                      <p className="text-base text-[#777984] font-normal">{problem.solution}</p>
+                      <p className="text-base text-[#777984] font-normal">
+                        {problem.solution}
+                      </p>
                     </div>
                   </div>
                 </div>

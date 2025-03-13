@@ -2,7 +2,6 @@ import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 import "./globals.css";
 import { EB_Garamond, Inter, Poppins } from "next/font/google";
-import Script from "next/script";
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"], // Choose required weights

@@ -1,8 +1,7 @@
-import { useEffect } from "react";
 import Script from "next/script";
 
 const ReCaptcha = () => {
-  useEffect(() => {
+/*   useEffect(() => {
     const handleRecaptcha = () => {
       if (typeof window !== "undefined" && window.grecaptcha) {
         window.grecaptcha.ready(() => {
@@ -23,7 +22,7 @@ const ReCaptcha = () => {
     };
 
     handleRecaptcha();
-  }, []);
+  }, []); */
 
   return (
     <>

@@ -80,7 +80,7 @@ import dallas_to_hyderabad_fullmap from "../assests/locations/dallas_to_hyderaba
 import houston_to_chennai from "../assests/locations/houston_to_chennai.png";
 import houston_to_chennai_fullmap from "../assests/locations/houston_to_chennai_fullmap.png";
 
-const locations_1 = {
+let locations_1 = {
   "flights-to-kolkata-from-usa": {
     desc: null,
 

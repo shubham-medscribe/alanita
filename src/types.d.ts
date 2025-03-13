@@ -1,4 +1,4 @@
-declare global {
+/* declare global {
   interface Window {
     grecaptcha: any;
     gtag: (...args: any[]) => void;
@@ -9,3 +9,4 @@ declare global {
 }
 
 export {};
+ */

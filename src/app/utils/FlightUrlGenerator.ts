@@ -27,7 +27,7 @@ function generateFlightURL(
   
     segments.forEach((segment, index) => {
       let segmentParams = `${segment.departure}|${segment.destination}|${segment.departDate}`;
-      const arr = ['|', '', '|', '', '|', '', '|', '', '|', '', '|', '', '|', '', '|', ''];
+      let arr = ['|', '', '|', '', '|', '', '|', '', '|', '', '|', '', '|', '', '|', ''];
   
       if (segment?.time) {
         arr[1] = segment.time;

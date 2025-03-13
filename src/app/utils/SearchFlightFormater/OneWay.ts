@@ -28,7 +28,7 @@ function formatFormDataToSegments(formData: FormData) {
   }
 
 function formatFormDataToOptions(formData: FormData) {
-    const options: Record<string, any> = {};
+    const options: Record<string, string|boolean|number|Array<string|number>> = {};
   
     if (formData.adultCount) options.adultCount = formData.adultCount;
     if (formData.childCount) options.childCount = formData.childCount;
