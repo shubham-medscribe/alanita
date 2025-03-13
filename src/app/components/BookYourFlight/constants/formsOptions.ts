@@ -20,7 +20,13 @@ const adultsCount = [
   "8 Adults",
 ];
 
-const anytime = ["Anytime", "Morning", "Afternoon", "Evening"];
+const anytime = [
+  { val: "", time: "Anytime" },
+  { val: "mo", time: "Morning" },
+  { val: "af", time: "Afternoon" },
+  { val: "ev", time: "Evening" }
+];
+
 
 const allClassCabin = [
   "All Class/Cabin",
@@ -31,19 +37,21 @@ const allClassCabin = [
 ];
 
 const lapInfant = [
-  "0 Lap Infant",
-  "1 Lap Infant",
-  "2 Laps Infants",
-  "3 Laps Infants",
-  "4 Laps Infants",
+  { val: 0, label: "0 Lap Infant" },
+  { val: 1, label: "1 Lap Infant" },
+  { val: 2, label: "2 Laps Infants" },
+  { val: 3, label: "3 Laps Infants" },
+  { val: 4, label: "4 Laps Infants" }
 ];
 
+
 const seatInfant = [
-  "0 Seat Infant",
-  "1 Seat Infant",
-  "2 Seats Infants",
-  "3 Seats Infants",
-  "4 Seats Infants",
+  { val: 0, label: "0 Seat Infant" },
+  { val: 1, label: "1 Seat Infant" },
+  { val: 2, label: "2 Seats Infants" },
+  { val: 3, label: "3 Seats Infants" },
+  { val: 4, label: "4 Seats Infants" }
 ];
+
 
 export {childsCount, adultsCount, anytime, allClassCabin, lapInfant, seatInfant}

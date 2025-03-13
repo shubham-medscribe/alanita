@@ -2,7 +2,6 @@ import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 import "./globals.css";
 import { EB_Garamond, Inter, Poppins } from "next/font/google";
-
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"], // Choose required weights
@@ -26,8 +25,15 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  /*  const handleScriptLoad = () => {
+    const scriptTag = document.getElementById("OFrameworkJS");
+    if (scriptTag) {
+      scriptTag.setAttribute("themeUri", "/OdyResponsiveSearchForm-Blue-Air/");
+      console.log("Script loaded and themeUri set!");
+    }
+  }; */
   return (
-    <html lang="en">
+    <html style={{ color: "black" }} lang="en">
       <body
         className={`${poppins.variable} ${garamond.variable} ${inter.variable}  antialiased`}
       >
@@ -37,6 +43,40 @@ export default function RootLayout({
           </div>
         </div>
         {children}
+        {/*   <img src="./dubai.jpg" /> */}
+        <div id="AirSearchForm"></div>
+        {/*  <Script
+          id="OFrameworkJS"
+          type="text/javascript"
+          src="https://air.alanitatravel.com/web/SearchForms/OFramework.js"
+          strategy="lazyOnload"
+          data-theme-uri="./OdyResponsiveSearchForm-Blue-Air/"
+          onLoad={() => {
+            const OFramework = (window as any).OFramework;
+            if (OFramework) {
+              OFramework.QSParams.Add("siid", "99316");
+              OFramework.AirSearchForm(
+                document.getElementById("AirSearchForm")
+              );
+            }
+          }}
+        /> */}
+
+        {/*   <Script
+          id="OFrameworkJS"
+          src="https://air.alanitatravel.com/web/SearchForms/OFramework.js"
+          strategy="afterInteractive"
+          data-language="javascript"
+          data-themeuri="/OdyResponsiveSearchForm-Blue-Air/"
+          data-skin-id="Default"
+        /> */}
+
+        {/* <Script
+          id="OFrameworkJS"
+          src="https://air.alanitatravel.com/web/SearchForms/OFramework.js"
+          strategy="afterInteractive"
+          onLoad={handleScriptLoad} // Runs after the script loads
+        /> */}
         <Footer />
       </body>
     </html>

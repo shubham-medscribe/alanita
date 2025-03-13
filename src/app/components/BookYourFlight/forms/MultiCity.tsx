@@ -1,3 +1,4 @@
+"use client"
 import { useState } from "react";
 import Date from "../../Date/Date";
 import {
@@ -87,33 +88,33 @@ function MultiCityForm() {
                   <Date />
 
                   <select className="p-3 border border-[#C3C3C3] rounded-xl w-full h-[56px]">
-                    {anytime.map((item: string, index: number) => (
-                      <option key={index} value={item}>
-                        {item}
-                      </option>
-                    ))}
+                  {anytime.map((item: Record<string, string>, index: number) => (
+                  <option key={index} value={item.val}>
+                    {item.time}
+                  </option>
+                ))}
                   </select>
                 </div>
                 <div className="flex-1 flex gap-3">
                   <Date />
 
                   <select className="p-3 border border-[#C3C3C3] rounded-xl w-full h-[56px]">
-                    {anytime.map((item: string, index: number) => (
-                      <option key={index} value={item}>
-                        {item}
-                      </option>
-                    ))}
+                  {anytime.map((item: Record<string, string>, index: number) => (
+                  <option key={index} value={item.val}>
+                    {item.time}
+                  </option>
+                ))}
                   </select>
                 </div>
                 <div className="flex-1 flex gap-3">
                   <Date />
 
                   <select className="p-3 border border-[#C3C3C3] rounded-xl w-full h-[56px]">
-                    {anytime.map((item: string, index: number) => (
-                      <option key={index} value={item}>
-                        {item}
-                      </option>
-                    ))}
+                  {anytime.map((item: Record<string, string>, index: number) => (
+                  <option key={index} value={item.val}>
+                    {item.time}
+                  </option>
+                ))}
                   </select>
                 </div>
               </div>
@@ -158,19 +159,23 @@ function MultiCityForm() {
                 </div>
                 <div className="flex-1 flex gap-3">
                   <select className="p-3 border border-[#C3C3C3] rounded-xl w-full h-[56px]">
-                    {lapInfant.map((item: string, index: number) => (
-                      <option key={index} value={item}>
-                        {item}
-                      </option>
-                    ))}
+                  {lapInfant.map(
+                  (item: Record<string, number | string>, index: number) => (
+                    <option key={index} value={item.val}>
+                      {item.label}
+                    </option>
+                  )
+                )}
                   </select>
 
                   <select className="p-3 border border-[#C3C3C3] rounded-xl w-full h-[56px]">
-                    {seatInfant.map((item: string, index: number) => (
-                      <option key={index} value={item}>
-                        {item}
-                      </option>
-                    ))}
+                  {seatInfant.map(
+                  (item: Record<string, number | string>, index: number) => (
+                    <option value={item.val} key={index}>
+                      {item.label}
+                    </option>
+                  )
+                )}
                   </select>
                 </div>
                 <div className="flex-1 flex gap-3">
@@ -248,7 +253,7 @@ function MultiCityForm() {
           </div>
         </div>
         <div className="flex justify-center h-full items-end pt-10">
-          <button className="text-white py-3 text-2xl px-28 sm:px-36 bg-[#1E4492] rounded-3xl font-inter font-bold text-white">
+          <button className=" py-3 text-2xl px-28 sm:px-36 bg-[#1E4492] rounded-3xl font-inter font-bold text-white">
             Search Flights
           </button>
         </div>

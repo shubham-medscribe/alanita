@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Air Travel Search Form -->
+    <div id="AirSearchForm"></div>
+    <script
+      type="text/javascript"
+      language="javascript"
+      id="OFrameworkJS"
+      ThemeURI="/OdyResponsiveSearchForm-Blue-Air/"
+      SkinID="default"
+      src="https://air.alanitatravel.com/web/SearchForms/OFramework.js"
+    ></script>
+    <!-- <script src="https://www.google.com/recaptcha/api.js" async></script> -->
+    <script src="https://www.google.com/recaptcha/api.js?render=6Lfpv24qAAAAAGaZfp4A2eCddeHXbxM4CrXghpA5"></script>
+    <script>
+      function captchaSubmit(data) {
+        document.getElementById("AirSearchForm").submit();
+      }
+    </script>
+    <script language="javascript" type="text/javascript">
+      OFramework.QSParams.Add("siid", "99316");
+      oAForm = OFramework.AirSearchForm(
+        document.getElementById("AirSearchForm")
+      );
+      $("#AirSearchForm").on(
+        "click",
+        ".tabsinn ul li > a > label",
+        function () {
+          $(".tabsinn ul li").removeClass("active");
+          $(this).parents("li").addClass("active");
+        }
+      );
+    </script>
+  </body>
+</html>
