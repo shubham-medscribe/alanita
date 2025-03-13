@@ -8,23 +8,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useParams } from "next/navigation";
 import React from "react";
-type Section = {
-  heading: string;
-  content?: string | string[];
-  image?: string;
-  points?:
-    | string[]
-    | {
-        heading: string;
-        content: string;
-      }[];
-};
 
-
-type Data = {
-  section: Section[];
-
-}
 
 
 export default function Page() {
