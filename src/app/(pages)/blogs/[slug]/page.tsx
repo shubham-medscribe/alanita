@@ -9,8 +9,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useParams } from "next/navigation";
 import React from "react";
 
-
-
 export default function Page() {
   const params = useParams();
   const slug = params.slug as string;
@@ -19,6 +17,7 @@ export default function Page() {
   /* if (!data) {
       return <h1 className="text-center text-red-500">Location not found!</h1>;
     } */
+
   return (
     <div className="w-full flex justify-center">
       <div className="w-full max-w-[1347px] space-y-7 p-5">
@@ -57,9 +56,93 @@ export default function Page() {
           )}
 
           {/*   sections */}
-          
-        
-          
+          <div>
+            {
+              <div>
+                {"sections" in data &&
+                  Array.isArray(data?.sections) &&
+                  data.sections.map(
+                    (section: Record<string, unknown>, index: number) => (
+                      <div key={index} className="">
+                        {typeof section.heading === "string" && (
+                          <h2 className="font-bold text-xl py-2 text-[#17233e]">
+                            {section.heading}
+                          </h2>
+                        )}
+                        {/* checking in section objects contains "image" property, then should be shown only if it exists */}
+                        {"image" in section &&
+                          typeof section.image === "string" && (
+                            <div className="flex justify-center">
+                              <img
+                                src={section.image}
+                                className="w-full sm:w-1/2 h-auto"
+                                alt=""
+                              />
+                            </div>
+                          )}
+                        {/* checking if content array contains object or string, if so map over it and render otherwise show content as it is */}
+                        {typeof section.content === "string" ? (
+                          <p className="py-1">{section.content}</p>
+                        ) : Array.isArray(section.content) ? (
+                          section.content.map(
+                            (content: string, idx: number) => (
+                              <p className="py-1" key={idx}>
+                                {content}
+                              </p>
+                            )
+                          )
+                        ) : null}
+
+                        {/* checking "points" properties exist in section objects, if exist then render */}
+                        {"points" in section ? (
+                          <div>
+                            {Array.isArray(section.points) &&
+                              /* if "points" is an array of objects then map it */
+                              section.points.map(
+                                (
+                                  point:
+                                    | string
+                                    | { heading: string; content: string },
+                                  idx: number
+                                ) => (
+                                  <div className="flex" key={idx}>
+                                    {typeof point === "string" ? (
+                                      <p>
+                                        <FontAwesomeIcon
+                                          className="text-[#d6171f]"
+                                          icon={faJetFighter}
+                                        />
+                                        &nbsp;{point}
+                                      </p>
+                                    ) : (
+                                      /* if "points" is a string array then normally render it */
+                                      <>
+                                        <h2>
+                                          <FontAwesomeIcon
+                                            className="text-[#d6171f]"
+                                            icon={faJetFighter}
+                                          />{" "}
+                                          {point.heading}
+                                          <span className="font-bold">
+                                            {":"}
+                                          </span>
+                                          &nbsp;
+                                        </h2>
+                                        <p>{point.content}</p>
+                                      </>
+                                    )}
+                                  </div>
+                                )
+                              )}
+                          </div>
+                        ) : null}
+                      </div>
+                    )
+                  )}
+              </div>
+            }
+          </div>
+
           {/*  section end */}
 
           {/*    if problem property exist we have render it */}

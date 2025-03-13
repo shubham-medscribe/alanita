@@ -1,4 +1,5 @@
-const blogContent = {
+
+const blogContent= {
   "your-ultimate-guide-to-seamless-flights-from-raleigh-durham-to-hyderabad-with-alanita-travel":
     {
       title:
@@ -893,7 +894,7 @@ const blogContent = {
     sections: [
       {
         heading: "Why Travel to India During the Off-Season?",
-        sections: [
+        points: [
           {
             heading: "Affordable Prices",
             content:
@@ -923,7 +924,7 @@ const blogContent = {
       },
       {
         heading: "Best Off-Season Destinations in India",
-        sections: [
+        points: [
           {
             heading: "Kerala",
             content:
@@ -948,7 +949,7 @@ const blogContent = {
       },
       {
         heading: "Tips for Off-Season Travel to India",
-        sections: [
+        points: [
           {
             heading: "Check the Weather",
             content:
@@ -1038,7 +1039,7 @@ const blogContent = {
     sections: [
       {
         heading: "1. Jaipur, Rajasthan",
-        sections: [
+        points: [
           {
             content:
               "Jaipur, the Pink City, is a vibrant destination that combines history, culture, and adventure. Families can explore the majestic Amer Fort, take an elephant ride, and visit the City Palace and Jantar Mantar. The local markets offer colorful textiles and handicrafts, making for a fun shopping experience. The city’s heritage hotels also provide a unique stay experience for families.",
@@ -1047,7 +1048,7 @@ const blogContent = {
       },
       {
         heading: "2. Kerala Backwaters",
-        sections: [
+        points: [
           {
             content:
               "The serene backwaters of Kerala offer a peaceful retreat for families. A houseboat cruise on the tranquil waters of Alleppey or Kumarakom provides a unique way to explore the lush green landscapes and traditional villages.",
@@ -1056,7 +1057,7 @@ const blogContent = {
       },
       {
         heading: "3. Goa",
-        sections: [
+        points: [
           {
             content:
               "Goa’s sandy beaches and laid-back vibe make it a perfect destination for family vacations. Families can enjoy water sports, beach games, and boat rides.",
@@ -1065,7 +1066,7 @@ const blogContent = {
       },
       {
         heading: "4. Darjeeling, West Bengal",
-        sections: [
+        points: [
           {
             content:
               "Darjeeling, known for its tea gardens and stunning views of the Himalayas, is a great destination for families. A ride on the Darjeeling Himalayan Railway, a UNESCO World Heritage Site, is a must-do experience.",
@@ -1074,7 +1075,7 @@ const blogContent = {
       },
       {
         heading: "5. Mysore, Karnataka",
-        sections: [
+        points: [
           {
             content:
               "Mysore, with its rich history and cultural heritage, offers a variety of attractions for families. The Mysore Palace, with its opulent architecture and evening light shows, is a major highlight.",
@@ -1083,7 +1084,7 @@ const blogContent = {
       },
       {
         heading: "6. Rishikesh, Uttarakhand",
-        sections: [
+        points: [
           {
             content:
               "Rishikesh is not only a spiritual destination but also an adventure hub, making it ideal for families seeking both tranquility and excitement.",
@@ -1092,7 +1093,7 @@ const blogContent = {
       },
       {
         heading: "7. Andaman and Nicobar Islands",
-        sections: [
+        points: [
           {
             content:
               "The pristine beaches and crystal-clear waters of the Andaman and Nicobar Islands provide a perfect backdrop for a family holiday. Families can indulge in snorkeling, scuba diving, and exploring marine life at Havelock Island.",
@@ -1101,7 +1102,7 @@ const blogContent = {
       },
       {
         heading: "8. Shimla, Himachal Pradesh",
-        sections: [
+        points: [
           {
             content:
               "Shimla, the Queen of Hills, is a classic family destination known for its pleasant climate and colonial charm. Families can enjoy leisurely walks on the Mall Road and visit the Viceregal Lodge.",
@@ -1110,7 +1111,7 @@ const blogContent = {
       },
       {
         heading: "9. Udaipur, Rajasthan",
-        sections: [
+        points: [
           {
             content:
               "Udaipur, the City of Lakes, is a picturesque destination with its beautiful palaces, serene lakes, and vibrant markets. Families can take boat rides on Lake Pichola and explore the grandeur of the City Palace.",
@@ -1119,7 +1120,7 @@ const blogContent = {
       },
       {
         heading: "10. Agra, Uttar Pradesh",
-        sections: [
+        points: [
           {
             content:
               "No trip to India is complete without a visit to the iconic Taj Mahal in Agra. Families can explore this magnificent monument, along with the Agra Fort and the nearby Fatehpur Sikri.",
@@ -1197,8 +1198,8 @@ const blogContent = {
               "Given its coastal location, Mumbai offers fresh and delicious seafood dishes like Bombil fry and prawn curry.",
           },
         ],
-        summary:
-          "Mumbai's culinary delights are a reflection of its cosmopolitan nature and are a must-experience for any food lover.",
+        /* summary:
+          "Mumbai's culinary delights are a reflection of its cosmopolitan nature and are a must-experience for any food lover.", */
       },
       {
         heading: "3. Kolkata",
@@ -1225,8 +1226,8 @@ const blogContent = {
             content: "A sweetened yogurt that is a staple dessert in Bengal.",
           },
         ],
-        summary:
-          "Kolkata’s food scene is an ode to its rich cultural heritage and love for all things sweet and savory.",
+        /* summary:
+          "Kolkata’s food scene is an ode to its rich cultural heritage and love for all things sweet and savory.", */
       },
       {
         heading: "4. Chennai",
@@ -1253,8 +1254,8 @@ const blogContent = {
               "Strong and aromatic, South Indian filter coffee is a must-try.",
           },
         ],
-        summary:
-          "Chennai’s food is a celebration of the rich culinary traditions of Tamil Nadu and offers a unique dining experience.",
+    /*     summary:
+          "Chennai’s food is a celebration of the rich culinary traditions of Tamil Nadu and offers a unique dining experience.", */
       },
       {
         heading: "5. Hyderabad",
@@ -1279,8 +1280,8 @@ const blogContent = {
             content: "A spicy curry made from green chilies and peanuts.",
           },
         ],
-        summary:
-          "Hyderabad’s food is a true representation of its royal history and culinary prowess.",
+      /*   summary:
+          "Hyderabad’s food is a true representation of its royal history and culinary prowess.", */
       },
     ],
     conclusion:
