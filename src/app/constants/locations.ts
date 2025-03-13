@@ -80,445 +80,9 @@ import dallas_to_hyderabad_fullmap from "../assests/locations/dallas_to_hyderaba
 import houston_to_chennai from "../assests/locations/houston_to_chennai.png";
 import houston_to_chennai_fullmap from "../assests/locations/houston_to_chennai_fullmap.png";
 
-let locations_1 = {
-  "flights-to-kolkata-from-usa": {
-    desc: null,
 
-    descwithimg: {
-      heading: "",
-      desc: [],
-      img: null, // Empty string for the image
-    },
 
-    list1: [
-      {
-        heading: "Cheap flights to Kolkata from the USA",
-        desc: [
-          "Kolkata - the city of joy, is the stunning capital of West Bengal in India. This glorious city is visited by a multitude of people daily. Therefore, the demand for flights to Kolkata from the USA is generally high. Alanita Travel offers substantial discounts and amazing offers throughout the year on the USA to Kolkata flights. With us, you can compare the airfare of different airlines and select the best one, which gives you the maximum savings. Even with the direct flights to Kolkata from the USA, we will provide you with amazing discounts. Now flying International won't cost you paying huge amounts. Flying abroad will be much economical with us at Alanita Travel.",
-        ],
-      },
-      {
-        heading: "Why book flights to Kolkata from the USA?",
-        desc: [
-          "If you travel to India, Kolkata is one of the must-visit list. The city is rich in its culture and history. When you book the cheap USA to CCU flights, you can experience the culture, education and commerce of East India. Kolkata was an important branch of the head of British India period which has its importance even today and it remains a vital part of India. Kolkata - the magnificent city, has been home to many great personalities. Few of them are Rabindranath Tagore, Amarta Sen, Mother Teresa and many more. When you visit this city, you will be amazed by the incredible tradition and culture of the city. Booking tickets to this incredible place will let you know more about the city.",
-        ],
-      },
-      {
-        heading: "What to do in Kolkata when you visit ?",
-        desc: [
-          "Kolkata has a never-ending list of fascinating places to visit. Book your tickets now and visit splendid monuments like Victoria Memorial, Fort William, Belur Math and Marble Palace. Other places of attraction are Eden Garden, Jorosanko Thakur Badi, and more. The iconic Howrah Bridge is an incredible sight for tourists to keep them as a memory. The towering grandeur will leave you speechless. The place has a gathering of thousands every day. The Mother Teresa House, which was the former abode of legendary mother Teresa, can be a great place to visit.",
-          "The food of Kolkata is famous everywhere. There are several delicious dishes that you can try when you visit Kolkata. Bengalis in Kolkata are known for their love for fish and the famous sweets Rasgulla and Sandesh. You can't miss all these when you visit here.",
-        ],
-      },
-    ],
-
-    tips: null,
-
-    list2: null,
-
-    welcome: null,
-  },
-  "flights-from-houston-to-chennai_": {
-    desc: "Discover incredible deals on flights from Houston to Chennai with Alanita Travel! Our vast network of airline partnerships and flexible search tools streamline the process, allowing you to compare prices effortlessly and find the perfect flight for your budget and travel preferences. Explore the captivating city of Chennai without breaking the bank!",
-
-    descwithimg: {
-      heading: "Immerse Yourself in Chennai's Enchantment",
-      desc: [
-        "Chennai, also known as 'The Gateway to South India,' offers a captivating blend of rich heritage, vibrant culture, and architectural marvels.",
-        "Witness the architectural wonder of the Kapaleeshwarar Temple, explore Fort St. George, or wander through the bustling Parry's Corner.",
-        "Tantalize your taste buds with the legendary South Indian cuisine, from the aromatic filter coffee and fluffy idlis to the delectable dosas and flavorful curries.",
-      ],
-      img: null, // Empty string for the image
-    },
-
-    list1: [
-      {
-        heading: "Why Choose Alanita Travel?",
-        desc: [
-          "Flexible Options: Select from a wide range of connecting flights that perfectly align with your travel needs and schedule.",
-          "Effortless Booking: Our user-friendly search engine makes booking your flight a breeze. Simply enter your travel dates and let us handle the rest.",
-          "Expert Guidance: Benefit from the knowledge of our experienced travel consultants who are available to answer your questions and help you find the ideal flight for your Chennai adventure.",
-        ],
-      },
-    ],
-
-    tips: {
-      heading: "Tips to Save Big on Flights to Chennai",
-      list: [
-        "Stay Informed with Email Alerts: Sign up to receive timely updates on Alanita Travel's latest offers and discounts on flights to Chennai.",
-        "Plan Ahead: Booking flights in advance often leads to lower fares.",
-        "Embrace Flexibility: Consider traveling during off-peak seasons to score the best deals.",
-        "Pack Light: Avoid baggage fees by packing only essentials.",
-        "Explore Round-Trip Options: Round-trip tickets can sometimes be more economical than one-way fares.",
-      ],
-    },
-
-    list2: [
-      {
-        heading: "Take Flight to Your Chennai Adventure!",
-        desc: [
-          "Contact Alanita Travel today and let our dedicated travel experts assist you in finding the perfect flight to Chennai!",
-          "With our competitive prices and unwavering commitment to excellent service, you can focus on planning your unforgettable experiences in Chennai's dynamic atmosphere.",
-        ],
-      },
-    ],
-
-    welcome: {
-      heading: "Affordable Flights from Houston to Chennai",
-      map: null, // Empty string for the image
-    },
-  },
-  "flights-from-usa-to-ahmedabad": {
-    desc: "Alanita Travel offers the best airfares and the lowest price on cheap tickets to Ahmedabad from the USA. Ahmedabad is a remarkable city of Gujarat and one of the most famous travel destinations. The demand for flights from the USA to Ahmedabad is high. Alanita Travel meets this increasing demand by offering hassle-free flight ticket deals to Ahmedabad from the USA. A large number of international flights arrive at Ahmedabad, which means the demand for flight tickets is high. Considering all this, we have amazing deals and offers for this route. Flights to Ahmedabad from the USA are also available with us at a discounted rate.",
-
-    descwithimg: {
-      heading: "Why Book Flight Tickets from the USA to Ahmedabad?",
-      desc: [
-        "Ahmedabad is one of the fastest-growing cities in the world, and the city sits pleasantly on the banks of Sabarmati river.",
-        "It is near to the current capital city - Gandhinagar and people mostly book their flights to Ahmedabad from the USA.",
-        "Also known as the industrial hub of India, this place is prime for commerce and trade sectors. Incredible growth has been seen in the infrastructure of the city.",
-        "You will love visiting the place if you are thinking of booking tickets to Ahmedabad.",
-      ],
-      img: null, // Empty string for the image
-    },
-
-    list1: [
-      {
-        heading: "Incredible Places to Visit in Ahmedabad",
-        desc: [
-          "Ahmedabad is a magnificent city and has a lot to offer to its tourists. If you are booking a flight to Ahmedabad, you can get to enjoy the beauty of the city.",
-          "The ones who are interested in the history of the places can visit Sarkhej Roza and Bhadra Fort.",
-          "One of the iconic places of the city is Sabarmati Ashram, which was once the headquarters of Mahatma Gandhi.",
-          "Kankaria Lake is one of the tourist places which you will love to visit with your children.",
-          "The beautiful Akshardham temple which is constructed with pink sandstone is a must-visit.",
-          "Jama Masjid and Rani Sipri Mosque are other travel destinations where you can find marvelous architectural designs.",
-        ],
-      },
-    ],
-
-    tips: {
-      heading: "Tips to Save Big on Flights to Ahmedabad",
-      list: [
-        "Stay Informed with Email Alerts: Sign up to receive timely updates on Alanita Travel's latest offers and discounts on flights to Ahmedabad.",
-        "Plan Ahead: Booking flights in advance often leads to lower fares.",
-        "Embrace Flexibility: Consider traveling during off-peak seasons to score the best deals.",
-        "Pack Light: Avoid baggage fees by packing only essentials.",
-        "Explore Round-Trip Options: Round-trip tickets can sometimes be more economical than one-way fares.",
-      ],
-    },
-
-    list2: [
-      {
-        heading: "Take Flight to Ahmedabad!",
-        desc: [
-          "Contact Alanita Travel today and let our dedicated travel experts assist you in finding the perfect flight to Ahmedabad!",
-          "With our competitive prices and unwavering commitment to excellent service, you can focus on planning your unforgettable experiences in Ahmedabad's dynamic atmosphere.",
-        ],
-      },
-    ],
-
-    welcome: {
-      heading: "Affordable Flights from the USA to Ahmedabad",
-      map: null, // Empty string for the image
-    },
-  },
-  "flights-from-usa-to-hyderabad": {
-    desc: "Do you wish to visit the city of Nizams? If yes, you are in the right place. At Alanita Travel we offer you an ample number of flights to Hyderabad from the USA. Visit us at our website with just one click and get amazing deals on your tickets. Find great offers on cheap flights to Hyderabad from the USA throughout the year. Booking your tickets beforehand will let you avail unbelievable offers. You might not have planned your trip yet, but you can book your tickets now to have an unplanned memory for life. We assure you significant savings and unbeatable offers in tickets to Hyderabad from the USA.",
-
-    descwithimg: {
-      heading: "Hyderabad - The Pearl City of India",
-      desc: [
-        "Hyderabad - the city of Nizams, which is famous for its richness and royalty will bring all the twists and turns to excite your journey.",
-        "If you are interested in visiting this city of Plethora, book your tickets now with us at Alanita Travel without any hassles.",
-        "The city of Hyderabad is known to be a crowded place, but when you get inside the crowd, you will enjoy it.",
-        "You can start with the famous Charminar, then move towards Golconda Fort. The place has an ample number of shopping malls and food outlets that won't let you get bored.",
-      ],
-      img: null, // Empty string for the image
-    },
-
-    list1: [
-      {
-        heading: "Flight Tickets to Hyderabad",
-        desc: [
-          "Alanita Travel is the place where you will find cheap and affordable flight tickets to Hyderabad from the USA.",
-          "We assure you of having a safe and comfortable journey so that you aren't much bothered about your expenses.",
-          "You can visit our website with just one click and get your flight tickets booked as per your convenience.",
-          "One of the most promising features of us is that we are available with you throughout the year with several offers and incredible deals so that you can fly anywhere at a budget-friendly expense.",
-        ],
-      },
-    ],
-
-    tips: {
-      heading: "Tips to Save Big on Flights to Hyderabad",
-      list: [
-        "Stay Informed with Email Alerts: Sign up to receive timely updates on Alanita Travel's latest offers and discounts on flights to Hyderabad.",
-        "Plan Ahead: Booking flights in advance often leads to lower fares.",
-        "Embrace Flexibility: Consider traveling during off-peak seasons to score the best deals.",
-        "Pack Light: Avoid baggage fees by packing only essentials.",
-        "Explore Round-Trip Options: Round-trip tickets can sometimes be more economical than one-way fares.",
-      ],
-    },
-
-    list2: [
-      {
-        heading: "Take Flight to Hyderabad!",
-        desc: [
-          "Contact Alanita Travel today and let our dedicated travel experts assist you in finding the perfect flight to Hyderabad!",
-          "With our competitive prices and unwavering commitment to excellent service, you can focus on planning your unforgettable experiences in Hyderabad's dynamic atmosphere.",
-        ],
-      },
-    ],
-
-    welcome: {
-      heading: "Affordable Flights from the USA to Hyderabad",
-      map: null, // Empty string for the image
-    },
-  },
-  "flights-to-chennai-from-usa": {
-    desc: null,
-    descwithimg: null,
-
-    list1: [
-      {
-        heading: "Cheap flights to Chennai from the USA",
-        desc: [
-          "Chennai - the marvelous capital of Tamil Nadu, is a very popular travel destination. Book your cheap flights from USA to Chennai with the help of Alanita Travel. We offer you unbelievable discounts throughout the year. We will ensure you the best prices and booking hassle-free on cheap tickets to Chennai from the USA. Every single day an endless stream of people come to book their tickets on this route. Join the chain and visit the fascinating city of Chennai very soon.",
-        ],
-      },
-      {
-        heading: "Why book cheap flights to Chennai from the USA?",
-        desc: [
-          "Chennai is a vibrant city and has a lot to offer to its visitors. Previously it was known as Madras and the beautiful city is a blend of traditional and modern ideals. It is known as an integral part of South India and a diverse Kaleidoscope of different cultures. Book a flight to Chennai from the USA and explore the glorious and fascinating city. People at Chennai are extremely helpful, and you will be welcomed wholeheartedly by the hospitable people of Chennai. They are the biggest asset of the city.",
-        ],
-      },
-      {
-        heading: "Things to be done in Chennai",
-        desc: [
-          "Once you book your tickets from the USA to Chennai, you get an astounding opportunity to explore amazing tourist attractions there. Strolling through Elliot's Beach and walking through Thalankuppam Pier will offer you an experience full of therapy. You can visit different museums like the Fort Museum and National Art Gallery. The temples here are very famous, like the Parthasarathy and Adeeswar temples are worth visiting. Birla Planetarium will give you a space tour or enjoy fishing at Barracuda Bay.",
-          "The mouth-watering delicacies prepared there are worth dying for. You can savour yourself with authentic South Indian dishes.",
-        ],
-      },
-      {
-        heading: "Which airport is used when you arrive in Chennai?",
-        desc: [
-          "Flights from the USA to Chennai arrive regularly at the Chennai International Airport. This airport is one of the busiest airports in the country. This airport has two terminals and has a world-class and impressive infrastructure. The passengers are offered different facilities like conference rooms, duty-free shops, exchange counters of currency, etc. This has made traveling easier for passengers. The flight from the USA arrives at this top-notch airport. Here you can look at different flights landing from different international airlines.",
-        ],
-      },
-      {
-        heading: "How to reach the city from Chennai Airport?",
-        desc: [
-          "This is one of the most asked questions by first-time travelers that arrive at Chennai from the USA. Thankfully, you get different means of transport to reach the city. You can choose the means according to your preference from the below-given options:",
-          "- Rental Cars with the driver are available that will offer you excellent services to reach your particular destination. You can also get cabs from the airport.",
-          "- Just outside the Airport, you can see taxi lines from where you can hire a taxi. They will help you reach the city center. Prepaid taxis can also be booked prior to your arrival. Even auto rickshaws are available that will help you reach the city.",
-        ],
-      },
-      {
-        heading: "When is the cheapest time to fly to Chennai?",
-        desc: [
-          "The cheapest time to fly to Chennai is typically in the fall or the spring when there is less crowd and the flight ticket prices are more reasonable.",
-        ],
-      },
-      {
-        heading: "Avail the best deals on flight tickets to Chennai",
-        desc: [
-          "Alanita Travel provides you with the best deals on booking your flight to Chennai. We compared the prices and put before you the cheapest airfare. You can save hugely by booking your tickets with us. Even if you have last-minute plans, we can take care of it and you can save money on it. Hurry up today and grab the best deals possible. We are waiting for you.",
-        ],
-      },
-    ],
-
-    tips: null,
-    list2: null,
-    welcome: null,
-  },
-  "flights-to-mumbai-from-usa": {
-    desc: null,
-    descwithimg: null,
-
-    list1: [
-      {
-        heading: "Cheapest Airfares on Flight Tickets to Mumbai from the USA",
-        desc: [
-          "At Alanita Travel, we strive to make booking easy and convenient for you. Don't delay and book your cheap flights to BOM from the USA with us today. We will make sure you get your best deals and cheap flights to Mumbai from the USA. As we want you to trust we have the best fares, we have customer support who are available anytime to help you with your queries. Flight booking becomes hassle-free when you book your tickets with us.",
-        ],
-      },
-      {
-        heading: "How to Get Cheap Flights to Mumbai?",
-        desc: [
-          "It is known to everyone that you need to show some flexibility when looking for cheap flights, and the same applies to booking flights to Mumbai.",
-          "For last-minute flights, flexibility is key—you may even end up choosing airlines you’ve never flown on before.",
-          "Being flexible with your destination and departure airport can help secure better deals.",
-          "Reach Mumbai by booking tickets with our travel hacks.",
-        ],
-      },
-      {
-        heading: "Mumbai - The Dreamland City",
-        desc: [
-          "Mumbai is known to be the capital city of Maharashtra.",
-          "It has the highest population in India and is the fourth most populous city in the world.",
-          "This city is home to Bollywood, the world's second-largest film industry.",
-          "Start looking for cheap flights from the USA to Mumbai with us.",
-        ],
-      },
-      {
-        heading: "Flights from the USA to Mumbai",
-        desc: [
-          "Getting flights from the USA to Mumbai is a blessing for business travelers looking to trade and explore Indian industries.",
-          "Business travelers prefer minimizing travel time and avoiding hassles, making efficient flights crucial.",
-          "There are numerous flights available from the USA to Mumbai, but they can be costly—round-trip bookings tend to be more economical.",
-          "At Alanita Travel, we ensure you get the cheapest airfare and offer last-minute booking convenience for business travelers.",
-          "Mumbai is one of the most frequently traveled cities, ensuring constant flight availability.",
-        ],
-      },
-      {
-        heading: "Which Airport is Used When You Arrive in Mumbai?",
-        desc: [
-          "Flights from the USA to Mumbai arrive at Chhatrapati Shivaji Maharaj International Airport. This is one of the busiest airports in India, offering world-class facilities.",
-          "The airport has two terminals: one for domestic and one for international flights, with impressive infrastructure and various passenger amenities.",
-          "Passengers have access to duty-free shopping, currency exchange counters, lounges, and conference rooms for business travelers.",
-          "International flights from various airlines land at this top-notch airport daily.",
-        ],
-      },
-      {
-        heading: "How to Reach the City from Mumbai Airport?",
-        desc: [
-          "One of the most common questions first-time travelers ask is how to reach the city from the airport. Thankfully, there are several transport options:",
-          "- Rental Cars with drivers are available for convenient transport to your destination.",
-          "- Prepaid taxis can be booked at the airport, providing an easy and safe way to reach the city.",
-          "- Auto-rickshaws are available outside the airport for short-distance travel within the city.",
-          "- Ride-hailing services like Uber and Ola are also accessible at the airport.",
-        ],
-      },
-      {
-        heading: "When is the Cheapest Time to Fly to Mumbai?",
-        desc: [
-          "The cheapest time to fly to Mumbai is typically during the monsoon season (June to September) or during off-peak travel months like February and March, when demand is lower and fares are more affordable.",
-        ],
-      },
-      {
-        heading: "Avail the Best Deals on Flight Tickets to Mumbai",
-        desc: [
-          "Alanita Travel provides you with the best deals on booking your flight to Mumbai. We compare prices and present you with the most affordable airfare options.",
-          "You can save significantly by booking your tickets with us. Even if you have last-minute travel plans, we can help you secure the best available prices.",
-          "Don't miss out on our exclusive flight deals—book today and make your Mumbai journey smooth and cost-effective.",
-        ],
-      },
-    ],
-
-    tips: null,
-    list2: null,
-    welcome: null,
-  },
-  "flights-to-new-delhi-from-usa": {
-    desc: null,
-    descwithimg: null,
-
-    list1: [
-      {
-        heading: "Cheap flights from the USA to New Delhi",
-        desc: [
-          "Nobody will want to pay huge amounts of money on travelling when they can save more on booking their flights tickets from USA to New Delhi. At Alanita Travel, we offer exceptional savings on booking flight tickets worldwide. So, if you are in search of a weekend getaway or a trip of lifetime or business gathering, we help you get to your destination at cheapest airfares. You will get the cheapest flight to Delhi as we update our discounts on airfares regularly.",
-          "Delhi - the capital of the country, is a city of contrasts. On one side it has extreme wealth, towering shopping malls and on the other side, it has incredible beauty alongside much poverty. This intense and bewildering city gives you a chance to discover something beautiful. The largest mosque, as well as the best street foods and the Chandni Chowk market, is worth making your trip memorable. This city always intrigues its visitors.",
-        ],
-      },
-    ],
-
-    tips: null,
-    list2: null,
-    welcome: null,
-  },
-  "flights-to-usa-from-india": {
-    desc: null,
-    descwithimg: null,
-
-    list1: [
-      {
-        heading: "Flights to USA - The Dream Travel Destination",
-        desc: [
-          "America is one of the most heavenly places on earth for any tourist. Being the world's 3rd largest country, USA offers a different panorama and plenty of varied attractions. Visit one of the incredible nature creations such as the imposing Grand Canyon of Colorado and many national parks, get lost in New York City that never sleeps, go on a trip from the windy city of Chicago, and the list of must-visits is nearly impossible to cap off. If you're planning to visit some of the most amazing places in the USA, get the cheapest flight tickets to USA from India to save you money.",
-        ],
-      },
-      {
-        heading: "How to book cheap flight tickets from USA to India",
-        desc: [
-          "Airfare is the biggest expense of your trip to USA. Booking cheap flight tickets can make your shopping process simple and easy. Alanita Travel is one of the largest travel companies that specialize in providing convenient and quick flight ticket booking to its customers. Over the years the leading travel company strengthened its forte in cheap flights and emerged as the favorite travel brand for flight bookings to the United States from India. Alanita Travel has constantly innovated to add value to customers with best USA flight deals booked online or over the phone. Cheap flights to USA from India allow you to embark on one of the most exquisite travel experiences of your life. Alanita Travel is a one stop travel solution and has planned vacations successfully for millions of families. If you are planning a dream USA trip for work, study, or business travel, book the cheapest possible flights with Alanita Travel and customize your experience.",
-        ],
-      },
-      {
-        heading: "Best time to book cheap flights to USA from India",
-        desc: [
-          "Before planning your trip, try booking air tickets very early to get the best deals on flights to the USA from India. At Alanita Travel, we offer a wide selection of low-cost flight deals to USA from India so that you can choose the flights that meet your budget and schedule. Spring and the Fall are the best times to travel across the USA when the weather is quite pleasant.",
-        ],
-      },
-      {
-        heading: "Direct flights",
-        desc: [
-          "Travel to the US is increasing due to boom in cheap airline flights, accommodative airline schedules, attractive flight ticket deals, and ease in the booking system. Low-cost air travel has played a huge part in the rise in the number of flyers to the USA from India. There are affordable airlines that offer the best nonstop flights between the USA and India. Direct USA - India flights are available from a number of cities in India to USA. Book your India-USA flight ticket through Alanita Travel and build your perfect vacation itinerary to experience the best attractions in USA.",
-        ],
-      },
-      {
-        heading: "How Alanita Travel is maintaining its competitive edge?",
-        desc: [
-          "24/7 customer service",
-          "Book the best flight deals at lowest price",
-          "Instant flight bookings online anytime",
-          "Lowest airfares over phone",
-          "Exceptional customer service",
-          "Customer support for major Indian languages",
-          "Travel industry's trusted company with over 20 years of experience",
-          "Easy and secure payment gateway",
-          "Offices in USA and India",
-        ],
-      },
-    ],
-
-    tips: null,
-    list2: null,
-    welcome: null,
-  },
-  "flights-to-india-from-usa": {
-    desc: null,
-    descwithimg: null,
-
-    list1: [
-      {
-        heading: "Cheapest flight tickets to India from USA",
-        desc: [
-          "If you are ready to plan your trip to India that will save you a lot of money, then you are in the right place. Many travel websites claim to have the lowest prices on flights. It’s hard to find a reliable website that offers the best deals on flights. But with Alanita Travel being in business for many years, we for a fact can deliver on the promise of providing cheap flights to India from USA that is hard to beat.",
-        ],
-      },
-      {
-        heading:
-          "Why choose Alanita Travel for booking flight tickets to India from USA?",
-        desc: [
-          "Alanita Travel is a leading travel company that specializes in cheapest flights and discounted airline tickets for travel between the United States and India. Guaranteed to find a cheap flight to India for an exotic experience? Travel with peace of mind and enjoy the best deals with Alanita Travel. Our value-based pricing and prolonged customer experience have delivered the best competitive advantage.",
-        ],
-      },
-      {
-        heading: "A Trip to India",
-        desc: [
-          "India is a very popular destination most travelers have in mind in the United States. Booking cheap flights to India from USA have always been in high demand for those who travel often to India. We are one of the largest companies that has booked thousands of happy customers who need to book flights from the United States to India at special fares. You will save a lot with flights between USA and India.",
-        ],
-      },
-      {
-        heading: "Popular Destinations in India",
-        desc: [
-          "India is popular among most travelers because of the beauty, diverse cultures, and stunning architecture, unlike any you’ve ever experienced. Its diverse culture and geography besides its historical splendor make a trip to India one of the most fascinating and intriguing experiences for the traveler. Plan your visit to popular tourist places in some of India’s largest cities, such as Mumbai, Delhi, Kolkata, Chennai, and Bengaluru. The Himalayan ranges in the north and the virgin peninsular seashores in the south offer a traveler many beautiful monuments, galleries, museums, gardens, besides various tourist attractions like the famous Taj Mahal, Red Fort, Qutub Minar, India Gate, spiritual sites, palaces and heritage buildings in various cities. So, get the cheapest flight from USA to India because flying to India will deliver you the best and most memorable experiences of your life.",
-        ],
-      },
-      {
-        heading:
-          "We wish for an ultimate travel experience to Incredible India!",
-        desc: [],
-      },
-    ],
-
-    tips: null,
-    list2: null,
-    welcome: null,
-  },
-};
-
-let locations = {
+const locations = {
   "flights-from-washington-dc-to-chennai": {
     desc: "Our flight search engine makes it easy to find the best deals on flights to Chennai from Washington Dc. With a variety of airlines to choose from and flexible search options, you can easily find the perfect flight for your needs and budget. Book your trip today and start exploring the vibrant city of Chennai!",
     descwithimg: {
@@ -2586,7 +2150,441 @@ let locations = {
       map: houston_to_chennai_fullmap,
     },
   },
-  ...locations_1,
+  "flights-to-kolkata-from-usa": {
+    desc: null,
+
+    descwithimg: {
+      heading: "",
+      desc: [],
+      img: null, // Empty string for the image
+    },
+
+    list1: [
+      {
+        heading: "Cheap flights to Kolkata from the USA",
+        desc: [
+          "Kolkata - the city of joy, is the stunning capital of West Bengal in India. This glorious city is visited by a multitude of people daily. Therefore, the demand for flights to Kolkata from the USA is generally high. Alanita Travel offers substantial discounts and amazing offers throughout the year on the USA to Kolkata flights. With us, you can compare the airfare of different airlines and select the best one, which gives you the maximum savings. Even with the direct flights to Kolkata from the USA, we will provide you with amazing discounts. Now flying International won't cost you paying huge amounts. Flying abroad will be much economical with us at Alanita Travel.",
+        ],
+      },
+      {
+        heading: "Why book flights to Kolkata from the USA?",
+        desc: [
+          "If you travel to India, Kolkata is one of the must-visit list. The city is rich in its culture and history. When you book the cheap USA to CCU flights, you can experience the culture, education and commerce of East India. Kolkata was an important branch of the head of British India period which has its importance even today and it remains a vital part of India. Kolkata - the magnificent city, has been home to many great personalities. Few of them are Rabindranath Tagore, Amarta Sen, Mother Teresa and many more. When you visit this city, you will be amazed by the incredible tradition and culture of the city. Booking tickets to this incredible place will let you know more about the city.",
+        ],
+      },
+      {
+        heading: "What to do in Kolkata when you visit ?",
+        desc: [
+          "Kolkata has a never-ending list of fascinating places to visit. Book your tickets now and visit splendid monuments like Victoria Memorial, Fort William, Belur Math and Marble Palace. Other places of attraction are Eden Garden, Jorosanko Thakur Badi, and more. The iconic Howrah Bridge is an incredible sight for tourists to keep them as a memory. The towering grandeur will leave you speechless. The place has a gathering of thousands every day. The Mother Teresa House, which was the former abode of legendary mother Teresa, can be a great place to visit.",
+          "The food of Kolkata is famous everywhere. There are several delicious dishes that you can try when you visit Kolkata. Bengalis in Kolkata are known for their love for fish and the famous sweets Rasgulla and Sandesh. You can't miss all these when you visit here.",
+        ],
+      },
+    ],
+
+    tips: null,
+
+    list2: null,
+
+    welcome: null,
+  },
+  "flights-from-houston-to-chennai_": {
+    desc: "Discover incredible deals on flights from Houston to Chennai with Alanita Travel! Our vast network of airline partnerships and flexible search tools streamline the process, allowing you to compare prices effortlessly and find the perfect flight for your budget and travel preferences. Explore the captivating city of Chennai without breaking the bank!",
+
+    descwithimg: {
+      heading: "Immerse Yourself in Chennai's Enchantment",
+      desc: [
+        "Chennai, also known as 'The Gateway to South India,' offers a captivating blend of rich heritage, vibrant culture, and architectural marvels.",
+        "Witness the architectural wonder of the Kapaleeshwarar Temple, explore Fort St. George, or wander through the bustling Parry's Corner.",
+        "Tantalize your taste buds with the legendary South Indian cuisine, from the aromatic filter coffee and fluffy idlis to the delectable dosas and flavorful curries.",
+      ],
+      img: null, // Empty string for the image
+    },
+
+    list1: [
+      {
+        heading: "Why Choose Alanita Travel?",
+        desc: [
+          "Flexible Options: Select from a wide range of connecting flights that perfectly align with your travel needs and schedule.",
+          "Effortless Booking: Our user-friendly search engine makes booking your flight a breeze. Simply enter your travel dates and let us handle the rest.",
+          "Expert Guidance: Benefit from the knowledge of our experienced travel consultants who are available to answer your questions and help you find the ideal flight for your Chennai adventure.",
+        ],
+      },
+    ],
+
+    tips: {
+      heading: "Tips to Save Big on Flights to Chennai",
+      list: [
+        "Stay Informed with Email Alerts: Sign up to receive timely updates on Alanita Travel's latest offers and discounts on flights to Chennai.",
+        "Plan Ahead: Booking flights in advance often leads to lower fares.",
+        "Embrace Flexibility: Consider traveling during off-peak seasons to score the best deals.",
+        "Pack Light: Avoid baggage fees by packing only essentials.",
+        "Explore Round-Trip Options: Round-trip tickets can sometimes be more economical than one-way fares.",
+      ],
+    },
+
+    list2: [
+      {
+        heading: "Take Flight to Your Chennai Adventure!",
+        desc: [
+          "Contact Alanita Travel today and let our dedicated travel experts assist you in finding the perfect flight to Chennai!",
+          "With our competitive prices and unwavering commitment to excellent service, you can focus on planning your unforgettable experiences in Chennai's dynamic atmosphere.",
+        ],
+      },
+    ],
+
+    welcome: {
+      heading: "Affordable Flights from Houston to Chennai",
+      map: null, // Empty string for the image
+    },
+  },
+  "flights-from-usa-to-ahmedabad": {
+    desc: "Alanita Travel offers the best airfares and the lowest price on cheap tickets to Ahmedabad from the USA. Ahmedabad is a remarkable city of Gujarat and one of the most famous travel destinations. The demand for flights from the USA to Ahmedabad is high. Alanita Travel meets this increasing demand by offering hassle-free flight ticket deals to Ahmedabad from the USA. A large number of international flights arrive at Ahmedabad, which means the demand for flight tickets is high. Considering all this, we have amazing deals and offers for this route. Flights to Ahmedabad from the USA are also available with us at a discounted rate.",
+
+    descwithimg: {
+      heading: "Why Book Flight Tickets from the USA to Ahmedabad?",
+      desc: [
+        "Ahmedabad is one of the fastest-growing cities in the world, and the city sits pleasantly on the banks of Sabarmati river.",
+        "It is near to the current capital city - Gandhinagar and people mostly book their flights to Ahmedabad from the USA.",
+        "Also known as the industrial hub of India, this place is prime for commerce and trade sectors. Incredible growth has been seen in the infrastructure of the city.",
+        "You will love visiting the place if you are thinking of booking tickets to Ahmedabad.",
+      ],
+      img: null, // Empty string for the image
+    },
+
+    list1: [
+      {
+        heading: "Incredible Places to Visit in Ahmedabad",
+        desc: [
+          "Ahmedabad is a magnificent city and has a lot to offer to its tourists. If you are booking a flight to Ahmedabad, you can get to enjoy the beauty of the city.",
+          "The ones who are interested in the history of the places can visit Sarkhej Roza and Bhadra Fort.",
+          "One of the iconic places of the city is Sabarmati Ashram, which was once the headquarters of Mahatma Gandhi.",
+          "Kankaria Lake is one of the tourist places which you will love to visit with your children.",
+          "The beautiful Akshardham temple which is constructed with pink sandstone is a must-visit.",
+          "Jama Masjid and Rani Sipri Mosque are other travel destinations where you can find marvelous architectural designs.",
+        ],
+      },
+    ],
+
+    tips: {
+      heading: "Tips to Save Big on Flights to Ahmedabad",
+      list: [
+        "Stay Informed with Email Alerts: Sign up to receive timely updates on Alanita Travel's latest offers and discounts on flights to Ahmedabad.",
+        "Plan Ahead: Booking flights in advance often leads to lower fares.",
+        "Embrace Flexibility: Consider traveling during off-peak seasons to score the best deals.",
+        "Pack Light: Avoid baggage fees by packing only essentials.",
+        "Explore Round-Trip Options: Round-trip tickets can sometimes be more economical than one-way fares.",
+      ],
+    },
+
+    list2: [
+      {
+        heading: "Take Flight to Ahmedabad!",
+        desc: [
+          "Contact Alanita Travel today and let our dedicated travel experts assist you in finding the perfect flight to Ahmedabad!",
+          "With our competitive prices and unwavering commitment to excellent service, you can focus on planning your unforgettable experiences in Ahmedabad's dynamic atmosphere.",
+        ],
+      },
+    ],
+
+    welcome: {
+      heading: "Affordable Flights from the USA to Ahmedabad",
+      map: null, // Empty string for the image
+    },
+  },
+  "flights-from-usa-to-hyderabad": {
+    desc: "Do you wish to visit the city of Nizams? If yes, you are in the right place. At Alanita Travel we offer you an ample number of flights to Hyderabad from the USA. Visit us at our website with just one click and get amazing deals on your tickets. Find great offers on cheap flights to Hyderabad from the USA throughout the year. Booking your tickets beforehand will let you avail unbelievable offers. You might not have planned your trip yet, but you can book your tickets now to have an unplanned memory for life. We assure you significant savings and unbeatable offers in tickets to Hyderabad from the USA.",
+
+    descwithimg: {
+      heading: "Hyderabad - The Pearl City of India",
+      desc: [
+        "Hyderabad - the city of Nizams, which is famous for its richness and royalty will bring all the twists and turns to excite your journey.",
+        "If you are interested in visiting this city of Plethora, book your tickets now with us at Alanita Travel without any hassles.",
+        "The city of Hyderabad is known to be a crowded place, but when you get inside the crowd, you will enjoy it.",
+        "You can start with the famous Charminar, then move towards Golconda Fort. The place has an ample number of shopping malls and food outlets that won't let you get bored.",
+      ],
+      img: null, // Empty string for the image
+    },
+
+    list1: [
+      {
+        heading: "Flight Tickets to Hyderabad",
+        desc: [
+          "Alanita Travel is the place where you will find cheap and affordable flight tickets to Hyderabad from the USA.",
+          "We assure you of having a safe and comfortable journey so that you aren't much bothered about your expenses.",
+          "You can visit our website with just one click and get your flight tickets booked as per your convenience.",
+          "One of the most promising features of us is that we are available with you throughout the year with several offers and incredible deals so that you can fly anywhere at a budget-friendly expense.",
+        ],
+      },
+    ],
+
+    tips: {
+      heading: "Tips to Save Big on Flights to Hyderabad",
+      list: [
+        "Stay Informed with Email Alerts: Sign up to receive timely updates on Alanita Travel's latest offers and discounts on flights to Hyderabad.",
+        "Plan Ahead: Booking flights in advance often leads to lower fares.",
+        "Embrace Flexibility: Consider traveling during off-peak seasons to score the best deals.",
+        "Pack Light: Avoid baggage fees by packing only essentials.",
+        "Explore Round-Trip Options: Round-trip tickets can sometimes be more economical than one-way fares.",
+      ],
+    },
+
+    list2: [
+      {
+        heading: "Take Flight to Hyderabad!",
+        desc: [
+          "Contact Alanita Travel today and let our dedicated travel experts assist you in finding the perfect flight to Hyderabad!",
+          "With our competitive prices and unwavering commitment to excellent service, you can focus on planning your unforgettable experiences in Hyderabad's dynamic atmosphere.",
+        ],
+      },
+    ],
+
+    welcome: {
+      heading: "Affordable Flights from the USA to Hyderabad",
+      map: null, // Empty string for the image
+    },
+  },
+  "flights-to-chennai-from-usa": {
+    desc: null,
+    descwithimg: null,
+
+    list1: [
+      {
+        heading: "Cheap flights to Chennai from the USA",
+        desc: [
+          "Chennai - the marvelous capital of Tamil Nadu, is a very popular travel destination. Book your cheap flights from USA to Chennai with the help of Alanita Travel. We offer you unbelievable discounts throughout the year. We will ensure you the best prices and booking hassle-free on cheap tickets to Chennai from the USA. Every single day an endless stream of people come to book their tickets on this route. Join the chain and visit the fascinating city of Chennai very soon.",
+        ],
+      },
+      {
+        heading: "Why book cheap flights to Chennai from the USA?",
+        desc: [
+          "Chennai is a vibrant city and has a lot to offer to its visitors. Previously it was known as Madras and the beautiful city is a blend of traditional and modern ideals. It is known as an integral part of South India and a diverse Kaleidoscope of different cultures. Book a flight to Chennai from the USA and explore the glorious and fascinating city. People at Chennai are extremely helpful, and you will be welcomed wholeheartedly by the hospitable people of Chennai. They are the biggest asset of the city.",
+        ],
+      },
+      {
+        heading: "Things to be done in Chennai",
+        desc: [
+          "Once you book your tickets from the USA to Chennai, you get an astounding opportunity to explore amazing tourist attractions there. Strolling through Elliot's Beach and walking through Thalankuppam Pier will offer you an experience full of therapy. You can visit different museums like the Fort Museum and National Art Gallery. The temples here are very famous, like the Parthasarathy and Adeeswar temples are worth visiting. Birla Planetarium will give you a space tour or enjoy fishing at Barracuda Bay.",
+          "The mouth-watering delicacies prepared there are worth dying for. You can savour yourself with authentic South Indian dishes.",
+        ],
+      },
+      {
+        heading: "Which airport is used when you arrive in Chennai?",
+        desc: [
+          "Flights from the USA to Chennai arrive regularly at the Chennai International Airport. This airport is one of the busiest airports in the country. This airport has two terminals and has a world-class and impressive infrastructure. The passengers are offered different facilities like conference rooms, duty-free shops, exchange counters of currency, etc. This has made traveling easier for passengers. The flight from the USA arrives at this top-notch airport. Here you can look at different flights landing from different international airlines.",
+        ],
+      },
+      {
+        heading: "How to reach the city from Chennai Airport?",
+        desc: [
+          "This is one of the most asked questions by first-time travelers that arrive at Chennai from the USA. Thankfully, you get different means of transport to reach the city. You can choose the means according to your preference from the below-given options:",
+          "- Rental Cars with the driver are available that will offer you excellent services to reach your particular destination. You can also get cabs from the airport.",
+          "- Just outside the Airport, you can see taxi lines from where you can hire a taxi. They will help you reach the city center. Prepaid taxis can also be booked prior to your arrival. Even auto rickshaws are available that will help you reach the city.",
+        ],
+      },
+      {
+        heading: "When is the cheapest time to fly to Chennai?",
+        desc: [
+          "The cheapest time to fly to Chennai is typically in the fall or the spring when there is less crowd and the flight ticket prices are more reasonable.",
+        ],
+      },
+      {
+        heading: "Avail the best deals on flight tickets to Chennai",
+        desc: [
+          "Alanita Travel provides you with the best deals on booking your flight to Chennai. We compared the prices and put before you the cheapest airfare. You can save hugely by booking your tickets with us. Even if you have last-minute plans, we can take care of it and you can save money on it. Hurry up today and grab the best deals possible. We are waiting for you.",
+        ],
+      },
+    ],
+
+    tips: null,
+    list2: null,
+    welcome: null,
+  },
+  "flights-to-mumbai-from-usa": {
+    desc: null,
+    descwithimg: null,
+
+    list1: [
+      {
+        heading: "Cheapest Airfares on Flight Tickets to Mumbai from the USA",
+        desc: [
+          "At Alanita Travel, we strive to make booking easy and convenient for you. Don't delay and book your cheap flights to BOM from the USA with us today. We will make sure you get your best deals and cheap flights to Mumbai from the USA. As we want you to trust we have the best fares, we have customer support who are available anytime to help you with your queries. Flight booking becomes hassle-free when you book your tickets with us.",
+        ],
+      },
+      {
+        heading: "How to Get Cheap Flights to Mumbai?",
+        desc: [
+          "It is known to everyone that you need to show some flexibility when looking for cheap flights, and the same applies to booking flights to Mumbai.",
+          "For last-minute flights, flexibility is key—you may even end up choosing airlines you’ve never flown on before.",
+          "Being flexible with your destination and departure airport can help secure better deals.",
+          "Reach Mumbai by booking tickets with our travel hacks.",
+        ],
+      },
+      {
+        heading: "Mumbai - The Dreamland City",
+        desc: [
+          "Mumbai is known to be the capital city of Maharashtra.",
+          "It has the highest population in India and is the fourth most populous city in the world.",
+          "This city is home to Bollywood, the world's second-largest film industry.",
+          "Start looking for cheap flights from the USA to Mumbai with us.",
+        ],
+      },
+      {
+        heading: "Flights from the USA to Mumbai",
+        desc: [
+          "Getting flights from the USA to Mumbai is a blessing for business travelers looking to trade and explore Indian industries.",
+          "Business travelers prefer minimizing travel time and avoiding hassles, making efficient flights crucial.",
+          "There are numerous flights available from the USA to Mumbai, but they can be costly—round-trip bookings tend to be more economical.",
+          "At Alanita Travel, we ensure you get the cheapest airfare and offer last-minute booking convenience for business travelers.",
+          "Mumbai is one of the most frequently traveled cities, ensuring constant flight availability.",
+        ],
+      },
+      {
+        heading: "Which Airport is Used When You Arrive in Mumbai?",
+        desc: [
+          "Flights from the USA to Mumbai arrive at Chhatrapati Shivaji Maharaj International Airport. This is one of the busiest airports in India, offering world-class facilities.",
+          "The airport has two terminals: one for domestic and one for international flights, with impressive infrastructure and various passenger amenities.",
+          "Passengers have access to duty-free shopping, currency exchange counters, lounges, and conference rooms for business travelers.",
+          "International flights from various airlines land at this top-notch airport daily.",
+        ],
+      },
+      {
+        heading: "How to Reach the City from Mumbai Airport?",
+        desc: [
+          "One of the most common questions first-time travelers ask is how to reach the city from the airport. Thankfully, there are several transport options:",
+          "- Rental Cars with drivers are available for convenient transport to your destination.",
+          "- Prepaid taxis can be booked at the airport, providing an easy and safe way to reach the city.",
+          "- Auto-rickshaws are available outside the airport for short-distance travel within the city.",
+          "- Ride-hailing services like Uber and Ola are also accessible at the airport.",
+        ],
+      },
+      {
+        heading: "When is the Cheapest Time to Fly to Mumbai?",
+        desc: [
+          "The cheapest time to fly to Mumbai is typically during the monsoon season (June to September) or during off-peak travel months like February and March, when demand is lower and fares are more affordable.",
+        ],
+      },
+      {
+        heading: "Avail the Best Deals on Flight Tickets to Mumbai",
+        desc: [
+          "Alanita Travel provides you with the best deals on booking your flight to Mumbai. We compare prices and present you with the most affordable airfare options.",
+          "You can save significantly by booking your tickets with us. Even if you have last-minute travel plans, we can help you secure the best available prices.",
+          "Don't miss out on our exclusive flight deals—book today and make your Mumbai journey smooth and cost-effective.",
+        ],
+      },
+    ],
+
+    tips: null,
+    list2: null,
+    welcome: null,
+  },
+  "flights-to-new-delhi-from-usa": {
+    desc: null,
+    descwithimg: null,
+
+    list1: [
+      {
+        heading: "Cheap flights from the USA to New Delhi",
+        desc: [
+          "Nobody will want to pay huge amounts of money on travelling when they can save more on booking their flights tickets from USA to New Delhi. At Alanita Travel, we offer exceptional savings on booking flight tickets worldwide. So, if you are in search of a weekend getaway or a trip of lifetime or business gathering, we help you get to your destination at cheapest airfares. You will get the cheapest flight to Delhi as we update our discounts on airfares regularly.",
+          "Delhi - the capital of the country, is a city of contrasts. On one side it has extreme wealth, towering shopping malls and on the other side, it has incredible beauty alongside much poverty. This intense and bewildering city gives you a chance to discover something beautiful. The largest mosque, as well as the best street foods and the Chandni Chowk market, is worth making your trip memorable. This city always intrigues its visitors.",
+        ],
+      },
+    ],
+
+    tips: null,
+    list2: null,
+    welcome: null,
+  },
+  "flights-to-usa-from-india": {
+    desc: null,
+    descwithimg: null,
+
+    list1: [
+      {
+        heading: "Flights to USA - The Dream Travel Destination",
+        desc: [
+          "America is one of the most heavenly places on earth for any tourist. Being the world's 3rd largest country, USA offers a different panorama and plenty of varied attractions. Visit one of the incredible nature creations such as the imposing Grand Canyon of Colorado and many national parks, get lost in New York City that never sleeps, go on a trip from the windy city of Chicago, and the list of must-visits is nearly impossible to cap off. If you're planning to visit some of the most amazing places in the USA, get the cheapest flight tickets to USA from India to save you money.",
+        ],
+      },
+      {
+        heading: "How to book cheap flight tickets from USA to India",
+        desc: [
+          "Airfare is the biggest expense of your trip to USA. Booking cheap flight tickets can make your shopping process simple and easy. Alanita Travel is one of the largest travel companies that specialize in providing convenient and quick flight ticket booking to its customers. Over the years the leading travel company strengthened its forte in cheap flights and emerged as the favorite travel brand for flight bookings to the United States from India. Alanita Travel has constantly innovated to add value to customers with best USA flight deals booked online or over the phone. Cheap flights to USA from India allow you to embark on one of the most exquisite travel experiences of your life. Alanita Travel is a one stop travel solution and has planned vacations successfully for millions of families. If you are planning a dream USA trip for work, study, or business travel, book the cheapest possible flights with Alanita Travel and customize your experience.",
+        ],
+      },
+      {
+        heading: "Best time to book cheap flights to USA from India",
+        desc: [
+          "Before planning your trip, try booking air tickets very early to get the best deals on flights to the USA from India. At Alanita Travel, we offer a wide selection of low-cost flight deals to USA from India so that you can choose the flights that meet your budget and schedule. Spring and the Fall are the best times to travel across the USA when the weather is quite pleasant.",
+        ],
+      },
+      {
+        heading: "Direct flights",
+        desc: [
+          "Travel to the US is increasing due to boom in cheap airline flights, accommodative airline schedules, attractive flight ticket deals, and ease in the booking system. Low-cost air travel has played a huge part in the rise in the number of flyers to the USA from India. There are affordable airlines that offer the best nonstop flights between the USA and India. Direct USA - India flights are available from a number of cities in India to USA. Book your India-USA flight ticket through Alanita Travel and build your perfect vacation itinerary to experience the best attractions in USA.",
+        ],
+      },
+      {
+        heading: "How Alanita Travel is maintaining its competitive edge?",
+        desc: [
+          "24/7 customer service",
+          "Book the best flight deals at lowest price",
+          "Instant flight bookings online anytime",
+          "Lowest airfares over phone",
+          "Exceptional customer service",
+          "Customer support for major Indian languages",
+          "Travel industry's trusted company with over 20 years of experience",
+          "Easy and secure payment gateway",
+          "Offices in USA and India",
+        ],
+      },
+    ],
+
+    tips: null,
+    list2: null,
+    welcome: null,
+  },
+  "flights-to-india-from-usa": {
+    desc: null,
+    descwithimg: null,
+
+    list1: [
+      {
+        heading: "Cheapest flight tickets to India from USA",
+        desc: [
+          "If you are ready to plan your trip to India that will save you a lot of money, then you are in the right place. Many travel websites claim to have the lowest prices on flights. It’s hard to find a reliable website that offers the best deals on flights. But with Alanita Travel being in business for many years, we for a fact can deliver on the promise of providing cheap flights to India from USA that is hard to beat.",
+        ],
+      },
+      {
+        heading:
+          "Why choose Alanita Travel for booking flight tickets to India from USA?",
+        desc: [
+          "Alanita Travel is a leading travel company that specializes in cheapest flights and discounted airline tickets for travel between the United States and India. Guaranteed to find a cheap flight to India for an exotic experience? Travel with peace of mind and enjoy the best deals with Alanita Travel. Our value-based pricing and prolonged customer experience have delivered the best competitive advantage.",
+        ],
+      },
+      {
+        heading: "A Trip to India",
+        desc: [
+          "India is a very popular destination most travelers have in mind in the United States. Booking cheap flights to India from USA have always been in high demand for those who travel often to India. We are one of the largest companies that has booked thousands of happy customers who need to book flights from the United States to India at special fares. You will save a lot with flights between USA and India.",
+        ],
+      },
+      {
+        heading: "Popular Destinations in India",
+        desc: [
+          "India is popular among most travelers because of the beauty, diverse cultures, and stunning architecture, unlike any you’ve ever experienced. Its diverse culture and geography besides its historical splendor make a trip to India one of the most fascinating and intriguing experiences for the traveler. Plan your visit to popular tourist places in some of India’s largest cities, such as Mumbai, Delhi, Kolkata, Chennai, and Bengaluru. The Himalayan ranges in the north and the virgin peninsular seashores in the south offer a traveler many beautiful monuments, galleries, museums, gardens, besides various tourist attractions like the famous Taj Mahal, Red Fort, Qutub Minar, India Gate, spiritual sites, palaces and heritage buildings in various cities. So, get the cheapest flight from USA to India because flying to India will deliver you the best and most memorable experiences of your life.",
+        ],
+      },
+      {
+        heading:
+          "We wish for an ultimate travel experience to Incredible India!",
+        desc: [],
+      },
+    ],
+
+    tips: null,
+    list2: null,
+    welcome: null,
+  },
 };
 
-export { locations, locations_1 };
+export {locations};
