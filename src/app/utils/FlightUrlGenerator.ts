@@ -52,7 +52,7 @@ function generateFlightURL(
       "|",
       "",
     ];
-    let arr = [...arr1];
+    const arr = [...arr1];
 
     if (segment?.time) {
       arr[1] = segment.time;
