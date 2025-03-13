@@ -13,7 +13,7 @@ export default function Navbar() {
 
   const links = [
     { name: "Home", href: "/" },
-    { name: "Flights", href: "/flights" },
+    { name: "Flights", href: "/flight" },
     { name: "E-Forms", href: "/e-forms" },
     { name: "Rules & Regulations", href: "/rules" },
     { name: "Contact", href: "/contact-us" },
