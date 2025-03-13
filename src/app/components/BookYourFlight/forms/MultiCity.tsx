@@ -88,33 +88,33 @@ function MultiCityForm() {
                   <Date />
 
                   <select className="p-3 border border-[#C3C3C3] rounded-xl w-full h-[56px]">
-                    {anytime.map((item: string, index: number) => (
-                      <option key={index} value={item}>
-                        {item}
-                      </option>
-                    ))}
+                  {anytime.map((item: Record<string, string>, index: number) => (
+                  <option key={index} value={item.val}>
+                    {item.time}
+                  </option>
+                ))}
                   </select>
                 </div>
                 <div className="flex-1 flex gap-3">
                   <Date />
 
                   <select className="p-3 border border-[#C3C3C3] rounded-xl w-full h-[56px]">
-                    {anytime.map((item: string, index: number) => (
-                      <option key={index} value={item}>
-                        {item}
-                      </option>
-                    ))}
+                  {anytime.map((item: Record<string, string>, index: number) => (
+                  <option key={index} value={item.val}>
+                    {item.time}
+                  </option>
+                ))}
                   </select>
                 </div>
                 <div className="flex-1 flex gap-3">
                   <Date />
 
                   <select className="p-3 border border-[#C3C3C3] rounded-xl w-full h-[56px]">
-                    {anytime.map((item: string, index: number) => (
-                      <option key={index} value={item}>
-                        {item}
-                      </option>
-                    ))}
+                  {anytime.map((item: Record<string, string>, index: number) => (
+                  <option key={index} value={item.val}>
+                    {item.time}
+                  </option>
+                ))}
                   </select>
                 </div>
               </div>
@@ -159,19 +159,23 @@ function MultiCityForm() {
                 </div>
                 <div className="flex-1 flex gap-3">
                   <select className="p-3 border border-[#C3C3C3] rounded-xl w-full h-[56px]">
-                    {lapInfant.map((item: string, index: number) => (
-                      <option key={index} value={item}>
-                        {item}
-                      </option>
-                    ))}
+                  {lapInfant.map(
+                  (item: Record<string, number | string>, index: number) => (
+                    <option key={index} value={item.val}>
+                      {item.label}
+                    </option>
+                  )
+                )}
                   </select>
 
                   <select className="p-3 border border-[#C3C3C3] rounded-xl w-full h-[56px]">
-                    {seatInfant.map((item: string, index: number) => (
-                      <option key={index} value={item}>
-                        {item}
-                      </option>
-                    ))}
+                  {seatInfant.map(
+                  (item: Record<string, number | string>, index: number) => (
+                    <option value={item.val} key={index}>
+                      {item.label}
+                    </option>
+                  )
+                )}
                   </select>
                 </div>
                 <div className="flex-1 flex gap-3">
